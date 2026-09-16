@@ -1,0 +1,22 @@
+
+## Problem-Solving Strategy (CRITICAL)
+- Start with the simplest approach that could work. Only add complexity after simpler approaches demonstrably fail.
+- **STOP and pivot after 3 failed attempts at the same fix.** If you've tried variations of the same approach 3 times without success, the approach itself is likely flawed—try something fundamentally different.
+- **Recognize diminishing returns.** If each debugging iteration only marginally improves the situation (or doesn't improve it at all), you're likely patching around a core issue rather than solving it.
+- **Resource/constraint violations require algorithmic changes, not optimizations.** If your solution exceeds limits by more than 2x, incremental tweaks won't help—find an approach with fundamentally lower requirements.
+- **Time-box complex debugging.** If you've spent significant effort debugging intricate logic (state machines, timing, race conditions) without progress, step back and ask: "Is there a simpler way to solve this that avoids this complexity entirely?"
+- Extensive debugging of complex solutions is often a signal that a simpler approach exists.
+
+## Algorithm Selection
+- Before coding, analyze whether the algorithm's complexity fits the constraints.
+- For problems with tight resource limits, prefer well-known efficient algorithms when possible.
+- If a standard algorithm doesn't fit constraints, the problem likely requires a fundamentally different approach—search for one before implementing.
+
+## Feasibility First
+- Before implementing a solution, estimate whether it can meet the constraints (time, memory, size limits, etc.).
+- If your first attempt exceeds constraints by more than 2x, the approach is likely wrong—don't optimize, reconsider the algorithm.
+
+## Recognizing "Almost Working" Traps
+- **"Works for A but not B" is still a failed approach**: When a solution must satisfy multiple independent constraints simultaneously (e.g., pass two different validators, work across multiple environments, satisfy multiple compilation targets), alternating which constraint fails does NOT constitute progress. If attempt N fails constraint A and attempt N+1 fails constraint B, you have made zero net progress.
+- **Count cumulative failures, not per-variant failures**: If you've tried 5 variations of the same technique and none satisfy all constraints, that's 5 failures of that technique—not 5 separate approaches. Apply the "3 failures = hard pivot" rule to the technique, not individual variations.
+- **Surface-level tweaks vs. fundamental changes**: Changing syntax, reordering lines, or adjusting delimiters within the same structural approach counts as the same approach. A "fundamentally different strategy" means a different algorithm, architecture, or technique entirely.

@@ -1,0 +1,151 @@
+{
+  "captured_at": "2026-09-16T16:14:07.161165+00:00",
+  "source": "/Users/Apple/.ob1",
+  "files": [
+    {
+      "path": "original/bin/ob1",
+      "size": 143912048,
+      "sha256": "5e70c83694b55dcb43dbf71a507baba30f4c1da96b73604495e0d0abcb8ec4ac"
+    },
+    {
+      "path": "original/bin/policies/discovered.toml",
+      "size": 254,
+      "sha256": "32a75d08912d123f3fb9402f3d3f71401bd5ab12206b7399115ffe71626978d2"
+    },
+    {
+      "path": "original/bin/policies/plan.toml",
+      "size": 2292,
+      "sha256": "205883580e7ca514654d44999f72f507fb114dba632c592f413a224fa155364e"
+    },
+    {
+      "path": "original/bin/policies/privileged-commands.toml",
+      "size": 1403,
+      "sha256": "b9efd3ff68f152579c535931aedf9cfec470ea77212cc5809b12b44844cc2c5d"
+    },
+    {
+      "path": "original/bin/policies/read-only.toml",
+      "size": 1765,
+      "sha256": "6e6898b48afc9bf78a43e53e75a66ada00df8266763ceff6319286266483e08a"
+    },
+    {
+      "path": "original/bin/policies/safe-yolo.toml",
+      "size": 3810,
+      "sha256": "9e2f26085d699327861e0b7956c0f2f89278f878658b562adeb960f627e241ca"
+    },
+    {
+      "path": "original/bin/policies/write.toml",
+      "size": 2294,
+      "sha256": "693a5edd379081ad2b15bf19f44173cb41a53c429fc70ce2fef1f52938677105"
+    },
+    {
+      "path": "original/bin/policies/yolo.toml",
+      "size": 1924,
+      "sha256": "e96699a203cfff6cd4a9e670422548d91070fba4ba81169bcda36d2b09595ada"
+    },
+    {
+      "path": "original/bin/sandbox-macos-permissive-open.sb",
+      "size": 890,
+      "sha256": "5f84e096da41b4fb2e84d280ba363dbab13959a978453244ed3e11f7e8a6da97"
+    },
+    {
+      "path": "original/bin/sandbox-macos-permissive-proxied.sb",
+      "size": 1309,
+      "sha256": "b754256ea32e23b0322ae1b15f1946be925b7e495b93f19cb11af42f05a6ad9b"
+    },
+    {
+      "path": "original/bin/sandbox-macos-restrictive-open.sb",
+      "size": 3359,
+      "sha256": "32e71d432a16fab67c2b378383c75cbf4991480cd362e644ae7473a597d243d2"
+    },
+    {
+      "path": "original/bin/sandbox-macos-restrictive-proxied.sb",
+      "size": 3565,
+      "sha256": "7624bfe02d84f70318f3f12efb869d07c7deb135f5d51c2b5d6b62dba498f6b4"
+    },
+    {
+      "path": "original/bin/sandbox-macos-strict-open.sb",
+      "size": 4817,
+      "sha256": "29632d83cd61efd20e462911e38d86912a6197c405991a0a39dd123c1dcba3e2"
+    },
+    {
+      "path": "original/bin/sandbox-macos-strict-proxied.sb",
+      "size": 5022,
+      "sha256": "1010371da39e940b8863b9b5ef8238d4bd1e848e1fbb4f76ff3bf78857be76d2"
+    },
+    {
+      "path": "original/scripts/optimize/analyze_github_history.js",
+      "size": 26391,
+      "sha256": "78131cb674b5a6f50311e2e78356c7c891dbbe6f166f6b20474e12b61ceeda8b"
+    },
+    {
+      "path": "original/scripts/optimize/analyze_model_routing.js",
+      "size": 12347,
+      "sha256": "8c126d0fcaaa6bb183fb2e74db9df21e60ba522fe315f16f79954b28e7399425"
+    },
+    {
+      "path": "original/scripts/optimize/analyze_readiness.js",
+      "size": 18825,
+      "sha256": "bce48e4f12ffddaad5fcd47c1c82feff3b299b86d085c45aaf10798a78f2695f"
+    },
+    {
+      "path": "original/scripts/optimize/analyze_session_deep.js",
+      "size": 14068,
+      "sha256": "d1b1c019efc08c84b9e28064c93a54f2d030bf759410c9cdb463fbabba4bd97a"
+    },
+    {
+      "path": "original/scripts/optimize/analyze_session_metrics.js",
+      "size": 14032,
+      "sha256": "4c5a5dd2fdc7d538bbbeed4eb46463c8b4f1893dc08403dae1bf8e426ac98797"
+    },
+    {
+      "path": "original/scripts/optimize/analyze_subagent_value.js",
+      "size": 16110,
+      "sha256": "af3c4231b3ab258f5decb54608de61290084b5f61e8bd88b83596d3212fdc4c8"
+    },
+    {
+      "path": "original/scripts/optimize/check_setup.js",
+      "size": 15496,
+      "sha256": "dfeb577ab7258c86cbd8181448d42681771e58e41c827eb6054b5635a6bcf92a"
+    },
+    {
+      "path": "original/scripts/optimize/extract_external_sessions.js",
+      "size": 19599,
+      "sha256": "72814b38aee901d86428e9806cb552e0439c2e2cabcb5139b12edfe62a868bd1"
+    },
+    {
+      "path": "original/scripts/optimize/extract_sessions.js",
+      "size": 13682,
+      "sha256": "7d6ddf11f623c221f30636bd9aa5cac86c12469e0c0af9ad7386dba5438c5d3d"
+    },
+    {
+      "path": "original/scripts/optimize/find_friction_signals.js",
+      "size": 23631,
+      "sha256": "d14758d6a26be8c7917462c43da0d40e68866e8327bad985c91b3c4c2b530b71"
+    },
+    {
+      "path": "original/scripts/optimize/find_repeated_intents.js",
+      "size": 8159,
+      "sha256": "24ace3ab7dcb8324679865f2b9a640d62f2eed468f9eb5d810427255fdeba443"
+    },
+    {
+      "path": "original/scripts/optimize/get_recommendation_value.js",
+      "size": 5009,
+      "sha256": "809874118c43b62e5e9c9b95eed6b75ea89d2b8cd19bf8e038775c035504e1e3"
+    },
+    {
+      "path": "original/scripts/optimize/githubUtils.js",
+      "size": 10784,
+      "sha256": "f190924076237ac99bfd0eb900ad3a616021392913d9d0add3370ba2492b1ab2"
+    },
+    {
+      "path": "original/scripts/optimize/package.json",
+      "size": 21,
+      "sha256": "5a065fe7d8eab2a582f428e11c2ea63aaf70607a54f69cfd5c711b5c53d91b32"
+    },
+    {
+      "path": "original/scripts/optimize/utils.js",
+      "size": 6049,
+      "sha256": "29f24be1560ba43b8eac7b2b4b97ef1ef66d6280da820a7b2de0835c22e2dae2"
+    }
+  ]
+}

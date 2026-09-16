@@ -1,0 +1,170 @@
+[
+  {
+    "name": "gaxios",
+    "version": "7.1.3",
+    "license": "Apache-2.0",
+    "evidence": "embedded object literal, not a complete dependency lockfile",
+    "line": 45142,
+    "endLine": 45237
+  },
+  {
+    "name": "google-auth-library",
+    "version": "10.5.0",
+    "license": "Apache-2.0",
+    "evidence": "embedded object literal, not a complete dependency lockfile",
+    "line": 54296,
+    "endLine": 54372
+  },
+  {
+    "name": "gaxios",
+    "version": "6.7.1",
+    "license": "Apache-2.0",
+    "evidence": "embedded object literal, not a complete dependency lockfile",
+    "line": 78961,
+    "endLine": 79050
+  },
+  {
+    "name": "google-auth-library",
+    "version": "9.15.1",
+    "license": "Apache-2.0",
+    "evidence": "embedded object literal, not a complete dependency lockfile",
+    "line": 80672,
+    "endLine": 80754
+  },
+  {
+    "name": "@prisma/instrumentation",
+    "version": "6.19.0",
+    "license": "Apache-2.0",
+    "evidence": "embedded object literal, not a complete dependency lockfile",
+    "line": 153424,
+    "endLine": 153462
+  },
+  {
+    "name": "gaxios",
+    "version": "6.7.1",
+    "license": "Apache-2.0",
+    "evidence": "embedded object literal, not a complete dependency lockfile",
+    "line": 180747,
+    "endLine": 180836
+  },
+  {
+    "name": "google-auth-library",
+    "version": "9.15.1",
+    "license": "Apache-2.0",
+    "evidence": "embedded object literal, not a complete dependency lockfile",
+    "line": 184518,
+    "endLine": 184600
+  },
+  {
+    "name": "mustache.js",
+    "version": "4.2.0",
+    "license": null,
+    "evidence": "embedded object literal, not a complete dependency lockfile",
+    "line": 217504,
+    "endLine": 217521
+  },
+  {
+    "name": "Customer.io Data Pipelines",
+    "version": "1.0.0",
+    "license": null,
+    "evidence": "embedded object literal, not a complete dependency lockfile",
+    "line": 250147,
+    "endLine": 250159
+  },
+  {
+    "name": "sharp",
+    "version": "0.34.5",
+    "license": "Apache-2.0",
+    "evidence": "embedded object literal, not a complete dependency lockfile",
+    "line": 253789,
+    "endLine": 253975
+  },
+  {
+    "name": "ob1-extension",
+    "version": "1.0.0",
+    "license": null,
+    "evidence": "embedded object literal, not a complete dependency lockfile",
+    "line": 260383,
+    "endLine": 260383
+  },
+  {
+    "name": "@grpc/grpc-js",
+    "version": "1.13.4",
+    "license": "Apache-2.0",
+    "evidence": "embedded object literal, not a complete dependency lockfile",
+    "line": 262059,
+    "endLine": 262137
+  },
+  {
+    "name": "systeminformation",
+    "version": "5.30.2",
+    "license": "MIT",
+    "evidence": "embedded object literal, not a complete dependency lockfile",
+    "line": 310159,
+    "endLine": 310236
+  },
+  {
+    "name": "@opentelemetry/core",
+    "version": "2.5.0",
+    "license": "Apache-2.0",
+    "evidence": "embedded object literal, not a complete dependency lockfile",
+    "line": 328931,
+    "endLine": 329010
+  },
+  {
+    "name": "googleapis-common",
+    "version": "7.2.0",
+    "license": "Apache-2.0",
+    "evidence": "embedded object literal, not a complete dependency lockfile",
+    "line": 332711,
+    "endLine": 332797
+  },
+  {
+    "name": "google-gax",
+    "version": "4.6.1",
+    "license": "Apache-2.0",
+    "evidence": "embedded object literal, not a complete dependency lockfile",
+    "line": 362525,
+    "endLine": 362638
+  },
+  {
+    "name": "@google-cloud/logging",
+    "version": "11.2.1",
+    "license": "Apache-2.0",
+    "evidence": "embedded object literal, not a complete dependency lockfile",
+    "line": 367176,
+    "endLine": 367279
+  },
+  {
+    "name": "streamable-http-client",
+    "version": "1.0.0",
+    "license": null,
+    "evidence": "embedded object literal, not a complete dependency lockfile",
+    "line": 485030,
+    "endLine": 485030
+  },
+  {
+    "name": "stdio-client",
+    "version": "1.0.0",
+    "license": null,
+    "evidence": "embedded object literal, not a complete dependency lockfile",
+    "line": 485056,
+    "endLine": 485056
+  },
+  {
+    "name": "dotenv",
+    "version": "17.1.0",
+    "license": "BSD-2-Clause",
+    "evidence": "embedded object literal, not a complete dependency lockfile",
+    "line": 525112,
+    "endLine": 525155
+  },
+  {
+    "name": "mcp-test-client",
+    "version": "0.0.1",
+    "license": null,
+    "evidence": "embedded object literal, not a complete dependency lockfile",
+    "line": 606111,
+    "endLine": 606111
+  }
+]

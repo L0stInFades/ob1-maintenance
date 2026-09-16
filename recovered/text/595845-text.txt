@@ -1,0 +1,26 @@
+🟢 JetBrains IDE detected!
+
+JetBrains integration uses MCP (Model Context Protocol) instead of a companion extension.
+
+To enable IDE integration:
+
+1. In your JetBrains IDE, go to Settings | Tools | MCP Server
+2. Click "Enable MCP Server"
+3. In the "Manual Client Configuration" section, click "Copy SSE Config"
+4. Paste the config here in the chat
+
+Example SSE config:
+{
+  "type": "sse",
+  "url": "http://localhost:64342/sse"
+}
+
+5. I'll automatically write it to .ob1/settings.json and restart
+
+Once configured, OB1 will have access to JetBrains MCP tools:
+• get_file_problems - See IDE errors and warnings in real-time
+• execute_terminal_command - Run commands in IDE terminal
+• get_run_configurations - List available run configurations
+• run_configuration - Execute tests, builds, etc.
+
+Run /tools to see available MCP tools after configuration.

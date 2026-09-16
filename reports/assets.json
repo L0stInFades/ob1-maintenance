@@ -1,0 +1,20 @@
+[
+  {
+    "file": "recovered/assets/K0i-412100.wasm",
+    "owner": "K0i",
+    "size": 205488,
+    "sha256": "f38dcc4b43b818f9a0785bc1c6d5611a75ac4cdd428ff3f02757c34ca4e46d7f",
+    "wasmValid": true,
+    "line": 412100,
+    "endLine": 412102
+  },
+  {
+    "file": "recovered/assets/q0i-412105.wasm",
+    "owner": "q0i",
+    "size": 1380769,
+    "sha256": "364f0a2cd385c792239423026ef442dbd073d34c396b7bc9e5932426b8e4aa5d",
+    "wasmValid": true,
+    "line": 412105,
+    "endLine": 412107
+  }
+]

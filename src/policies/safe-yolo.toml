@@ -1,0 +1,116 @@
+# Safe YOLO Mode Policy
+#
+# Safe YOLO auto-approves most tool calls like YOLO mode, but still requires
+# user confirmation for dangerous shell commands (rm, kill, sudo, etc.),
+# database tools, and MCP/discovered tools.
+#
+# The actual enforcement is handled programmatically in config.ts:
+#   Priority 2.998: catch-all ALLOW (auto-approve most things)
+#   Priority 2.999: ASK_USER for dangerous commands (overrides the allow)
+#
+# This TOML file provides the base mode definition. The programmatic rules
+# in config.ts take precedence since they operate at the user tier (2.x).
+#
+# Priority system for policy rules:
+# - Higher priority numbers win over lower priority numbers
+# - When multiple rules match, the highest priority rule is applied
+# - Rules are evaluated in order of priority (highest first)
+#
+# Priority bands (tiers):
+# - Default policies (TOML): 1 + priority/1000 (e.g., priority 100 → 1.100)
+# - User policies (TOML): 2 + priority/1000 (e.g., priority 100 → 2.100)
+# - Admin policies (TOML): 3 + priority/1000 (e.g., priority 100 → 3.100)
+
+# Dangerous shell commands - file deletion
+[[rule]]
+toolName = "run_shell_command"
+commandPrefix = ["rm", "rmdir", "del", "shred", "unlink"]
+decision = "ask_user"
+priority = 999
+modes = ["safeYolo"]
+
+# Dangerous shell commands - process management
+[[rule]]
+toolName = "run_shell_command"
+commandPrefix = ["kill", "killall", "pkill", "xkill"]
+decision = "ask_user"
+priority = 999
+modes = ["safeYolo"]
+
+# Dangerous shell commands - Docker destructive
+[[rule]]
+toolName = "run_shell_command"
+commandPrefix = ["docker rm", "docker stop", "docker kill", "docker system prune", "docker volume rm", "docker network rm", "docker compose down"]
+decision = "ask_user"
+priority = 999
+modes = ["safeYolo"]
+
+# Dangerous shell commands - database tools
+[[rule]]
+toolName = "run_shell_command"
+commandPrefix = ["psql", "mysql", "mongo", "mongosh", "redis-cli", "sqlite3", "cqlsh"]
+decision = "ask_user"
+priority = 999
+modes = ["safeYolo"]
+
+# Dangerous shell commands - system modification
+[[rule]]
+toolName = "run_shell_command"
+commandPrefix = ["chmod", "chown", "mkfs", "fdisk", "dd", "mount", "umount"]
+decision = "ask_user"
+priority = 999
+modes = ["safeYolo"]
+
+# Dangerous shell commands - service management
+[[rule]]
+toolName = "run_shell_command"
+commandPrefix = ["systemctl stop", "systemctl restart", "systemctl disable", "systemctl mask", "service stop", "service restart"]
+decision = "ask_user"
+priority = 999
+modes = ["safeYolo"]
+
+# Dangerous shell commands - package removal
+[[rule]]
+toolName = "run_shell_command"
+commandPrefix = ["npm uninstall", "pip uninstall", "pip3 uninstall", "apt remove", "apt purge", "apt-get remove", "apt-get purge", "yum remove", "dnf remove", "brew uninstall", "cargo uninstall"]
+decision = "ask_user"
+priority = 999
+modes = ["safeYolo"]
+
+# Dangerous shell commands - git destructive
+[[rule]]
+toolName = "run_shell_command"
+commandPrefix = ["git push --force", "git push -f", "git reset --hard", "git clean", "git checkout ."]
+decision = "ask_user"
+priority = 999
+modes = ["safeYolo"]
+
+# Dangerous shell commands - network
+[[rule]]
+toolName = "run_shell_command"
+commandPrefix = ["iptables", "ip6tables", "ufw", "nft"]
+decision = "ask_user"
+priority = 999
+modes = ["safeYolo"]
+
+# Dangerous shell commands - privilege escalation
+[[rule]]
+toolName = "run_shell_command"
+commandPrefix = ["sudo", "su", "doas", "pkexec", "runas", "gsudo", "elevate"]
+decision = "ask_user"
+priority = 999
+modes = ["safeYolo"]
+
+# MCP/discovered tools require confirmation
+[[rule]]
+toolName = "discovered_tool_*"
+decision = "ask_user"
+priority = 999
+modes = ["safeYolo"]
+
+# Catch-all allow for safe_yolo mode (lower priority than dangerous command rules)
+[[rule]]
+decision = "allow"
+priority = 998
+modes = ["safeYolo"]
+allow_redirection = true

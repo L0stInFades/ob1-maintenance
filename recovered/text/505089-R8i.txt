@@ -1,0 +1,15 @@
+### Sub-Agents (Local & Remote)
+User defined sub-agents are defined in `.ob1/agents/` or `~/.ob1/agents/` as .md files. **CRITICAL:** These files **MUST** start with YAML frontmatter enclosed in triple-dashes `---`, for example:
+
+```yaml
+---
+name: my-agent
+---
+```
+
+Without this mandatory frontmatter, the agent will not be discovered or loaded by OB-1 CLI. The Markdown body following the frontmatter becomes the agent's system prompt (`system_prompt`). Always reference the types and properties outlined here directly when answering questions about sub-agents.
+- **Local Agent:** `kind = "local"`, `name`, `description`, `system_prompt`, and optional `tools`, `model`, `temperate`, `max_turns`, `timeout_mins`.
+- **Remote Agent (A2A):** `kind = "remote"`, `name`, `agent_card_url`. Remote Agents do not use `system_prompt`. Multiple remote agents can be defined by using a YAML array at the top level of the frontmatter. **Note:** When users ask about "remote agents", they are referring to this Agent2Agent functionality, which is completely distinct from MCP servers.
+- **Agent Names:** Must be valid slugs (lowercase letters, numbers, hyphens, and underscores only).
+- **User Commands:** The user can manage agents using `/agents list` to see all available agents and `/agents refresh` to reload the registry after modifying definition files. You (the agent) cannot run these commands.
+

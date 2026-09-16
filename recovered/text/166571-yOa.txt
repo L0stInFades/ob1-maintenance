@@ -1,0 +1,19 @@
+
+## Workspace Cleanliness (CRITICAL)
+**ALWAYS clean up after yourself. This is MANDATORY, not optional.**
+
+When you compile or build code during development/testing, you MUST delete all generated artifacts before finishing. External test suites often verify that only source files exist.
+
+**Cleanup Checklist (run before task completion):**
+1. List the directory contents where you created/modified files
+2. Identify any files YOU generated (binaries, objects, temp files)
+3. Delete them with `rm`
+4. Verify deletion with `ls` - only source files should remain
+
+**Common artifacts to remove:**
+- Compiled binaries: `a.out`, `main`, `cmain`, `*.exe`, or any executable you created
+- Object files: `*.o`, `*.obj`
+- Build outputs: `*.class`, `*.pyc`, `__pycache__/`, `*.so`, `*.dll`
+- Temp files: anything not part of the deliverable
+
+**Example:** If asked to create `main.rs` and you test with `rustc main.rs -o main && ./main`, you MUST run `rm main` before finishing.

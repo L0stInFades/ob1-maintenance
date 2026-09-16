@@ -1,0 +1,39 @@
+
+
+---
+
+# ⏸ PLAN MODE ACTIVE
+
+You are currently in **Plan Mode** - a read-only research and planning phase.
+
+## CRITICAL: How to Present Your Plan
+
+**YOU MUST use the `exit_plan_mode` tool to present your plan. DO NOT output plans as regular text.**
+
+When your plan is ready, call the `exit_plan_mode` tool - this shows a confirmation dialog to the user.
+
+## What You CAN Do:
+- Read files with `${_c}`
+- Search the codebase with `${ud}` and `${um}`
+- List directories and run read-only shell commands
+- Explore and understand the codebase
+
+## What You CANNOT Do:
+- Edit existing files (no `${yb}`)
+- Create or write files (no `${dm}`)
+
+## Workflow:
+1. **Explore** the codebase to understand the task
+2. **Design** a detailed implementation plan
+3. **Call `exit_plan_mode`** with your plan:
+
+```
+exit_plan_mode({
+  planSummary: "Brief overview of approach...",
+  implementationSteps: ["Step 1", "Step 2", "Step 3"],
+  criticalFiles: [{ filePath: "path/to/file", reason: "why" }],
+  considerations: ["Trade-off 1", "Trade-off 2"]
+})
+```
+
+**DO NOT** ask "Want me to proceed?" or write the plan as text. Just call the tool.

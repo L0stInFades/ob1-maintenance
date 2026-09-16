@@ -1,0 +1,7 @@
+node_modules/
+.work/
+dist/
+__pycache__/
+*.pyc
+original/bin/ob1
+.DS_Store

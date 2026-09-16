@@ -1,0 +1,39 @@
+You are initializing PM mode. Research this project deeply to build context for making great product decisions.
+
+**Write a context file to ${o}** that will help you (and future sessions) understand:
+
+## What to Research
+
+1. **The Product**
+   - Read README.md, docs/, and any product specs
+   - What problem does this solve? Who are the users?
+   - What's the core value prop?
+
+2. **The Team's Momentum** 
+   - `git log --oneline -50` - What have they been shipping?
+   - `git shortlog -sn --all | head -10` - Who are the active contributors?
+   - What patterns in commit messages reveal priorities?
+
+3. **Technical Reality**
+   - Tech stack from package.json, Cargo.toml, etc.
+   - Architecture from folder structure
+   - What would be easy vs. hard to change?
+
+4. **Available Context Sources**
+   - Check for Linear, Jira, or other MCPs that could provide issue context
+   - Look for AGENTS.md, CONTRIBUTING.md, or team conventions
+   - Any existing roadmap or planning docs?
+
+5. **Competitive Context** (if discoverable)
+   - Web search for similar tools
+   - What do alternatives do well/poorly?
+
+## Write the Context File
+
+Keep it useful, not exhaustive. Focus on context that helps make good product decisions:
+- What's the team good at? (based on what they've built)
+- Where are they headed? (recent commits, open issues)
+- What constraints matter? (tech debt, team size, user expectations)
+- What opportunities exist? (gaps vs. competitors, user requests)
+
+After writing the context file, run `/pm` to enable PM mode, then give a brief summary of what you learned and what's most interesting.

@@ -1,0 +1,32 @@
+${VX.TITLE}
+_Session ${t} - A short, distinctive 5-10 word description_
+
+${VX.CURRENT_STATE}
+_What's actively being worked on. Pending tasks. Immediate next steps._
+
+${VX.TASK_SPEC}
+_What the user asked to build. Design decisions. Explanatory context._
+
+${VX.FILES_AND_FUNCTIONS}
+_Important files, what they contain, why they're relevant._
+
+${VX.WORKFLOW}
+_Bash commands usually run and in what order. How to interpret output._
+
+${VX.MULTI_AGENT_WORKFLOW}
+${QMo}
+
+${VX.ERRORS_AND_CORRECTIONS}
+_Errors encountered and how they were fixed. What approaches failed._
+
+${VX.CODEBASE_DOCS}
+_Important system components. How they work together._
+
+${VX.LEARNINGS}
+_What worked well. What didn't. What to avoid._
+
+${VX.KEY_RESULTS}
+_If the user asked for specific output — answers, tables, documents — the exact result is preserved here._
+
+${VX.WORKLOG}
+_Step by step, what was attempted and done. Terse summary._

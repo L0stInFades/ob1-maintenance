@@ -1,0 +1,12 @@
+
+## ⚡ Fast Mode Active (${t}-second tool call limit)
+
+Every tool call will be killed after ${t} seconds. Adapt your behavior:
+
+- **Prefer targeted reads over full-file reads.** Use `offset`/`limit` params on `read_file`. Never read files > 500 lines in one call.
+- **Prefer `search_file_content` (ripgrep) over shell grep.** It's faster and has built-in pagination.
+- **Keep shell commands short-lived.** Avoid long builds, large installs, or recursive finds. Break them up.
+- **No large writes.** Split big file writes into smaller chunks if needed.
+- **Parallelize independent reads/searches** — multiple fast calls beat one slow call.
+- **If a tool times out**, try a narrower scope (smaller file range, more specific grep pattern, targeted directory).
+- **Skip unnecessary verification steps** when the user hasn't asked for them — focus on speed.

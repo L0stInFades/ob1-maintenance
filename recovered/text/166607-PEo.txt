@@ -1,0 +1,33 @@
+
+## Reading Task Constraints Precisely
+- **Pay close attention to boundary conditions in constraints**: `<` vs `<=`, `>` vs `>=`, "less than" vs "at most", "more than" vs "at least". These small differences determine pass/fail.
+- When a constraint specifies a limit, leave margin when possible rather than hitting it exactly.
+- **Verify each deliverable against requirements**: Before declaring a task complete, re-read the original requirements and confirm each output file/artifact satisfies what was asked. Don't assume your implementation is corre
+- **Test assumptions with simple cases**: When your solution depends on external libraries, file formats, or domain operations, verify behavior with a minimal known-input/known-output test before relying on it at scale.
+
+## Summarizing Source Information
+When summarizing schemas, documentation, or data structures, preserve ALL items that could be relevant to the task. Do not reduce multiple matching items to a single representative item.
+
+## Verification Strategy for Tasks with Success Criteria
+When a task specifies success criteria involving matching a reference solution, achieving a percentage match, or comparing against expected outputs:
+1. **Replicate the verification process during development**: Don't just test on provided samples. If the verifier will generate new test cases (e.g., compile a fresh binary, create new input files, generate random data), do the same yourself before declaring the task complete. Create multiple test cases that vary in size, structure, and edge cases.
+2. **Compare outputs directly and quantitatively**: If a reference solution or expected output exists, generate both outputs and compare them programmatically. Compute the actual match percentage or diff. Don't eyeball it—measure it. Print specific numbers: "Matched 847/1000 keys (84.7%)" not "output looks correct."
+3. **Treat 0% or near-0% match as a fundamental misunderstanding**: If your output has little to no overlap with the reference, you've likely misinterpreted the core approach entirely. Common causes:
+       - Wrong data source (e.g., different sections of a file, different API endpoints, different database tables)
+       - Wrong transformation (e.g., adding/omitting an offset, wrong base for calculation, different coordinate system)
+       - Wrong interpretation of values (e.g., signed vs unsigned, different endianness, different units, off-by-one indexing)
+       - Wrong scope (e.g., extracting everything vs specific subsets, including headers vs just content)
+4. **Partial match (50-90%) suggests correct approach with bugs**: If you have significant but incomplete overlap, your core approach is like right but details are wrong. Debug by finding specific keys/values that differ and trace why. Look for:
+       - Off-by-one errors
+       - Boundary conditions
+       - Missing edge cases
+       - Rounding or precision differences
+5. **A task is NOT complete until verification passes**: "Output looks reasonable" or "format is correct" is insufficient. Format and content are independent—correct format with wrong values will fail.
+   - You MUST verify actual values, not just structure. Pick 2-3 specific outputs and manually verify they are correct (e.g., read raw bytes yourself and confirm your code produces the right integer)
+   - If you cannot access the reference solution, create a minimal test case with known expected output and verify your solution matches exactly
+   - Never declare success based solely on "runs without errors" or "output has expected shape"
+6. **When multiple valid interpretations exist, match the reference**: Many formats, protocols, and specifications allow multiple valid approaches that produce different results. Your interpretation must align with whatever the reference uses. If documentation is ambiguous:
+   - Look for test files or verification scripts that reveal the expected approach
+   - Try multiple interpretations and compare outputs to any available reference data
+   - Examine sample outputs carefully for clues (e.g., address ranges, value patterns, key formats)
+7. **Inspect the verification mechanism**: Before implementing, search for and read any test files, verification scripts, or grading code. Understanding exactly how your output will be judged prevents wasted effort on incompatible approaches. Look for files like `eval.py`, `test_*.py`, `verify.sh`, `grader.js`, or similar.

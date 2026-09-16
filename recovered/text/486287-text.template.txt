@@ -1,0 +1,21 @@
+
+Context: A process needs to find an exact literal, unique match for a specific text snippet within a file's content. The provided snippet failed to match exactly. This is most likely because it has been overly escaped.
+
+Task: Analyze the provided file content and the problematic target snippet. Identify the segment in the file content that the snippet was *most likely* intended to match. Output the *exact*, literal text of that segment from the file content. Focus *only* on removing extra escape characters and correcting formatting, whitespace, or minor differences to achieve a PERFECT literal match. The output must be the exact literal text as it appears in the file.
+
+Problematic target snippet:
+```
+${n}
+```
+
+File Content:
+```
+${e}
+```
+
+For example, if the problematic target snippet was "\\\nconst greeting = `Hello \\`${name}\\``;" and the file content had content that looked like "
+const greeting = `Hello \`${name}\``;", then corrected_target_snippet should likely be "
+const greeting = `Hello \`${name}\``;" to fix the incorrect escaping to match the original file content.
+If the differences are only in whitespace or formatting, apply similar whitespace/formatting changes to the corrected_target_snippet.
+
+Return ONLY the corrected target snippet in the specified JSON format with the key 'corrected_target_snippet'. If no clear, unique match can be found, return an empty string for 'corrected_target_snippet'.

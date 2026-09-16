@@ -1,0 +1,57 @@
+# Privileged Commands Policy
+#
+# This policy ensures that commands requiring elevated privileges always prompt
+# for user confirmation, regardless of any "always allow" rules that may exist
+# for the underlying commands.
+#
+# Priority 900 is high enough to override user-saved "always allow" rules (2.95)
+# but still respects YOLO mode (priority 999) when explicitly enabled.
+
+# sudo - Unix/Linux/macOS privilege escalation
+[[rule]]
+toolName = "run_shell_command"
+commandPrefix = "sudo"
+decision = "ask_user"
+priority = 900
+
+# su - Switch user (Unix/Linux/macOS)
+[[rule]]
+toolName = "run_shell_command"
+commandPrefix = "su"
+decision = "ask_user"
+priority = 900
+
+# doas - OpenBSD privilege escalation (also available on Linux/macOS)
+[[rule]]
+toolName = "run_shell_command"
+commandPrefix = "doas"
+decision = "ask_user"
+priority = 900
+
+# pkexec - PolicyKit privilege escalation (Linux)
+[[rule]]
+toolName = "run_shell_command"
+commandPrefix = "pkexec"
+decision = "ask_user"
+priority = 900
+
+# runas - Windows privilege escalation
+[[rule]]
+toolName = "run_shell_command"
+commandPrefix = "runas"
+decision = "ask_user"
+priority = 900
+
+# gsudo - Windows sudo equivalent
+[[rule]]
+toolName = "run_shell_command"
+commandPrefix = "gsudo"
+decision = "ask_user"
+priority = 900
+
+# elevate - Windows elevation utility
+[[rule]]
+toolName = "run_shell_command"
+commandPrefix = "elevate"
+decision = "ask_user"
+priority = 900

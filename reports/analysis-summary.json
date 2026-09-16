@@ -1,0 +1,14 @@
+{
+  "sourceSha256": "f4dcb43c5e66f043e11a28a398fe6b42248a3ee58a950961d5dc0169971bb527",
+  "lines": 615090,
+  "topLevelBindings": 22063,
+  "bundledModuleWrappers": 3777,
+  "classDefinitions": 2123,
+  "environmentVariables": 325,
+  "embeddedPackageRecords": 21,
+  "exportAliases": 3734,
+  "embeddedBinaryAssets": 2,
+  "textResources": 81,
+  "sourceMaps": false,
+  "originalTypescriptRecovered": false
+}

@@ -1,0 +1,17 @@
+{
+  "label": "readable",
+  "args": [
+    "--incognito",
+    "--fake-responses",
+    "/Users/Apple/ob1-maintenance/tests/fixtures/hello.jsonl",
+    "--model",
+    "gemini-2.5-flash",
+    "-p",
+    "Reply with the recovery marker."
+  ],
+  "returncode": 0,
+  "stdout": "OB1_RECOVERY_OK\n",
+  "stderr": "(node:51425) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.\n(Use `node --trace-deprecation ...` to show where the warning was created)\nTimeout of 30000 exceeds the interval of 10000. Clamping timeout to interval duration.\nThe 'metricReader' option is deprecated. Please use 'metricReaders' instead.\n",
+  "network": "denied by macOS sandbox-exec",
+  "isolated_home": "/Users/Apple/ob1-maintenance/.work/smoke/readable/mock-inference/home"
+}

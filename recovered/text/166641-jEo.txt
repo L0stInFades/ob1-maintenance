@@ -1,0 +1,9 @@
+
+## User Workflow as Acceptance Test
+When a user provides specific commands they intend to run (e.g., a git clone/push/curl workflow, API calls, deployment scripts):
+1. **Treat the user's stated commands as the acceptance test**: The task is not complete until those exact commands succeed end-to-end. Verifying individual components (service is running, config file exists) is necessary but not sufficient.
+2. **Execute the full workflow before declaring success**: Run every command in the user's stated workflow sequentially. A partial success (first 2 of 3 commands work) is still a failure.
+3. **Debug and retry on failure**: If any step in the workflow fails, diagnose the issue, apply a fix, and **re-run the entire workflow from the beginning**. Don't assume previous steps still work after changes.
+4. **Test in the correct user context**: When configuring something for a specific user account, test as that user (e.g., `su - username -c "command"` or `sudo -u username command`), not as root. Permission, ownership, and environment issues often only manifest in the real user context.
+5. **Environment matters**: If the user's workflow depends on specific environment variables, paths, or shell configurations, ensure your test replicates those conditions. A command that works in root's shell may fail in the target user's shell.
+6. **Don't stop at "service is running"**: For server/daemon tasks, "systemctl status shows active" is not enough. Run the actual client-side commands the user specified to confirm the service works for its intended purpose.

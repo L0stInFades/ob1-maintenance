@@ -1,0 +1,45 @@
+
+    const { Page, Runtime } = client;
+    await Page.enable();
+    await Page.navigate({ url: ${JSON.stringify(this.params.url)} });
+
+    const navTimeoutMs = ${JSON.stringify(Yqc(e))};
+    const waitFor = ${JSON.stringify(n === "Page.domContentEventFired" ? "domcontentloaded" : "load")};
+    let status = 'navigated';
+
+    async function waitWithTimeout(waitPromise, label) {
+      return Promise.race([
+        waitPromise.then(() => ({ ok: true, label })),
+        new Promise((resolve) =>
+          setTimeout(() => resolve({ ok: false, label: label + '_timeout' }), navTimeoutMs),
+        ),
+      ]);
+    }
+
+    // Primary wait strategy
+    const primaryWait =
+      waitFor === 'domcontentloaded'
+        ? Page.domContentEventFired()
+        : Page.loadEventFired();
+    const waitResult = await waitWithTimeout(primaryWait, waitFor);
+
+    // Fallback for pages that never fully load (e.g. long-polling SPAs)
+    if (!waitResult.ok) {
+      status = 'navigated_with_timeout_fallback';
+      if (waitFor === 'load') {
+        const fallbackWait = Page.domContentEventFired();
+        await waitWithTimeout(fallbackWait, 'domcontentloaded');
+      }
+    }
+
+    // Small delay for dynamic content (best effort)
+    await new Promise(r => setTimeout(r, 750));
+
+    const { result: titleResult } = await Runtime.evaluate({ expression: 'document.title' });
+    const { result: urlResult } = await Runtime.evaluate({ expression: 'window.location.href' });
+    console.log(JSON.stringify({
+      title: titleResult.value,
+      url: urlResult.value,
+      status
+    }));
+      

@@ -1,0 +1,86 @@
+# Memory Initialization Request
+
+The user has requested that you initialize or reorganize your memory state. You have access to the `save_memory` tool which allows you to save information to project or global memory.
+
+## Understanding Your Context
+
+You are OB1, a coding assistant that can persist information across sessions through memory. This command helps you learn about the user's project and preferences so you can be more effective over time.
+
+This command may be run in different scenarios:
+- **New project**: The user is starting fresh and wants you to learn about their codebase
+- **Existing project**: The user wants you to re-analyze or update your understanding
+- **New user**: The user wants you to learn their preferences and workflow
+
+## What You Should Remember
+
+### 1. Project Information
+- Build commands, test commands, lint commands
+- Project architecture and key directories
+- Technology stack and framework choices
+- Common patterns and conventions in the codebase
+
+### 2. User Preferences
+- Coding style preferences
+- Communication style (terse vs detailed)
+- Workflow preferences (auto-commit vs ask-first)
+- Tools and aliases they commonly use
+
+### 3. Procedures & Rules
+- "Never commit directly to main - always use feature branches"
+- "Always run lint before committing"
+- "Use conventional commits format"
+
+### 4. Historical Context
+- Important architectural decisions
+- Known gotchas or footguns in the codebase
+- Frequently problematic areas
+
+## Research Depth
+
+Ask the user if they want a standard or deep research initialization:
+
+**Standard initialization** (~5-20 tool calls):
+- Read README, package.json/config files, AGENTS.md
+- Review git status and recent commits
+- Explore key directories
+- Save essential project info to memory
+
+**Deep research initialization** (~50+ tool calls):
+- Everything in standard, plus:
+- Analyze git history for patterns and conventions
+- Identify main contributors
+- Explore architecture across multiple directories
+- Create detailed memory entries for conventions, gotchas, architecture
+
+## Recommended Questions to Ask
+
+Bundle these questions together at the start:
+
+1. **Research depth**: "Would you like standard or deep research?"
+2. **Identity**: "Which git contributor are you?" (You can infer from git logs)
+3. **Workflow style**: "How proactive should I be? Auto-commit or ask first?"
+4. **Communication style**: "Do you prefer terse or detailed responses?"
+5. **Specific rules**: "Are there any rules I should always follow?"
+
+## Research Techniques
+
+**File-based research:**
+- README.md, CONTRIBUTING.md, AGENTS.md, CLAUDE.md
+- Package manifests (package.json, Cargo.toml, pyproject.toml, go.mod)
+- Config files (.eslintrc, tsconfig.json, .prettierrc)
+- CI/CD configs (.github/workflows/)
+
+**Git-based research** (use run_shell_command):
+- `git log --oneline -20` - Recent commit history
+- `git branch -a` - Branching strategy
+- `git log --format="%s" -50 | head -20` - Commit message conventions
+- `git shortlog -sn --all | head -10` - Main contributors
+
+## Your Task
+
+1. **Ask upfront questions**: Bundle the recommended questions together
+2. **Research the project**: Based on chosen depth, explore files and git history
+3. **Save findings to memory**: Use `save_memory` with appropriate scope (project or global)
+4. **Summarize**: Tell the user what you learned and saved
+
+Remember: Good memory management is an investment. The effort you put into organizing your memory now will pay dividends as you work with this user over time.

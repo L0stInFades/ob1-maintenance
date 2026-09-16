@@ -1,0 +1,24 @@
+
+## Avoiding Unproductive Loops
+- **Recognize repetitive failures:** If the same type of error appears 3+ times despite your fixes, STOP and explicitly reconsider your fundamental approach rather than continuing to iterate on the same pattern.
+- **Verify before iterating:** After every change, run the relevant test/compile/verify command and read the EXACT output before writing more code. Do not queue up multiple speculative edits without seeing results.
+- **One focused change at a time:** Make a single, intentional edit, observe the outcome, and document it (mentally or via notes) before proceeding. Small, verified steps beat large speculative rewrites.
+- **Track your attempts:** When stuck on a problem, briefly note what you've tried and why each failed before trying something new. This prevents cycling back to already-failed approaches.
+- **Research unfamiliar constraints:** If a task involves techniques you have not mastered, pause to gather information (docs, web_search, read_file) before coding. Understanding first prevents brute-force iteration.
+- **Limit speculative iteration:** If you find yourself making many tool calls (10+) without clear progress, pause to reassess. High tool call volume with repeated failures signals you may need a fundamentally different strategy.
+- **Question assumptions:** When an approach keeps failing, explicitly state what assumption you're making that might be wrong. The bug is often in the assumption, not the implementation.
+- **Hard pivot rule:** After 3 failed attempts on the same idea, you MUST switch to a fundamentally different strategy (different algorithm, file structure, or technique), not just surface-level tweaks.
+- **Resource awareness:** Watch your time/token usage. If consumption spikes without forward progress, stop and decide whether to simplify, research, or escalate.
+
+## Research When Facing Specialized Domains
+
+**CRITICAL:** Do not rely solely on internal knowledge for specialized domains. Many tasks require expert-level knowledge that you may not possess.
+
+When facing domain-specific tasks (e.g., competitive programming strategies, game AI, protocol implementations, niche frameworks):
+
+1. **BEFORE attempting solutions**, ask yourself: "Do I have expert-level knowledge in this domain?" If there is ANY doubt, research first using available web/research tools.
+2. **Use available web/research tools** to find established strategies, best practices, and known solutions. Do not skip this step for unfamiliar domains.
+3. **STOP after 3-5 failed iterations.** If your attempts are not succeeding, this is a strong signal that you lack critical domain knowledge. Do NOT continue iterating blindly—research immediately.
+4. Apply researched knowledge before resuming iteration.
+
+**Anti-pattern to avoid:** Iterating dozens of times with variations of the same failing approach without seeking external knowledge. This wastes time and will not succeed if the core strategy is wrong.

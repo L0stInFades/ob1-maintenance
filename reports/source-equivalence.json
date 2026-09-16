@@ -1,0 +1,14 @@
+{
+  "extractedAstSha256": "33f4fdf57c24689657184754ce44e8cf13143c6c8db9fea9e39e48e55c5b61e2",
+  "readableAstSha256": "33f4fdf57c24689657184754ce44e8cf13143c6c8db9fea9e39e48e55c5b61e2",
+  "equal": true,
+  "parser": "acorn 8.15.0",
+  "normalizations": [
+    "source positions",
+    "literal spelling",
+    "noncomputed property key spelling",
+    "same-operator logical association with operand order preserved",
+    "regular expression flag order"
+  ],
+  "note": "Normalized AST comparison checks the initial formatting pass. Future maintenance changes should intentionally differ."
+}

@@ -1,0 +1,24 @@
+{
+  "name": "ob1-local-maintenance",
+  "version": "0.1.725-recovered.0",
+  "private": true,
+  "description": "Local recovery and maintenance workspace for the installed OB1 binary",
+  "scripts": {
+    "extract": "python3 scripts/extract_sea.py",
+    "format": "node scripts/format.cjs",
+    "analyze": "node scripts/analyze.cjs",
+    "build": "node scripts/build.cjs",
+    "test": "python3 -m unittest discover -s tests -v",
+    "smoke": "python3 scripts/smoke.py --include-build",
+    "test:offline": "python3 scripts/offline-test.py",
+    "verify:source": "node --expose-gc scripts/verify-source.cjs",
+    "verify:build": "python3 scripts/verify-build.py",
+    "lookup": "node scripts/lookup.cjs",
+    "dev": "node scripts/dev.cjs",
+    "start": "node scripts/dev.cjs"
+  },
+  "devDependencies": {
+    "acorn": "8.15.0",
+    "prettier": "3.6.2"
+  }
+}

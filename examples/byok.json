@@ -1,0 +1,9 @@
+{
+  "preferDirect": true,
+  "providers": {
+    "anthropic": { "enabled": true },
+    "openai": { "enabled": true },
+    "google": { "enabled": true },
+    "openrouter": { "enabled": true }
+  }
+}

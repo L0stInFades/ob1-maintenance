@@ -1,0 +1,84 @@
+
+Access and manage past conversation threads (sessions).
+
+## Actions
+
+### list
+List available conversation threads.
+- `limit` (number, optional): Maximum threads to return (default: 20)
+- `search` (string, optional): Filter threads containing this text
+- `scope` (string, optional): "project" (default) or "all"
+- `multi_agent_only` (boolean, optional): Only show multi-agent sessions
+
+### get  
+Read thread content, optionally filtered by agent.
+- `thread_id` (string, required): Thread identifier
+- `message_limit` (number, optional): Max messages (default: 50)
+- `agent_id` (string, optional): Filter by agent (e.g., "main", "task-1")
+- `include_handoffs` (boolean, optional): Include handoff messages (default: true)
+
+### list_agents
+List all agents in a multi-agent thread.
+- `thread_id` (string, required): Thread identifier
+
+### fork
+Create a new session from a previous point.
+- `thread_id` (string, required): Thread identifier
+- `message_index` (number, optional): Fork point (default: end)
+
+### find_fork_point
+Find message index for forking.
+- `thread_id` (string, required): Thread identifier
+- `search` / `user_message_offset` / `from_end_offset`: Search criteria
+
+## Examples
+
+List multi-agent sessions only:
+```json
+{"action": "list", "multi_agent_only": true}
+```
+
+Get messages from specific agent:
+```json
+{"action": "get", "thread_id": "3", "agent_id": "task-1"}
+```
+
+List agents in a thread:
+```json
+{"action": "list_agents", "thread_id": "3"}
+```
+
+List recent threads:
+```json
+{"action": "list", "limit": 10}
+```
+
+List threads from all projects:
+```json
+{"action": "list", "scope": "all"}
+```
+
+Get thread content:
+```json
+{"action": "get", "thread_id": "3"}
+```
+
+Fork from message 5 of thread 2 (creates new resumable session):
+```json
+{"action": "fork", "thread_id": "2", "message_index": 5}
+```
+
+Find last user message in thread (for "fork at my previous instruction"):
+```json
+{"action": "find_fork_point", "thread_id": "2", "user_message_offset": 1}
+```
+
+Find second-to-last user message ("go back 2 instructions"):
+```json
+{"action": "find_fork_point", "thread_id": "2", "user_message_offset": 2}
+```
+
+Find message containing specific text ("fork before the refactor"):
+```json
+{"action": "find_fork_point", "thread_id": "2", "search": "refactor"}
+```

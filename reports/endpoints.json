@@ -1,0 +1,1155 @@
+[
+  {
+    "url": "http://${t}/",
+    "lines": [
+      53680,
+      80344,
+      132477,
+      184106,
+      309481
+    ]
+  },
+  {
+    "url": "http://127.0.0.1:3000/",
+    "lines": [
+      106894
+    ]
+  },
+  {
+    "url": "http://169.254.169.254/",
+    "lines": [
+      53665,
+      80329,
+      184091
+    ]
+  },
+  {
+    "url": "http://json-schema.org/draft-07/schema",
+    "lines": [
+      92425,
+      92426,
+      92525,
+      98172,
+      98173,
+      98272,
+      111648,
+      224653,
+      457886,
+      465576,
+      465577,
+      465676
+    ]
+  },
+  {
+    "url": "http://json-schema.org/schema",
+    "lines": [
+      92535,
+      93163,
+      98282,
+      465686
+    ]
+  },
+  {
+    "url": "http://localhost/",
+    "lines": [
+      309163
+    ]
+  },
+  {
+    "url": "http://localhost:11434/",
+    "lines": [
+      167735,
+      202601,
+      202604
+    ]
+  },
+  {
+    "url": "http://localhost:4317/",
+    "lines": [
+      280471,
+      301447,
+      301532,
+      301710,
+      308340,
+      308531
+    ]
+  },
+  {
+    "url": "http://localhost:4318/",
+    "lines": [
+      280522
+    ]
+  },
+  {
+    "url": "http://localhost:4318/v1/logs",
+    "lines": [
+      301724,
+      308305
+    ]
+  },
+  {
+    "url": "http://localhost:4318/v1/metrics",
+    "lines": [
+      301582,
+      308503
+    ]
+  },
+  {
+    "url": "http://localhost:4318/v1/traces",
+    "lines": [
+      301461,
+      308302
+    ]
+  },
+  {
+    "url": "http://localhost:8877/",
+    "lines": [
+      611098,
+      611217
+    ]
+  },
+  {
+    "url": "http://localhost:8969/stream",
+    "lines": [
+      144784
+    ]
+  },
+  {
+    "url": "http://localhost:9411/api/v2/spans",
+    "lines": [
+      300183,
+      301413,
+      308378
+    ]
+  },
+  {
+    "url": "http://localhost:9999/",
+    "lines": [
+      476924
+    ]
+  },
+  {
+    "url": "http://metadata.google.internal./",
+    "lines": [
+      53666,
+      80330,
+      184092
+    ]
+  },
+  {
+    "url": "http://s.io/",
+    "lines": [
+      137239
+    ]
+  },
+  {
+    "url": "http://unix${r.pathname}${r.search}/",
+    "lines": [
+      446437
+    ]
+  },
+  {
+    "url": "http://yandex.com/bots",
+    "lines": [
+      156959
+    ]
+  },
+  {
+    "url": "https://${p}/$%7BI%7D",
+    "lines": [
+      274652
+    ]
+  },
+  {
+    "url": "https://${this.clientoptions.location}-aiplatform.googleapis.com/",
+    "lines": [
+      65829,
+      199069
+    ]
+  },
+  {
+    "url": "https://${this.defaultservicepath}/",
+    "lines": [
+      56576,
+      81967,
+      186377
+    ]
+  },
+  {
+    "url": "https://${t}/$%7Be%7D",
+    "lines": [
+      116509
+    ]
+  },
+  {
+    "url": "https://${t}/$%7Be%7D/$%7Bn%7D/issues",
+    "lines": [
+      116418
+    ]
+  },
+  {
+    "url": "https://${t}/",
+    "lines": [
+      280431,
+      332683
+    ]
+  },
+  {
+    "url": "https://accounts.google.com/",
+    "lines": [
+      54606,
+      81024,
+      185002
+    ]
+  },
+  {
+    "url": "https://accounts.google.com/o/oauth2/revoke",
+    "lines": [
+      81666,
+      186076
+    ]
+  },
+  {
+    "url": "https://accounts.google.com/o/oauth2/v2/auth",
+    "lines": [
+      54595,
+      81013,
+      184991
+    ]
+  },
+  {
+    "url": "https://ai.google.dev/docs/gemini_api_overview",
+    "lines": [
+      585242
+    ]
+  },
+  {
+    "url": "https://ai.google.dev/gemini-api/terms",
+    "lines": [
+      585265
+    ]
+  },
+  {
+    "url": "https://aiplatform.googleapis.com/",
+    "lines": [
+      65830,
+      199070
+    ]
+  },
+  {
+    "url": "https://aistudio.google.com/app/apikey",
+    "lines": [
+      585004
+    ]
+  },
+  {
+    "url": "https://api.anthropic.com/",
+    "lines": [
+      165583,
+      165962,
+      168890
+    ]
+  },
+  {
+    "url": "https://api.braintrust.dev/",
+    "lines": [
+      237351
+    ]
+  },
+  {
+    "url": "https://api.elevenlabs.io/v1/speech-to-text",
+    "lines": [
+      247533
+    ]
+  },
+  {
+    "url": "https://api.github.com/",
+    "lines": [
+      259534
+    ]
+  },
+  {
+    "url": "https://api.github.com/repos/$%7Bt%7D/$%7Be%7D/releases",
+    "lines": [
+      580594
+    ]
+  },
+  {
+    "url": "https://api.github.com/repos/$%7Bt%7D/$%7Be%7D/releases/latest",
+    "lines": [
+      580592
+    ]
+  },
+  {
+    "url": "https://api.github.com/repos/$%7Bt%7D/$%7Be%7D/releases/tags/$%7Bn%7D",
+    "lines": [
+      580589
+    ]
+  },
+  {
+    "url": "https://api.openai.com/v1",
+    "lines": [
+      123682,
+      124044,
+      168891,
+      169911
+    ]
+  },
+  {
+    "url": "https://api.workos.com/user_management/authenticate",
+    "lines": [
+      118257,
+      244025
+    ]
+  },
+  {
+    "url": "https://api.workos.com/user_management/authorize/device",
+    "lines": [
+      244024
+    ]
+  },
+  {
+    "url": "https://braintrust.dev/",
+    "lines": [
+      226554
+    ]
+  },
+  {
+    "url": "https://braintrust.dev/error-generating-link",
+    "lines": [
+      234602
+    ]
+  },
+  {
+    "url": "https://braintrust.dev/fake-api-url",
+    "lines": [
+      226015
+    ]
+  },
+  {
+    "url": "https://braintrust.dev/noop-span",
+    "lines": [
+      234049
+    ]
+  },
+  {
+    "url": "https://cdp.customer.io/",
+    "lines": [
+      250030
+    ]
+  },
+  {
+    "url": "https://cloud.google.com/terms/service-terms",
+    "lines": [
+      585299
+    ]
+  },
+  {
+    "url": "https://cloud.google.com/terms/services",
+    "lines": [
+      585307
+    ]
+  },
+  {
+    "url": "https://cloudcode-pa.googleapis.com/",
+    "lines": [
+      117371
+    ]
+  },
+  {
+    "url": "https://cloudresourcemanager.${this.universedomain}/v1/projects/",
+    "lines": [
+      57113,
+      82551,
+      186961
+    ]
+  },
+  {
+    "url": "https://cloudresourcemanager.googleapis.com/v1/projects/",
+    "lines": [
+      57077,
+      82519,
+      186929
+    ]
+  },
+  {
+    "url": "https://codeassist.google.com/authcode",
+    "lines": [
+      106810
+    ]
+  },
+  {
+    "url": "https://dashboard.openblocklabs.com/",
+    "lines": [
+      160285,
+      423988,
+      492751,
+      492996,
+      512610,
+      523680
+    ]
+  },
+  {
+    "url": "https://dashboard.openblocklabs.com/api/v1/chats",
+    "lines": [
+      614202
+    ]
+  },
+  {
+    "url": "https://dashboard.openblocklabs.com/api/v1/chats/share",
+    "lines": [
+      423724
+    ]
+  },
+  {
+    "url": "https://developers.google.com/gemini-code-assist/auth_failure_gemini",
+    "lines": [
+      107071
+    ]
+  },
+  {
+    "url": "https://developers.google.com/gemini-code-assist/auth_success_gemini",
+    "lines": [
+      107070
+    ]
+  },
+  {
+    "url": "https://developers.google.com/gemini-code-assist/resources/privacy-notices",
+    "lines": [
+      585408
+    ]
+  },
+  {
+    "url": "https://developers.google.com/terms",
+    "lines": [
+      585257
+    ]
+  },
+  {
+    "url": "https://dotenvx.com/",
+    "lines": [
+      525140
+    ]
+  },
+  {
+    "url": "https://eh4hjgjge4akwn7c.public.blob.vercel-storage.com/",
+    "lines": [
+      243317,
+      601843
+    ]
+  },
+  {
+    "url": "https://eu-assets.i.posthog.com/",
+    "lines": [
+      157693
+    ]
+  },
+  {
+    "url": "https://eu.i.posthog.com/",
+    "lines": [
+      157693
+    ]
+  },
+  {
+    "url": "https://example.com/iiif",
+    "lines": [
+      254403
+    ]
+  },
+  {
+    "url": "https://fburl.com/react-devtools-workplace-group",
+    "lines": [
+      35287
+    ]
+  },
+  {
+    "url": "https://generativelanguage.googleapis.com/",
+    "lines": [
+      65819,
+      168892,
+      199059,
+      201443
+    ]
+  },
+  {
+    "url": "https://github.com/$%7BIZc%7D/releases/download/$%7Bfqn%7D/ripgrep-$%7Bfqn%7D-$%7Be%7D",
+    "lines": [
+      448102
+    ]
+  },
+  {
+    "url": "https://github.com/$%7Br%7D/$%7Bo%7D/pull/$%7Ba.number%7D",
+    "lines": [
+      259358
+    ]
+  },
+  {
+    "url": "https://github.com/$%7Br.owner%7D/$%7Br.repo%7D",
+    "lines": [
+      581648
+    ]
+  },
+  {
+    "url": "https://github.com/",
+    "lines": [
+      580573
+    ]
+  },
+  {
+    "url": "https://github.com/delta-hq/ob1",
+    "lines": [
+      167159,
+      201947,
+      203876,
+      204218,
+      204305,
+      204394,
+      211728,
+      238367,
+      251005,
+      251369
+    ]
+  },
+  {
+    "url": "https://github.com/facebook/react/blob/main/packages/react-devtools/CHANGELOG.md",
+    "lines": [
+      35284
+    ]
+  },
+  {
+    "url": "https://github.com/googleapis/gax-nodejs",
+    "lines": [
+      362635
+    ]
+  },
+  {
+    "url": "https://github.com/googleapis/gax-nodejs.git",
+    "lines": [
+      362629
+    ]
+  },
+  {
+    "url": "https://github.com/googleapis/gax-nodejs/issues",
+    "lines": [
+      362634
+    ]
+  },
+  {
+    "url": "https://github.com/googleapis/google-cloud-node-core.git",
+    "lines": [
+      45177
+    ]
+  },
+  {
+    "url": "https://github.com/googleapis/google-cloud-node-core/tree/main/packages/gaxios",
+    "lines": [
+      45236
+    ]
+  },
+  {
+    "url": "https://github.com/grpc/grpc-node/tree/master/packages/grpc-js",
+    "lines": [
+      262064
+    ]
+  },
+  {
+    "url": "https://github.com/highlightjs/highlight.js/wiki/security",
+    "lines": [
+      534058
+    ]
+  },
+  {
+    "url": "https://github.com/motdotla/dotenv",
+    "lines": [
+      525139
+    ]
+  },
+  {
+    "url": "https://github.com/node-fetch/node-fetch/issues/1167",
+    "lines": [
+      50497
+    ]
+  },
+  {
+    "url": "https://github.com/open-telemetry/opentelemetry-js/tree/main/packages/opentelemetry-core",
+    "lines": [
+      329007
+    ]
+  },
+  {
+    "url": "https://github.com/prisma/prisma.git",
+    "lines": [
+      153441
+    ]
+  },
+  {
+    "url": "https://github.com/prisma/prisma/issues",
+    "lines": [
+      153444
+    ]
+  },
+  {
+    "url": "https://goo.gle/set-up-gemini-code-assist",
+    "lines": [
+      424406
+    ]
+  },
+  {
+    "url": "https://grpc.io/",
+    "lines": [
+      262063
+    ]
+  },
+  {
+    "url": "https://iamcredentials.${o}/v1/projects/-/serviceAccounts/",
+    "lines": [
+      58744,
+      84005,
+      188415
+    ]
+  },
+  {
+    "url": "https://iamcredentials.${this.universedomain}/",
+    "lines": [
+      56853,
+      82239,
+      186649
+    ]
+  },
+  {
+    "url": "https://iamcredentials.googleapis.com/v1/projects/-/serviceAccounts/$%7BencodeURIComponent(t)%7D:generateIdToken",
+    "lines": [
+      513683
+    ]
+  },
+  {
+    "url": "https://inference.baseten.co/",
+    "lines": [
+      167593
+    ]
+  },
+  {
+    "url": "https://json-schema.org/draft/2019-09/schema",
+    "lines": [
+      111650,
+      224655
+    ]
+  },
+  {
+    "url": "https://json-schema.org/draft/2020-12/meta/applicator",
+    "lines": [
+      92937
+    ]
+  },
+  {
+    "url": "https://json-schema.org/draft/2020-12/meta/content",
+    "lines": [
+      92988
+    ]
+  },
+  {
+    "url": "https://json-schema.org/draft/2020-12/meta/core",
+    "lines": [
+      93003
+    ]
+  },
+  {
+    "url": "https://json-schema.org/draft/2020-12/meta/format-annotation",
+    "lines": [
+      93037
+    ]
+  },
+  {
+    "url": "https://json-schema.org/draft/2020-12/meta/meta-data",
+    "lines": [
+      93048
+    ]
+  },
+  {
+    "url": "https://json-schema.org/draft/2020-12/meta/unevaluated",
+    "lines": [
+      92974
+    ]
+  },
+  {
+    "url": "https://json-schema.org/draft/2020-12/meta/validation",
+    "lines": [
+      93067
+    ]
+  },
+  {
+    "url": "https://json-schema.org/draft/2020-12/schema",
+    "lines": [
+      92878,
+      92879,
+      92936,
+      92973,
+      92987,
+      93002,
+      93036,
+      93047,
+      93066,
+      93150,
+      98472,
+      457884
+    ]
+  },
+  {
+    "url": "https://json-schema.org/draft/2020-12/vocab/applicator",
+    "lines": [
+      92882,
+      92938
+    ]
+  },
+  {
+    "url": "https://json-schema.org/draft/2020-12/vocab/content",
+    "lines": [
+      92887,
+      92989
+    ]
+  },
+  {
+    "url": "https://json-schema.org/draft/2020-12/vocab/core",
+    "lines": [
+      92881,
+      93004
+    ]
+  },
+  {
+    "url": "https://json-schema.org/draft/2020-12/vocab/format-annotation",
+    "lines": [
+      92886,
+      93038
+    ]
+  },
+  {
+    "url": "https://json-schema.org/draft/2020-12/vocab/meta-data",
+    "lines": [
+      92885,
+      93049
+    ]
+  },
+  {
+    "url": "https://json-schema.org/draft/2020-12/vocab/unevaluated",
+    "lines": [
+      92883,
+      92975
+    ]
+  },
+  {
+    "url": "https://json-schema.org/draft/2020-12/vocab/validation",
+    "lines": [
+      92884,
+      93068
+    ]
+  },
+  {
+    "url": "https://model-${n}.api.baseten.co/v1",
+    "lines": [
+      167124
+    ]
+  },
+  {
+    "url": "https://monitoring.googleapis.com/",
+    "lines": [
+      333369,
+      333388,
+      333418,
+      333437,
+      333462,
+      333495,
+      333517,
+      333536,
+      333555,
+      333577,
+      333622,
+      333647,
+      333672,
+      333703,
+      333733,
+      333790,
+      333825,
+      333870,
+      333893,
+      333916,
+      333939,
+      333962,
+      333991,
+      334020,
+      334043,
+      334066,
+      334089,
+      334112,
+      334141,
+      334170,
+      334193,
+      334216,
+      334239,
+      334268,
+      334291,
+      334320,
+      334343,
+      334375,
+      334398,
+      334421,
+      334444,
+      334467,
+      334490,
+      334513,
+      334536,
+      334565,
+      334588,
+      334611,
+      334634,
+      334663,
+      334686,
+      334709,
+      334732,
+      334761,
+      334784,
+      334807,
+      334830,
+      334853,
+      334882,
+      334905,
+      334928,
+      334951,
+      334974,
+      335003,
+      335026,
+      335049,
+      335072,
+      335095,
+      335124
+    ]
+  },
+  {
+    "url": "https://o4508496862969856.ingest.us.sentry.io/4510506959568896",
+    "lines": [
+      162108
+    ]
+  },
+  {
+    "url": "https://oauth2.googleapis.com/revoke",
+    "lines": [
+      54597,
+      56038,
+      81015,
+      184993
+    ]
+  },
+  {
+    "url": "https://oauth2.googleapis.com/token",
+    "lines": [
+      54596,
+      56037,
+      81014,
+      184992
+    ]
+  },
+  {
+    "url": "https://oauth2.googleapis.com/tokeninfo",
+    "lines": [
+      54594,
+      54610,
+      81012,
+      81468,
+      184990,
+      185446
+    ]
+  },
+  {
+    "url": "https://ob1-cloud-agents.fly.dev/",
+    "lines": [
+      118342
+    ]
+  },
+  {
+    "url": "https://openblocklabs.com/manual",
+    "lines": [
+      549640
+    ]
+  },
+  {
+    "url": "https://opencollective.com/libvips",
+    "lines": [
+      253974
+    ]
+  },
+  {
+    "url": "https://openrouter.ai/api/v1",
+    "lines": [
+      168893
+    ]
+  },
+  {
+    "url": "https://play.googleapis.com/log",
+    "lines": [
+      327252
+    ]
+  },
+  {
+    "url": "https://policies.google.com/privacy",
+    "lines": [
+      585470
+    ]
+  },
+  {
+    "url": "https://raw.githubusercontent.com/ajv-validator/ajv/master/lib/refs/data.json",
+    "lines": [
+      89890,
+      90912,
+      96112,
+      96659,
+      463516,
+      464063
+    ]
+  },
+  {
+    "url": "https://react.dev/errors/",
+    "lines": [
+      5221
+    ]
+  },
+  {
+    "url": "https://react.dev/link/hydration-mismatch",
+    "lines": [
+      13877
+    ]
+  },
+  {
+    "url": "https://reactjs.org/blog/2019/08/15/new-react-devtools.html",
+    "lines": [
+      35286
+    ]
+  },
+  {
+    "url": "https://sentry.io/organizations/",
+    "lines": [
+      160196
+    ]
+  },
+  {
+    "url": "https://sharp.pixelplumbing.com/",
+    "lines": [
+      253795
+    ]
+  },
+  {
+    "url": "https://spiky-feels-fe4.notion.site/2e17559211aa80fe8d3dc81cac7dd96c",
+    "lines": [
+      593066
+    ]
+  },
+  {
+    "url": "https://sts.${this.universedomain}/v1/token",
+    "lines": [
+      58827,
+      84102,
+      188512
+    ]
+  },
+  {
+    "url": "https://sts.{region}.amazonaws.com/",
+    "lines": [
+      57834,
+      83169,
+      187579
+    ]
+  },
+  {
+    "url": "https://sts.{universedomain}/v1/oauthtoken",
+    "lines": [
+      58203,
+      83451,
+      187861
+    ]
+  },
+  {
+    "url": "https://sts.{universedomain}/v1/token",
+    "lines": [
+      57079,
+      82521,
+      186931
+    ]
+  },
+  {
+    "url": "https://systeminformation.io/",
+    "lines": [
+      310166
+    ]
+  },
+  {
+    "url": "https://us-assets.i.posthog.com/",
+    "lines": [
+      157692
+    ]
+  },
+  {
+    "url": "https://us.i.posthog.com/",
+    "lines": [
+      157564,
+      157691,
+      160164,
+      161833
+    ]
+  },
+  {
+    "url": "https://www.braintrust.dev/",
+    "lines": [
+      226000,
+      226557,
+      235492
+    ]
+  },
+  {
+    "url": "https://www.buymeacoffee.com/systeminfo",
+    "lines": [
+      310233
+    ]
+  },
+  {
+    "url": "https://www.googleapis.com/auth/cloud-platform",
+    "lines": [
+      57073,
+      67958,
+      82515,
+      107065,
+      186925,
+      200848,
+      330358,
+      335628,
+      364178,
+      364258,
+      364801,
+      371419,
+      372932,
+      373809,
+      509830
+    ]
+  },
+  {
+    "url": "https://www.googleapis.com/auth/cloud-platform,https://www.googleapis.com/auth/cloud-platform.read-only,https://www.googleapis.com/auth/logging.admin,https://www.googleapis.com/auth/logging.read",
+    "lines": [
+      368370
+    ]
+  },
+  {
+    "url": "https://www.googleapis.com/auth/cloud-platform,https://www.googleapis.com/auth/cloud-platform.read-only,https://www.googleapis.com/auth/logging.admin,https://www.googleapis.com/auth/logging.read,https://www.googleapis.com/auth/logging.write",
+    "lines": [
+      368055,
+      370245
+    ]
+  },
+  {
+    "url": "https://www.googleapis.com/auth/cloud-platform,https://www.googleapis.com/auth/trace.append",
+    "lines": [
+      329203
+    ]
+  },
+  {
+    "url": "https://www.googleapis.com/auth/cloud-platform.read-only",
+    "lines": [
+      371420,
+      372933,
+      373810
+    ]
+  },
+  {
+    "url": "https://www.googleapis.com/auth/cloudkms",
+    "lines": [
+      364179
+    ]
+  },
+  {
+    "url": "https://www.googleapis.com/auth/logging.admin",
+    "lines": [
+      371421,
+      372934,
+      373811
+    ]
+  },
+  {
+    "url": "https://www.googleapis.com/auth/logging.read",
+    "lines": [
+      371422,
+      372935,
+      373812
+    ]
+  },
+  {
+    "url": "https://www.googleapis.com/auth/logging.write",
+    "lines": [
+      372936,
+      373813
+    ]
+  },
+  {
+    "url": "https://www.googleapis.com/auth/userinfo.email",
+    "lines": [
+      107066
+    ]
+  },
+  {
+    "url": "https://www.googleapis.com/auth/userinfo.profile",
+    "lines": [
+      107067
+    ]
+  },
+  {
+    "url": "https://www.googleapis.com/oauth2/v1/certs",
+    "lines": [
+      54598,
+      81016,
+      184994
+    ]
+  },
+  {
+    "url": "https://www.googleapis.com/oauth2/v2/userinfo",
+    "lines": [
+      106995
+    ]
+  },
+  {
+    "url": "https://www.googleapis.com/oauth2/v3/certs",
+    "lines": [
+      54599,
+      81017,
+      184995
+    ]
+  },
+  {
+    "url": "https://www.googleapis.com/oauth2/v4/token",
+    "lines": [
+      81665,
+      186075
+    ]
+  },
+  {
+    "url": "https://www.gstatic.com/iap/verify/public_key",
+    "lines": [
+      54600,
+      81018,
+      184996
+    ]
+  },
+  {
+    "url": "https://www.openblocklabs.com/",
+    "lines": [
+      582879
+    ]
+  },
+  {
+    "url": "https://www.prisma.io/",
+    "lines": [
+      153438
+    ]
+  },
+  {
+    "url": "https://yargs.js.org/docs/",
+    "lines": [
+      547224,
+      608604
+    ]
+  }
+]

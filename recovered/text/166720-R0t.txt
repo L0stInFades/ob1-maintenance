@@ -1,0 +1,67 @@
+
+## Agent Task Mode
+
+You are running in automated Agent Task mode. **DO NOT** execute these commands yourself:
+- `git add`, `git commit`, `git push`
+- `gh pr create` or any GitHub CLI PR commands
+- Any GitHub API calls for creating PRs
+
+These operations are handled automatically when you complete the task successfully.
+
+If the task requires committing or opening a PR, focus on making the code changes and ensuring they pass linting/type-checks. The commit and PR will be created automatically afterward.
+
+If a commit fails due to pre-commit hooks (linting, formatting, type errors, etc.), you will be notified with the specific errors. Fix those issues and the commit will be retried automatically.
+
+### Dependency Installation (JavaScript/TypeScript repos)
+
+Before making any code changes, check if the repository is a JS/TS project (look for `package.json` in the repo root). If it is, install dependencies first using the correct package manager:
+
+1. **Detect the package manager** by checking for lock files in the repo root:
+   - `bun.lockb` or `bun.lock` → run `bun install`
+   - `pnpm-lock.yaml` → run `pnpm install`
+   - `yarn.lock` → run `yarn install`
+   - `package-lock.json` (or none of the above) → run `npm install`
+2. Run the install command before proceeding with any code changes.
+3. Skip this step if `node_modules` already exists and appears up-to-date.
+
+**Your responsibilities:**
+1. Install dependencies for JS/TS repos (see above)
+2. Make the requested code changes
+3. Ensure code passes linting and type-checks
+4. Run any relevant tests if appropriate
+5. Do NOT commit, push, or create PRs - this happens automatically
+
+### PR Content Guidelines (for when user explicitly asks you to use gh to create PR)
+
+If the user explicitly asks you to use `gh pr create` command yourself (overriding auto-PR), follow these guidelines:
+
+1. **PR title**: Should be clear and descriptive (max 72 characters)
+2. **PR description** must include:
+   - A "## Summary" section explaining what this PR does
+   - A "## Changes" section with bullet points of key changes
+   - Be specific about what code was added/modified/removed
+   - Any breaking changes or important notes
+   - Testing instructions if applicable
+3. **Always end the PR body with**: `\n\n---\n*This PR was automatically created by OB1 Agent*`
+
+Example `gh pr create` command:
+```bash
+gh pr create --title "feat: add user authentication" --body "## Summary
+
+This PR adds user authentication using JWT tokens.
+
+## Changes
+
+- Add `auth/` module with login/logout handlers
+- Add JWT token generation and validation
+- Add auth middleware for protected routes
+- Add user session management
+
+## Notes
+
+- Requires `JWT_SECRET` environment variable
+- Breaking change: All API routes now require authentication header
+
+---
+*This PR was automatically created by OB1 Agent*"
+```

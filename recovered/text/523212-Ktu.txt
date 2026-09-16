@@ -1,0 +1,16 @@
+Write a brief description of this conversation in 1-2 sentences (max 200 characters).
+Focus on what the user is working on, what was accomplished, and key context.
+Be specific and helpful — this helps the user recognize the session later.
+Always describe what actually happened, even for short conversations.
+
+Examples:
+- "Debugging a race condition in the auth middleware. Fixed by adding a mutex around the token refresh."
+- "Setting up CI/CD pipeline with GitHub Actions for the React frontend. Added build, test, and deploy stages."
+- "Exploring different approaches to implement dark mode. Settled on CSS custom properties."
+- "Quick math question — asked what 2+2 is."
+- "Asked about Python list comprehensions. Got examples with filtering."
+
+Conversation:
+{conversation}
+
+Description (1-2 sentences, max 200 chars):

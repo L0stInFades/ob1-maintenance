@@ -1,0 +1,35 @@
+
+$ErrorActionPreference = 'Stop'
+$commandText = $env:${tAi}
+if ([string]::IsNullOrEmpty($commandText)) {
+  Write-Output '{"success":false}'
+  exit 0
+}
+$tokens = $null
+$errors = $null
+$ast = [System.Management.Automation.Language.Parser]::ParseInput($commandText, [ref]$tokens, [ref]$errors)
+if ($errors -and $errors.Count -gt 0) {
+  Write-Output '{"success":false}'
+  exit 0
+}
+$commandAsts = $ast.FindAll({ param($node) $node -is [System.Management.Automation.Language.CommandAst] }, $true)
+$commandObjects = @()
+$hasRedirection = $false
+foreach ($commandAst in $commandAsts) {
+  if ($commandAst.Redirections.Count -gt 0) {
+    $hasRedirection = $true
+  }
+  $name = $commandAst.GetCommandName()
+  if ([string]::IsNullOrWhiteSpace($name)) {
+    continue
+  }
+  $commandObjects += [PSCustomObject]@{
+    name = $name
+    text = $commandAst.Extent.Text.Trim()
+  }
+}
+[PSCustomObject]@{
+  success = $true
+  commands = $commandObjects
+  hasRedirection = $hasRedirection
+} | ConvertTo-Json -Compress

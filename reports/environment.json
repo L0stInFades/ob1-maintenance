@@ -1,0 +1,2450 @@
+[
+  {
+    "name": "AGENT_TASK",
+    "lines": [
+      166491,
+      258906
+    ]
+  },
+  {
+    "name": "ALIYUN_REGION_ID",
+    "lines": [
+      143811,
+      143812
+    ]
+  },
+  {
+    "name": "ANTHROPIC_API_KEY",
+    "lines": [
+      169151,
+      204288,
+      204294
+    ]
+  },
+  {
+    "name": "ANTIGRAVITY_CLI_ALIAS",
+    "lines": [
+      327063
+    ]
+  },
+  {
+    "name": "APPDATA",
+    "lines": [
+      54287,
+      58498,
+      83768,
+      160889,
+      188178,
+      598094,
+      598095
+    ]
+  },
+  {
+    "name": "APPVEYOR_PULL_REQUEST_HEAD_COMMIT",
+    "lines": [
+      145479
+    ]
+  },
+  {
+    "name": "APPVEYOR_REPO_COMMIT",
+    "lines": [
+      145480
+    ]
+  },
+  {
+    "name": "AWS_ACCESS_KEY_ID",
+    "lines": [
+      57808,
+      57810,
+      83073,
+      83075,
+      187483,
+      187485
+    ]
+  },
+  {
+    "name": "AWS_COMMIT_ID",
+    "lines": [
+      145482
+    ]
+  },
+  {
+    "name": "AWS_DEFAULT_REGION",
+    "lines": [
+      57805,
+      83070,
+      187480
+    ]
+  },
+  {
+    "name": "AWS_EXECUTION_ENV",
+    "lines": [
+      143807
+    ]
+  },
+  {
+    "name": "AWS_REGION",
+    "lines": [
+      57805,
+      83070,
+      143803,
+      143806,
+      187480
+    ]
+  },
+  {
+    "name": "AWS_SECRET_ACCESS_KEY",
+    "lines": [
+      57808,
+      57811,
+      83073,
+      83076,
+      187483,
+      187486
+    ]
+  },
+  {
+    "name": "AWS_SESSION_TOKEN",
+    "lines": [
+      57812,
+      83077,
+      187487
+    ]
+  },
+  {
+    "name": "BASETEN_API_HOST",
+    "lines": [
+      166816
+    ]
+  },
+  {
+    "name": "BASETEN_API_KEY",
+    "lines": [
+      166836,
+      166839,
+      166842
+    ]
+  },
+  {
+    "name": "BITBUCKET_COMMIT",
+    "lines": [
+      145477
+    ]
+  },
+  {
+    "name": "BRAINTRUST_API_KEY",
+    "lines": [
+      237346
+    ]
+  },
+  {
+    "name": "BRAINTRUST_API_URL",
+    "lines": [
+      237351
+    ]
+  },
+  {
+    "name": "BRAINTRUST_OTEL_COMPAT",
+    "lines": [
+      224832,
+      225489,
+      225494,
+      227662
+    ]
+  },
+  {
+    "name": "BRAINTRUST_PARENT",
+    "lines": [
+      237353
+    ]
+  },
+  {
+    "name": "BROWSER",
+    "lines": [
+      424171,
+      498866
+    ]
+  },
+  {
+    "name": "BUDDY_EXECUTION_REVISION",
+    "lines": [
+      145485
+    ]
+  },
+  {
+    "name": "BUILDKITE_COMMIT",
+    "lines": [
+      145486
+    ]
+  },
+  {
+    "name": "BUILD_SANDBOX",
+    "lines": [
+      611042,
+      611142
+    ]
+  },
+  {
+    "name": "BUILD_SOURCEVERSION",
+    "lines": [
+      145483
+    ]
+  },
+  {
+    "name": "BUILD_VCS_NUMBER",
+    "lines": [
+      145513
+    ]
+  },
+  {
+    "name": "CF_PAGES_COMMIT_SHA",
+    "lines": [
+      145491
+    ]
+  },
+  {
+    "name": "CF_REVISION",
+    "lines": [
+      145489
+    ]
+  },
+  {
+    "name": "CI",
+    "lines": [
+      243230,
+      424172,
+      476780,
+      498867
+    ]
+  },
+  {
+    "name": "CIRCLE_SHA1",
+    "lines": [
+      145487
+    ]
+  },
+  {
+    "name": "CIRRUS_CHANGE_IN_REPO",
+    "lines": [
+      145488
+    ]
+  },
+  {
+    "name": "CI_BUILD_REF",
+    "lines": [
+      145475
+    ]
+  },
+  {
+    "name": "CI_COMMIT_ID",
+    "lines": [
+      145508
+    ]
+  },
+  {
+    "name": "CI_COMMIT_SHA",
+    "lines": [
+      145476,
+      145514
+    ]
+  },
+  {
+    "name": "CI_MERGE_REQUEST_SOURCE_BRANCH_SHA",
+    "lines": [
+      145474
+    ]
+  },
+  {
+    "name": "CLI_TITLE",
+    "lines": [
+      613642
+    ]
+  },
+  {
+    "name": "CLOUDSDK_CONFIG",
+    "lines": [
+      54285
+    ]
+  },
+  {
+    "name": "CLOUD_RUN_JOB",
+    "lines": [
+      53240,
+      55202,
+      79957,
+      183719
+    ]
+  },
+  {
+    "name": "CLOUD_SHELL",
+    "lines": [
+      327050,
+      614048
+    ]
+  },
+  {
+    "name": "CM_COMMIT",
+    "lines": [
+      145490
+    ]
+  },
+  {
+    "name": "CODEBUILD_RESOLVED_SOURCE_VERSION",
+    "lines": [
+      145481
+    ]
+  },
+  {
+    "name": "CODESPACES",
+    "lines": [
+      327071
+    ]
+  },
+  {
+    "name": "CODE_ASSIST_API_VERSION",
+    "lines": [
+      117532
+    ]
+  },
+  {
+    "name": "CODE_ASSIST_ENDPOINT",
+    "lines": [
+      117531
+    ]
+  },
+  {
+    "name": "COLORTERM",
+    "lines": [
+      611267
+    ]
+  },
+  {
+    "name": "COMMIT_REF",
+    "lines": [
+      145512
+    ]
+  },
+  {
+    "name": "CONTAINER_NAME",
+    "lines": [
+      367132
+    ]
+  },
+  {
+    "name": "CURSOR_TRACE_ID",
+    "lines": [
+      327069,
+      598051
+    ]
+  },
+  {
+    "name": "CUSTOMERIO_ENABLED",
+    "lines": [
+      250518
+    ]
+  },
+  {
+    "name": "ComSpec",
+    "lines": [
+      412318
+    ]
+  },
+  {
+    "name": "D",
+    "lines": [
+      611269
+    ]
+  },
+  {
+    "name": "DEBIAN_FRONTEND",
+    "lines": [
+      424172,
+      498867
+    ]
+  },
+  {
+    "name": "DEBUG",
+    "lines": [
+      45864,
+      46029,
+      46032,
+      130864,
+      131034,
+      131037,
+      336123,
+      611025,
+      611038,
+      611051,
+      611206,
+      611380,
+      613933
+    ]
+  },
+  {
+    "name": "DEBUG_ANTHROPIC",
+    "lines": [
+      169170,
+      169325
+    ]
+  },
+  {
+    "name": "DEBUG_AUTH",
+    "lines": [
+      53805,
+      80485,
+      184247
+    ]
+  },
+  {
+    "name": "DEBUG_BASETEN",
+    "lines": [
+      167197,
+      167290
+    ]
+  },
+  {
+    "name": "DEBUG_BG_SHELL",
+    "lines": [
+      412700
+    ]
+  },
+  {
+    "name": "DEBUG_BRAINTRUST",
+    "lines": [
+      211193,
+      211211,
+      212127,
+      212550,
+      212630,
+      212640,
+      212650,
+      212732,
+      212743,
+      212782,
+      212790,
+      212807,
+      212819,
+      212825,
+      212838,
+      212868,
+      212874,
+      212924,
+      212941,
+      212946,
+      212952,
+      212956,
+      212960,
+      213156,
+      213164,
+      213171,
+      213383,
+      213399,
+      213410,
+      213420,
+      213428,
+      213481,
+      213486,
+      213662,
+      213850,
+      213858,
+      213902,
+      213917,
+      213931,
+      213948,
+      213957,
+      213971,
+      214023,
+      214028,
+      214034,
+      214039,
+      214050,
+      214079,
+      237631,
+      237636,
+      250647
+    ]
+  },
+  {
+    "name": "DEBUG_CEREBRAS",
+    "lines": [
+      203327,
+      203337,
+      203486,
+      203758
+    ]
+  },
+  {
+    "name": "DEBUG_CUSTOMERIO",
+    "lines": [
+      250551,
+      250554,
+      250564,
+      250569
+    ]
+  },
+  {
+    "name": "DEBUG_LIVE_FRICTION",
+    "lines": [
+      212002,
+      212021,
+      212029,
+      212038,
+      212044,
+      212051,
+      601670,
+      601674
+    ]
+  },
+  {
+    "name": "DEBUG_MICROCOMPACT",
+    "lines": [
+      494383
+    ]
+  },
+  {
+    "name": "DEBUG_OPENAI",
+    "lines": [
+      169993,
+      170150
+    ]
+  },
+  {
+    "name": "DEBUG_OPENROUTER",
+    "lines": [
+      204169,
+      204637,
+      204992,
+      205366,
+      205382
+    ]
+  },
+  {
+    "name": "DEBUG_PORT",
+    "lines": [
+      611032,
+      611207
+    ]
+  },
+  {
+    "name": "DEBUG_POSTHOG",
+    "lines": [
+      160639,
+      160642,
+      160668,
+      160673,
+      160696,
+      160699,
+      160718,
+      160720,
+      160777,
+      160782,
+      160808,
+      160811,
+      161008,
+      161015,
+      161043,
+      161048,
+      161081,
+      161084,
+      161107,
+      161110,
+      161140,
+      161145,
+      161173,
+      161176,
+      161201,
+      161206,
+      161233,
+      161238,
+      161261,
+      161264,
+      161286,
+      161291,
+      161313,
+      161318,
+      161358,
+      161360,
+      161382,
+      161387,
+      161411,
+      161416,
+      161438,
+      161443,
+      161465,
+      161468,
+      161491,
+      161496,
+      161522,
+      161527,
+      161558,
+      161561,
+      161593,
+      161596,
+      161654,
+      161701,
+      161703,
+      161769,
+      161774
+    ]
+  },
+  {
+    "name": "DEBUG_SAMBANOVA",
+    "lines": [
+      201686,
+      201859
+    ]
+  },
+  {
+    "name": "DEBUG_SENTRY",
+    "lines": [
+      162097,
+      162111
+    ]
+  },
+  {
+    "name": "DEBUG_SESSION_METRICS",
+    "lines": [
+      160323,
+      160346,
+      160406,
+      160435,
+      160492,
+      160498,
+      251526
+    ]
+  },
+  {
+    "name": "DEBUG_VALUE_TRACKING",
+    "lines": [
+      206630,
+      206652,
+      206676,
+      206713,
+      207157,
+      251288
+    ]
+  },
+  {
+    "name": "DETECT_GCP_RETRIES",
+    "lines": [
+      53770,
+      80450,
+      184212
+    ]
+  },
+  {
+    "name": "DEV",
+    "lines": [
+      590485,
+      590878,
+      590905,
+      590921,
+      601873
+    ]
+  },
+  {
+    "name": "DISABLE_MICROCOMPACT",
+    "lines": [
+      252756,
+      252964
+    ]
+  },
+  {
+    "name": "DOTENV_KEY",
+    "lines": [
+      525248,
+      525249
+    ]
+  },
+  {
+    "name": "DRONE_COMMIT_SHA",
+    "lines": [
+      145492
+    ]
+  },
+  {
+    "name": "DYNO",
+    "lines": [
+      143828
+    ]
+  },
+  {
+    "name": "EDITOR",
+    "lines": [
+      558220
+    ]
+  },
+  {
+    "name": "EDITOR_IN_CLOUD_SHELL",
+    "lines": [
+      327050
+    ]
+  },
+  {
+    "name": "ELEVENLABS_API_KEY",
+    "lines": [
+      247523
+    ]
+  },
+  {
+    "name": "EVENTARC_CLOUD_EVENT_SOURCE",
+    "lines": [
+      156359,
+      156360
+    ]
+  },
+  {
+    "name": "FC_GIT_COMMIT_SHA",
+    "lines": [
+      145493
+    ]
+  },
+  {
+    "name": "FLY_REGION",
+    "lines": [
+      143826,
+      143827
+    ]
+  },
+  {
+    "name": "FMa",
+    "lines": [
+      187794
+    ]
+  },
+  {
+    "name": "FORCE_COLOR",
+    "lines": [
+      113646
+    ]
+  },
+  {
+    "name": "FUNCTION_NAME",
+    "lines": [
+      53240,
+      55196,
+      79957,
+      81606,
+      183719,
+      185584,
+      337133,
+      367081,
+      367163
+    ]
+  },
+  {
+    "name": "FUNCTION_REGION",
+    "lines": [
+      367074,
+      367082
+    ]
+  },
+  {
+    "name": "FUNCTION_TARGET",
+    "lines": [
+      55196,
+      81606,
+      156354,
+      185584
+    ]
+  },
+  {
+    "name": "GAE_MODULE_NAME",
+    "lines": [
+      55193,
+      81603,
+      185581,
+      367104,
+      367159
+    ]
+  },
+  {
+    "name": "GAE_MODULE_VERSION",
+    "lines": [
+      367160
+    ]
+  },
+  {
+    "name": "GAE_SERVICE",
+    "lines": [
+      55193,
+      81603,
+      185581,
+      367104,
+      367159
+    ]
+  },
+  {
+    "name": "GAE_VERSION",
+    "lines": [
+      367105,
+      367160
+    ]
+  },
+  {
+    "name": "GCE_METADATA_HOST",
+    "lines": [
+      53679,
+      53797,
+      80343,
+      80477,
+      184105,
+      184239
+    ]
+  },
+  {
+    "name": "GCE_METADATA_IP",
+    "lines": [
+      53679,
+      53797,
+      80343,
+      80477,
+      184105,
+      184239
+    ]
+  },
+  {
+    "name": "GCLOUD_PROJECT",
+    "lines": [
+      58634,
+      83913,
+      156358,
+      188323
+    ]
+  },
+  {
+    "name": "GCP_PROJECT",
+    "lines": [
+      143809
+    ]
+  },
+  {
+    "name": "GEMINI_API_KEY",
+    "lines": [
+      246832,
+      405684,
+      592409,
+      592453,
+      592467,
+      611251,
+      614050
+    ]
+  },
+  {
+    "name": "GEMINI_API_KEY_AUTH_MECHANISM",
+    "lines": [
+      405711
+    ]
+  },
+  {
+    "name": "GEMINI_CLI_ACTIVITY_LOG_TARGET",
+    "lines": [
+      543794,
+      611605
+    ]
+  },
+  {
+    "name": "GEMINI_CLI_CUSTOM_HEADERS",
+    "lines": [
+      405708
+    ]
+  },
+  {
+    "name": "GEMINI_CLI_HOME",
+    "lines": [
+      84953
+    ]
+  },
+  {
+    "name": "GEMINI_CLI_IDE_AUTH_TOKEN",
+    "lines": [
+      484812
+    ]
+  },
+  {
+    "name": "GEMINI_CLI_IDE_SERVER_PORT",
+    "lines": [
+      484613,
+      571544
+    ]
+  },
+  {
+    "name": "GEMINI_CLI_IDE_SERVER_STDIO_ARGS",
+    "lines": [
+      484619
+    ]
+  },
+  {
+    "name": "GEMINI_CLI_IDE_SERVER_STDIO_COMMAND",
+    "lines": [
+      484617
+    ]
+  },
+  {
+    "name": "GEMINI_CLI_IDE_WORKSPACE_PATH",
+    "lines": [
+      484813,
+      571544
+    ]
+  },
+  {
+    "name": "GEMINI_CLI_INTEGRATION_TEST",
+    "lines": [
+      611237,
+      611294
+    ]
+  },
+  {
+    "name": "GEMINI_CLI_NO_RELAUNCH",
+    "lines": [
+      613697,
+      613857
+    ]
+  },
+  {
+    "name": "GEMINI_CLI_SYSTEM_SETTINGS_PATH",
+    "lines": [
+      86592,
+      86593
+    ]
+  },
+  {
+    "name": "GEMINI_CLI_TEST_VAR",
+    "lines": [
+      611249,
+      611250
+    ]
+  },
+  {
+    "name": "GEMINI_CLI_TRUSTED_FOLDERS_PATH",
+    "lines": [
+      549967,
+      549968
+    ]
+  },
+  {
+    "name": "GEMINI_CLI_USE_COMPUTE_ADC",
+    "lines": [
+      614048
+    ]
+  },
+  {
+    "name": "GEMINI_DEBUG_LOG_FILE",
+    "lines": [
+      86275,
+      86276
+    ]
+  },
+  {
+    "name": "GEMINI_DEFAULT_AUTH_TYPE",
+    "lines": [
+      592481
+    ]
+  },
+  {
+    "name": "GEMINI_EXP",
+    "lines": [
+      512499,
+      512501
+    ]
+  },
+  {
+    "name": "GEMINI_MODEL",
+    "lines": [
+      611265
+    ]
+  },
+  {
+    "name": "GEMINI_PTY_INFO",
+    "lines": [
+      412765
+    ]
+  },
+  {
+    "name": "GEMINI_SANDBOX",
+    "lines": [
+      601900,
+      610230
+    ]
+  },
+  {
+    "name": "GEMINI_SANDBOX_IMAGE",
+    "lines": [
+      610255
+    ]
+  },
+  {
+    "name": "GEMINI_SANDBOX_PROXY_COMMAND",
+    "lines": [
+      611088,
+      611210
+    ]
+  },
+  {
+    "name": "GEMINI_SYSTEM_MD",
+    "lines": [
+      587788
+    ]
+  },
+  {
+    "name": "GH_WORKFLOW_NAME",
+    "lines": [
+      327159
+    ]
+  },
+  {
+    "name": "GITHUB_REPOSITORY",
+    "lines": [
+      327162
+    ]
+  },
+  {
+    "name": "GITHUB_SHA",
+    "lines": [
+      145473,
+      327152
+    ]
+  },
+  {
+    "name": "GITHUB_TOKEN",
+    "lines": [
+      258909,
+      258912,
+      580519
+    ]
+  },
+  {
+    "name": "GIT_CLONE_COMMIT_HASH",
+    "lines": [
+      145484
+    ]
+  },
+  {
+    "name": "GIT_COMMIT",
+    "lines": [
+      145511
+    ]
+  },
+  {
+    "name": "GOOGLE_API_KEY",
+    "lines": [
+      405685,
+      592415,
+      611252
+    ]
+  },
+  {
+    "name": "GOOGLE_APPLICATION_CREDENTIALS",
+    "lines": [
+      58484,
+      83754,
+      106967,
+      188164,
+      611186,
+      611188
+    ]
+  },
+  {
+    "name": "GOOGLE_CLOUD_ACCESS_TOKEN",
+    "lines": [
+      106662,
+      106664
+    ]
+  },
+  {
+    "name": "GOOGLE_CLOUD_LOCATION",
+    "lines": [
+      405310,
+      405687,
+      592414,
+      611263,
+      611264
+    ]
+  },
+  {
+    "name": "GOOGLE_CLOUD_PROJECT",
+    "lines": [
+      58635,
+      83914,
+      117801,
+      188324,
+      404638,
+      405686,
+      592414,
+      611261,
+      611262
+    ]
+  },
+  {
+    "name": "GOOGLE_CLOUD_PROJECT_ID",
+    "lines": [
+      117801,
+      405686
+    ]
+  },
+  {
+    "name": "GOOGLE_CLOUD_QUOTA_PROJECT",
+    "lines": [
+      58467,
+      84031,
+      188441
+    ]
+  },
+  {
+    "name": "GOOGLE_CLOUD_REGION",
+    "lines": [
+      367074,
+      367082
+    ]
+  },
+  {
+    "name": "GOOGLE_CLOUD_UNIVERSE_DOMAIN",
+    "lines": [
+      332969,
+      371085,
+      372667,
+      373588
+    ]
+  },
+  {
+    "name": "GOOGLE_GEMINI_BASE_URL",
+    "lines": [
+      611253,
+      611254
+    ]
+  },
+  {
+    "name": "GOOGLE_GENAI_API_VERSION",
+    "lines": [
+      405712
+    ]
+  },
+  {
+    "name": "GOOGLE_GENAI_USE_GCA",
+    "lines": [
+      106662,
+      611259,
+      611260
+    ]
+  },
+  {
+    "name": "GOOGLE_GENAI_USE_VERTEXAI",
+    "lines": [
+      611257,
+      611258
+    ]
+  },
+  {
+    "name": "GOOGLE_VERTEX_BASE_URL",
+    "lines": [
+      611255,
+      611256
+    ]
+  },
+  {
+    "name": "GRACEFUL_FS_PLATFORM",
+    "lines": [
+      85108
+    ]
+  },
+  {
+    "name": "GRPC_DEFAULT_SSL_ROOTS_FILE_PATH",
+    "lines": [
+      262485
+    ]
+  },
+  {
+    "name": "GRPC_EXPERIMENTAL_ENABLE_OUTLIER_DETECTION",
+    "lines": [
+      279599
+    ]
+  },
+  {
+    "name": "GRPC_NODE_TRACE",
+    "lines": [
+      262214
+    ]
+  },
+  {
+    "name": "GRPC_NODE_USE_ALTERNATIVE_RESOLVER",
+    "lines": [
+      272808
+    ]
+  },
+  {
+    "name": "GRPC_NODE_VERBOSITY",
+    "lines": [
+      262164
+    ]
+  },
+  {
+    "name": "GRPC_SSL_CIPHER_SUITES",
+    "lines": [
+      262484
+    ]
+  },
+  {
+    "name": "GRPC_TRACE",
+    "lines": [
+      262216
+    ]
+  },
+  {
+    "name": "GRPC_VERBOSITY",
+    "lines": [
+      262166
+    ]
+  },
+  {
+    "name": "HEROKU_SLUG_COMMIT",
+    "lines": [
+      145495
+    ]
+  },
+  {
+    "name": "HEROKU_TEST_RUN_COMMIT_VERSION",
+    "lines": [
+      145494
+    ]
+  },
+  {
+    "name": "HOME",
+    "lines": [
+      54288,
+      58500,
+      83770,
+      188180,
+      498878
+    ]
+  },
+  {
+    "name": "HOSTNAME",
+    "lines": [
+      367131,
+      367165
+    ]
+  },
+  {
+    "name": "HTTPS_PROXY",
+    "lines": [
+      51515,
+      336788,
+      474935,
+      611094,
+      611213
+    ]
+  },
+  {
+    "name": "HTTP_PROXY",
+    "lines": [
+      51517,
+      336786,
+      474933,
+      611096,
+      611215
+    ]
+  },
+  {
+    "name": "IBM_CLOUD_REGION",
+    "lines": [
+      143815,
+      143816
+    ]
+  },
+  {
+    "name": "IDEA_INITIAL_DIRECTORY",
+    "lines": [
+      327058,
+      570196
+    ]
+  },
+  {
+    "name": "JEST_WORKER_ID",
+    "lines": [
+      472425
+    ]
+  },
+  {
+    "name": "JETBRAINS_IDE",
+    "lines": [
+      327059,
+      570197
+    ]
+  },
+  {
+    "name": "K_CONFIGURATION",
+    "lines": [
+      55199,
+      81609,
+      185587,
+      367094
+    ]
+  },
+  {
+    "name": "K_REVISION",
+    "lines": [
+      367093
+    ]
+  },
+  {
+    "name": "K_SERVICE",
+    "lines": [
+      53240,
+      79957,
+      156354,
+      183719,
+      367081,
+      367092,
+      367167
+    ]
+  },
+  {
+    "name": "LANG",
+    "lines": [
+      570463
+    ]
+  },
+  {
+    "name": "LC_ALL",
+    "lines": [
+      570464
+    ]
+  },
+  {
+    "name": "LOCALAPPDATA",
+    "lines": [
+      598260
+    ]
+  },
+  {
+    "name": "METADATA_SERVER_DETECTION",
+    "lines": [
+      53774,
+      53775,
+      80454,
+      80455,
+      184216,
+      184217
+    ]
+  },
+  {
+    "name": "MONOSPACE_ENV",
+    "lines": [
+      327077
+    ]
+  },
+  {
+    "name": "NETLIFY",
+    "lines": [
+      143824
+    ]
+  },
+  {
+    "name": "NODE_DEBUG",
+    "lines": [
+      85470,
+      85496,
+      113903,
+      113904,
+      241812,
+      241813
+    ]
+  },
+  {
+    "name": "NODE_ENV",
+    "lines": [
+      450,
+      1541,
+      2048,
+      2059,
+      4937,
+      5211,
+      12244,
+      23609,
+      144789,
+      144790,
+      239008,
+      239282,
+      500027,
+      500163,
+      536794,
+      536963,
+      537020,
+      537033,
+      537078,
+      537090,
+      537138,
+      537148,
+      537300,
+      537362,
+      537614,
+      611027
+    ]
+  },
+  {
+    "name": "NODE_OPTIONS",
+    "lines": [
+      611282
+    ]
+  },
+  {
+    "name": "NO_COLOR",
+    "lines": [
+      614436
+    ]
+  },
+  {
+    "name": "NO_PROXY",
+    "lines": [
+      51441,
+      79771,
+      181966,
+      336769,
+      474996,
+      484681,
+      611100,
+      611224
+    ]
+  },
+  {
+    "name": "OAUTH_CALLBACK_HOST",
+    "lines": [
+      106883
+    ]
+  },
+  {
+    "name": "OAUTH_CALLBACK_PORT",
+    "lines": [
+      106943,
+      514082
+    ]
+  },
+  {
+    "name": "OB1_API_KEY",
+    "lines": [
+      118131,
+      118157,
+      118231,
+      247232,
+      252205
+    ]
+  },
+  {
+    "name": "OB1_BENCH_SKILLS",
+    "lines": [
+      512683
+    ]
+  },
+  {
+    "name": "OB1_CLOUD_AGENTS_URL",
+    "lines": [
+      118342
+    ]
+  },
+  {
+    "name": "OB1_DEBUG_MIGRATION",
+    "lines": [
+      208911
+    ]
+  },
+  {
+    "name": "OB1_DEV_TRACING",
+    "lines": [
+      404365
+    ]
+  },
+  {
+    "name": "OB1_LIVE_FRICTION_ENABLED",
+    "lines": [
+      211439
+    ]
+  },
+  {
+    "name": "OB1_NOTIFICATIONS",
+    "lines": [
+      206453,
+      206474
+    ]
+  },
+  {
+    "name": "OB1_SHARE_API_URL",
+    "lines": [
+      423724,
+      614202
+    ]
+  },
+  {
+    "name": "OB1_SHARE_BASE_URL",
+    "lines": [
+      423988
+    ]
+  },
+  {
+    "name": "OB1_USER_ID",
+    "lines": [
+      252270
+    ]
+  },
+  {
+    "name": "OLLAMA_HOST",
+    "lines": [
+      167735,
+      202601,
+      202604
+    ]
+  },
+  {
+    "name": "OPENAI_API_BASE",
+    "lines": [
+      169911
+    ]
+  },
+  {
+    "name": "OPENAI_API_KEY",
+    "lines": [
+      169906,
+      204293
+    ]
+  },
+  {
+    "name": "OPENROUTER_API_HOST",
+    "lines": [
+      160269,
+      512609
+    ]
+  },
+  {
+    "name": "OPENROUTER_API_URL",
+    "lines": [
+      204301,
+      211723,
+      238362,
+      251000,
+      251364
+    ]
+  },
+  {
+    "name": "OPENROUTER_WEB_HOST",
+    "lines": [
+      160272
+    ]
+  },
+  {
+    "name": "OSTYPE",
+    "lines": [
+      432713,
+      432714
+    ]
+  },
+  {
+    "name": "OTEL_EXPORTER_OTLP_ENDPOINT",
+    "lines": [
+      280970
+    ]
+  },
+  {
+    "name": "OTEL_EXPORTER_OTLP_HEADERS",
+    "lines": [
+      280955
+    ]
+  },
+  {
+    "name": "OTEL_EXPORTER_OTLP_INSECURE",
+    "lines": [
+      280975
+    ]
+  },
+  {
+    "name": "OTEL_EXPORTER_PROMETHEUS_HOST",
+    "lines": [
+      299838
+    ]
+  },
+  {
+    "name": "OTEL_EXPORTER_PROMETHEUS_PORT",
+    "lines": [
+      299840
+    ]
+  },
+  {
+    "name": "OTEL_FASTIFY_IGNORE_PATHS",
+    "lines": [
+      147886,
+      147888
+    ]
+  },
+  {
+    "name": "OTEL_SEMCONV_STABILITY_OPT_IN",
+    "lines": [
+      132678,
+      151219,
+      151223,
+      151669,
+      151678,
+      151851,
+      151860,
+      152619,
+      153731,
+      309690
+    ]
+  },
+  {
+    "name": "OTEL_SERVICE_NAME",
+    "lines": [
+      147883
+    ]
+  },
+  {
+    "name": "OTLP_GOOGLE_CLOUD_PROJECT",
+    "lines": [
+      404638
+    ]
+  },
+  {
+    "name": "Ojl",
+    "lines": [
+      328598
+    ]
+  },
+  {
+    "name": "PARALLEL_API_HOST",
+    "lines": [
+      492751,
+      492996,
+      523680
+    ]
+  },
+  {
+    "name": "PATH",
+    "lines": [
+      412116,
+      432724,
+      611000,
+      611001
+    ]
+  },
+  {
+    "name": "PATHEXT",
+    "lines": [
+      432633,
+      432725
+    ]
+  },
+  {
+    "name": "PKG_CONFIG_PATH",
+    "lines": [
+      254091
+    ]
+  },
+  {
+    "name": "POSITRON",
+    "lines": [
+      327079
+    ]
+  },
+  {
+    "name": "POSTHOG_API_KEY",
+    "lines": [
+      161832
+    ]
+  },
+  {
+    "name": "POSTHOG_ENABLED",
+    "lines": [
+      161834
+    ]
+  },
+  {
+    "name": "POSTHOG_HOST",
+    "lines": [
+      161833
+    ]
+  },
+  {
+    "name": "PQs",
+    "lines": [
+      58137
+    ]
+  },
+  {
+    "name": "PRISMA_SHOW_ALL_TRACES",
+    "lines": [
+      153388
+    ]
+  },
+  {
+    "name": "PYTHONPATH",
+    "lines": [
+      611009,
+      611010
+    ]
+  },
+  {
+    "name": "RAILWAY_GIT_COMMIT_SHA",
+    "lines": [
+      145496
+    ]
+  },
+  {
+    "name": "READABLE_STREAM",
+    "lines": [
+      339308
+    ]
+  },
+  {
+    "name": "REGION_NAME",
+    "lines": [
+      143813,
+      143814
+    ]
+  },
+  {
+    "name": "REMOTE_CONTAINERS",
+    "lines": [
+      484714
+    ]
+  },
+  {
+    "name": "RENDER_GIT_COMMIT",
+    "lines": [
+      145497
+    ]
+  },
+  {
+    "name": "REPLIT_USER",
+    "lines": [
+      327067
+    ]
+  },
+  {
+    "name": "RIPGREP_VERSION",
+    "lines": [
+      448030
+    ]
+  },
+  {
+    "name": "SANDBOX",
+    "lines": [
+      408946,
+      610229,
+      614076
+    ]
+  },
+  {
+    "name": "SANDBOX_ENV",
+    "lines": [
+      611276,
+      611277
+    ]
+  },
+  {
+    "name": "SANDBOX_FLAGS",
+    "lines": [
+      611165,
+      611166
+    ]
+  },
+  {
+    "name": "SANDBOX_MOUNTS",
+    "lines": [
+      611193,
+      611194
+    ]
+  },
+  {
+    "name": "SANDBOX_PORTS",
+    "lines": [
+      610989
+    ]
+  },
+  {
+    "name": "SANDBOX_SET_UID_GID",
+    "lines": [
+      610960
+    ]
+  },
+  {
+    "name": "SEATBELT_PROFILE",
+    "lines": [
+      611043
+    ]
+  },
+  {
+    "name": "SEMAPHORE_GIT_SHA",
+    "lines": [
+      145498
+    ]
+  },
+  {
+    "name": "SENTRY_BAGGAGE",
+    "lines": [
+      145743
+    ]
+  },
+  {
+    "name": "SENTRY_DEBUG",
+    "lines": [
+      145722
+    ]
+  },
+  {
+    "name": "SENTRY_DSN",
+    "lines": [
+      145714,
+      162107
+    ]
+  },
+  {
+    "name": "SENTRY_ENABLED",
+    "lines": [
+      162102
+    ]
+  },
+  {
+    "name": "SENTRY_ENVIRONMENT",
+    "lines": [
+      145715,
+      162089,
+      162110
+    ]
+  },
+  {
+    "name": "SENTRY_RELEASE",
+    "lines": [
+      145470,
+      162090,
+      162122
+    ]
+  },
+  {
+    "name": "SENTRY_SPOTLIGHT",
+    "lines": [
+      145707,
+      145708
+    ]
+  },
+  {
+    "name": "SENTRY_TRACE",
+    "lines": [
+      145742
+    ]
+  },
+  {
+    "name": "SENTRY_TRACES_SAMPLE_RATE",
+    "lines": [
+      145735
+    ]
+  },
+  {
+    "name": "SENTRY_USE_ENVIRONMENT",
+    "lines": [
+      145741
+    ]
+  },
+  {
+    "name": "SHARP_FORCE_GLOBAL_LIBVIPS",
+    "lines": [
+      254103
+    ]
+  },
+  {
+    "name": "SHARP_IGNORE_GLOBAL_LIBVIPS",
+    "lines": [
+      254102
+    ]
+  },
+  {
+    "name": "SHPOOL_SESSION_NAME",
+    "lines": [
+      613900
+    ]
+  },
+  {
+    "name": "SOURCE_COMMIT",
+    "lines": [
+      145509
+    ]
+  },
+  {
+    "name": "SOURCE_VERSION",
+    "lines": [
+      145510
+    ]
+  },
+  {
+    "name": "SSH_CLIENT",
+    "lines": [
+      555699
+    ]
+  },
+  {
+    "name": "SSH_CONNECTION",
+    "lines": [
+      424174,
+      484711,
+      498869,
+      555699
+    ]
+  },
+  {
+    "name": "SSH_TTY",
+    "lines": [
+      555699
+    ]
+  },
+  {
+    "name": "STY",
+    "lines": [
+      555698
+    ]
+  },
+  {
+    "name": "SURFACE",
+    "lines": [
+      327148,
+      327149
+    ]
+  },
+  {
+    "name": "TEENY_REQUEST_WARN_CONCURRENT_REQUESTS",
+    "lines": [
+      336864
+    ]
+  },
+  {
+    "name": "TENCENTCLOUD_APPID",
+    "lines": [
+      143821
+    ]
+  },
+  {
+    "name": "TENCENTCLOUD_REGION",
+    "lines": [
+      143817,
+      143820
+    ]
+  },
+  {
+    "name": "TENCENTCLOUD_ZONE",
+    "lines": [
+      143822
+    ]
+  },
+  {
+    "name": "TERM",
+    "lines": [
+      555697,
+      555698,
+      555702,
+      611266
+    ]
+  },
+  {
+    "name": "TERMINAL_BENCH",
+    "lines": [
+      166430,
+      166449,
+      166500,
+      204288,
+      204292,
+      486203,
+      486270
+    ]
+  },
+  {
+    "name": "TERMINAL_EMULATOR",
+    "lines": [
+      327053,
+      327057,
+      570195
+    ]
+  },
+  {
+    "name": "TERM_PRODUCT",
+    "lines": [
+      327075
+    ]
+  },
+  {
+    "name": "TERM_PROGRAM",
+    "lines": [
+      327081,
+      327114,
+      327154,
+      598050
+    ]
+  },
+  {
+    "name": "TESTING_TAR_FAKE_PLATFORM",
+    "lines": [
+      577855,
+      579684,
+      579791
+    ]
+  },
+  {
+    "name": "TEST_GRACEFUL_FS_GLOBAL_PATCH",
+    "lines": [
+      85503
+    ]
+  },
+  {
+    "name": "TMUX",
+    "lines": [
+      239546,
+      555697
+    ]
+  },
+  {
+    "name": "TRAVIS_PULL_REQUEST_SHA",
+    "lines": [
+      145499
+    ]
+  },
+  {
+    "name": "UID",
+    "lines": [
+      498747
+    ]
+  },
+  {
+    "name": "UNDICI_NO_WASM_SIMD",
+    "lines": [
+      472429,
+      472431
+    ]
+  },
+  {
+    "name": "USER",
+    "lines": [
+      156645,
+      167140,
+      204312,
+      498747,
+      578441
+    ]
+  },
+  {
+    "name": "USERNAME",
+    "lines": [
+      156645,
+      167140,
+      204312,
+      498747
+    ]
+  },
+  {
+    "name": "USERPROFILE",
+    "lines": [
+      498878
+    ]
+  },
+  {
+    "name": "VBOX_INSTALL_PATH",
+    "lines": [
+      310509
+    ]
+  },
+  {
+    "name": "VBOX_MSI_INSTALL_PATH",
+    "lines": [
+      310509
+    ]
+  },
+  {
+    "name": "VERCEL",
+    "lines": [
+      143801
+    ]
+  },
+  {
+    "name": "VERCEL_BITBUCKET_COMMIT_SHA",
+    "lines": [
+      145503
+    ]
+  },
+  {
+    "name": "VERCEL_GITHUB_COMMIT_SHA",
+    "lines": [
+      145501
+    ]
+  },
+  {
+    "name": "VERCEL_GITLAB_COMMIT_SHA",
+    "lines": [
+      145502
+    ]
+  },
+  {
+    "name": "VERCEL_GIT_COMMIT_SHA",
+    "lines": [
+      145500
+    ]
+  },
+  {
+    "name": "VERCEL_REGION",
+    "lines": [
+      143802
+    ]
+  },
+  {
+    "name": "VIRTUAL_ENV",
+    "lines": [
+      611270,
+      611273,
+      611274
+    ]
+  },
+  {
+    "name": "VISUAL",
+    "lines": [
+      558219
+    ]
+  },
+  {
+    "name": "VITEST",
+    "lines": [
+      500027,
+      500163
+    ]
+  },
+  {
+    "name": "VSCODE_GIT_ASKPASS_MAIN",
+    "lines": [
+      598052,
+      598054,
+      598056
+    ]
+  },
+  {
+    "name": "VSCODE_GIT_IPC_HANDLE",
+    "lines": [
+      598058
+    ]
+  },
+  {
+    "name": "VSCODE_REMOTE_CONTAINERS_SESSION",
+    "lines": [
+      484714
+    ]
+  },
+  {
+    "name": "Vjl",
+    "lines": [
+      328550
+    ]
+  },
+  {
+    "name": "WEBSITE_SITE_NAME",
+    "lines": [
+      143813
+    ]
+  },
+  {
+    "name": "WINDIR",
+    "lines": [
+      310259
+    ]
+  },
+  {
+    "name": "WORKOS_CLIENT_ID",
+    "lines": [
+      118256,
+      243994
+    ]
+  },
+  {
+    "name": "WSLENV",
+    "lines": [
+      555700
+    ]
+  },
+  {
+    "name": "WSL_DISTRO_NAME",
+    "lines": [
+      498815,
+      555700,
+      598231
+    ]
+  },
+  {
+    "name": "WSL_INTEROP",
+    "lines": [
+      498815,
+      555700
+    ]
+  },
+  {
+    "name": "WS_NO_BUFFER_UTIL",
+    "lines": [
+      26134,
+      188886
+    ]
+  },
+  {
+    "name": "WS_NO_UTF_8_VALIDATE",
+    "lines": [
+      26461,
+      189213
+    ]
+  },
+  {
+    "name": "WT_SESSION",
+    "lines": [
+      555701,
+      570083,
+      598060
+    ]
+  },
+  {
+    "name": "Wci",
+    "lines": [
+      328554
+    ]
+  },
+  {
+    "name": "XDG_CONFIG_HOME",
+    "lines": [
+      160890
+    ]
+  },
+  {
+    "name": "YARGS_MIN_NODE_VERSION",
+    "lines": [
+      544832,
+      544833,
+      548443,
+      605444,
+      605445
+    ]
+  },
+  {
+    "name": "ZEIT_BITBUCKET_COMMIT_SHA",
+    "lines": [
+      145506
+    ]
+  },
+  {
+    "name": "ZEIT_GITHUB_COMMIT_SHA",
+    "lines": [
+      145504
+    ]
+  },
+  {
+    "name": "ZEIT_GITLAB_COMMIT_SHA",
+    "lines": [
+      145505
+    ]
+  },
+  {
+    "name": "__COG_BASHRC_SOURCED",
+    "lines": [
+      327065
+    ]
+  },
+  {
+    "name": "__FAKE_FS_O_FILENAME__",
+    "lines": [
+      579480
+    ]
+  },
+  {
+    "name": "__FAKE_PLATFORM__",
+    "lines": [
+      579477
+    ]
+  },
+  {
+    "name": "__MINIMATCH_TESTING_PLATFORM__",
+    "lines": [
+      147325,
+      427359
+    ]
+  },
+  {
+    "name": "a",
+    "lines": [
+      205642,
+      553152,
+      553153
+    ]
+  },
+  {
+    "name": "bdt",
+    "lines": [
+      106645,
+      513831
+    ]
+  },
+  {
+    "name": "comspec",
+    "lines": [
+      432898
+    ]
+  },
+  {
+    "name": "e",
+    "lines": [
+      45982,
+      130987,
+      280980
+    ]
+  },
+  {
+    "name": "eOs",
+    "lines": [
+      83384
+    ]
+  },
+  {
+    "name": "gcloud_project",
+    "lines": [
+      58636,
+      83915,
+      188325
+    ]
+  },
+  {
+    "name": "google_application_credentials",
+    "lines": [
+      58484,
+      83754,
+      188164
+    ]
+  },
+  {
+    "name": "google_cloud_project",
+    "lines": [
+      58637,
+      83916,
+      188326
+    ]
+  },
+  {
+    "name": "grpc_proxy",
+    "lines": [
+      273085
+    ]
+  },
+  {
+    "name": "http_proxy",
+    "lines": [
+      51518,
+      145370,
+      273087,
+      336787,
+      474933,
+      611097,
+      611216
+    ]
+  },
+  {
+    "name": "https_proxy",
+    "lines": [
+      51516,
+      145370,
+      273086,
+      336789,
+      474935,
+      611095,
+      611214
+    ]
+  },
+  {
+    "name": "ijl",
+    "lines": [
+      328449
+    ]
+  },
+  {
+    "name": "l",
+    "lines": [
+      205648
+    ]
+  },
+  {
+    "name": "n",
+    "lines": [
+      168806
+    ]
+  },
+  {
+    "name": "no_grpc_proxy",
+    "lines": [
+      273117
+    ]
+  },
+  {
+    "name": "no_proxy",
+    "lines": [
+      51441,
+      79771,
+      181966,
+      273120,
+      336769,
+      474996,
+      611100,
+      611224
+    ]
+  },
+  {
+    "name": "npm_config_arch",
+    "lines": [
+      448033
+    ]
+  },
+  {
+    "name": "npm_package_config_libvips",
+    "lines": [
+      253985
+    ]
+  },
+  {
+    "name": "platform",
+    "lines": [
+      448034
+    ]
+  },
+  {
+    "name": "r",
+    "lines": [
+      168797
+    ]
+  },
+  {
+    "name": "s",
+    "lines": [
+      424177,
+      498872
+    ]
+  },
+  {
+    "name": "sjl",
+    "lines": [
+      328453
+    ]
+  },
+  {
+    "name": "t",
+    "lines": [
+      125693,
+      125706,
+      125711,
+      226737,
+      260750,
+      260763,
+      260768,
+      280979,
+      328474,
+      328583,
+      548410,
+      605856
+    ]
+  },
+  {
+    "name": "vua",
+    "lines": [
+      106323
+    ]
+  }
+]

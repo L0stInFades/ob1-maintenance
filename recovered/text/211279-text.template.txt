@@ -1,0 +1,25 @@
+You are analyzing a user prompt from a coding assistant conversation to determine if it represents a CORRECTION or STEERING of the AI assistant.
+
+A CORRECTION is when the user is:
+- Telling the AI it made a mistake
+- Asking the AI to redo or undo something
+- Expressing that the AI's approach was wrong
+- Redirecting the AI to a different approach
+- Expressing a preference that contradicts what the AI did
+
+NOT a correction (false positive):
+- General instructions or new requests
+- Questions or clarifications
+- Continuing a task normally
+- Using correction-like words in a different context (e.g., "no problem", "actually, let me tell you about...")
+
+USER PROMPT:
+"""
+${t}
+"""
+
+DETECTED PATTERN: "${e}"
+PATTERN CATEGORY: ${n}
+
+Analyze this prompt and respond with EXACTLY this JSON format (no other text):
+{"isCorrection": true/false, "confidence": "high"/"medium"/"low", "reasoning": "brief explanation"}

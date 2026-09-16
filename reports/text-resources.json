@@ -1,0 +1,731 @@
+[
+  {
+    "file": "recovered/text/112035-Lun.template.txt",
+    "owner": "Lun",
+    "length": 2098,
+    "interpolated": true,
+    "preview": "Replaces text within a file. By default, replaces a single occurrence, but can replace multiple occurrences when `expect",
+    "line": 112035,
+    "endLine": 112046
+  },
+  {
+    "file": "recovered/text/112052-Lun.txt",
+    "owner": "Lun",
+    "length": 955,
+    "interpolated": false,
+    "preview": "A clear, semantic instruction for the code change, acting as a high-quality prompt for an expert LLM assistant. It must ",
+    "line": 112052,
+    "endLine": 112066
+  },
+  {
+    "file": "recovered/text/112122-Lun.txt",
+    "owner": "Lun",
+    "length": 1936,
+    "interpolated": false,
+    "preview": "Reads content from multiple files specified by glob patterns within a configured target directory. For text files, it co",
+    "line": 112122,
+    "endLine": 112131
+  },
+  {
+    "file": "recovered/text/112206-Lun.txt",
+    "owner": "Lun",
+    "length": 4826,
+    "interpolated": false,
+    "preview": "This tool can help you list out the current subtasks that are required to be completed for a given user request. The lis",
+    "line": 112206,
+    "endLine": 112268
+  },
+  {
+    "file": "recovered/text/112639-Jun.template.txt",
+    "owner": "Jun",
+    "length": 2098,
+    "interpolated": true,
+    "preview": "Replaces text within a file. By default, replaces a single occurrence, but can replace multiple occurrences when `expect",
+    "line": 112639,
+    "endLine": 112650
+  },
+  {
+    "file": "recovered/text/112656-Jun.txt",
+    "owner": "Jun",
+    "length": 955,
+    "interpolated": false,
+    "preview": "A clear, semantic instruction for the code change, acting as a high-quality prompt for an expert LLM assistant. It must ",
+    "line": 112656,
+    "endLine": 112670
+  },
+  {
+    "file": "recovered/text/112726-Jun.txt",
+    "owner": "Jun",
+    "length": 1936,
+    "interpolated": false,
+    "preview": "Reads content from multiple files specified by glob patterns within a configured target directory. For text files, it co",
+    "line": 112726,
+    "endLine": 112735
+  },
+  {
+    "file": "recovered/text/112810-Jun.txt",
+    "owner": "Jun",
+    "length": 4826,
+    "interpolated": false,
+    "preview": "This tool can help you list out the current subtasks that are required to be completed for a given user request. The lis",
+    "line": 112810,
+    "endLine": 112872
+  },
+  {
+    "file": "recovered/text/164338-wEo.txt",
+    "owner": "wEo",
+    "length": 1323,
+    "interpolated": false,
+    "preview": "You have been working on the task described above but have not yet completed it. Write a continuation summary that will ",
+    "line": 164338,
+    "endLine": 164360
+  },
+  {
+    "file": "recovered/text/166062-r7.txt",
+    "owner": "r7",
+    "length": 5303,
+    "interpolated": false,
+    "preview": "## Task Delegation",
+    "line": 166062,
+    "endLine": 166158
+  },
+  {
+    "file": "recovered/text/166159-h3e.txt",
+    "owner": "h3e",
+    "length": 1478,
+    "interpolated": false,
+    "preview": "## Task Agent Role",
+    "line": 166159,
+    "endLine": 166200
+  },
+  {
+    "file": "recovered/text/166433-text.template.txt",
+    "owner": "text",
+    "length": 852,
+    "interpolated": true,
+    "preview": "## ⚡ Fast Mode Active (${t}-second tool call limit)",
+    "line": 166433,
+    "endLine": 166445
+  },
+  {
+    "file": "recovered/text/166571-yOa.txt",
+    "owner": "yOa",
+    "length": 968,
+    "interpolated": false,
+    "preview": "## Workspace Cleanliness (CRITICAL)",
+    "line": 166571,
+    "endLine": 166571
+  },
+  {
+    "file": "recovered/text/166572-UEo.txt",
+    "owner": "UEo",
+    "length": 2970,
+    "interpolated": false,
+    "preview": "## Avoiding Unproductive Loops",
+    "line": 166572,
+    "endLine": 166596
+  },
+  {
+    "file": "recovered/text/166607-PEo.txt",
+    "owner": "PEo",
+    "length": 4426,
+    "interpolated": false,
+    "preview": "## Reading Task Constraints Precisely",
+    "line": 166607,
+    "endLine": 166640
+  },
+  {
+    "file": "recovered/text/166641-jEo.txt",
+    "owner": "jEo",
+    "length": 1567,
+    "interpolated": false,
+    "preview": "## User Workflow as Acceptance Test",
+    "line": 166641,
+    "endLine": 166650
+  },
+  {
+    "file": "recovered/text/166659-KEo.txt",
+    "owner": "KEo",
+    "length": 2779,
+    "interpolated": false,
+    "preview": "## Problem-Solving Strategy (CRITICAL)",
+    "line": 166659,
+    "endLine": 166681
+  },
+  {
+    "file": "recovered/text/166682-ZNn.txt",
+    "owner": "ZNn",
+    "length": 1186,
+    "interpolated": false,
+    "preview": "# Plan Mode Active",
+    "line": 166682,
+    "endLine": 166719
+  },
+  {
+    "file": "recovered/text/166720-R0t.txt",
+    "owner": "R0t",
+    "length": 2840,
+    "interpolated": false,
+    "preview": "## Agent Task Mode",
+    "line": 166720,
+    "endLine": 166787
+  },
+  {
+    "file": "recovered/text/202415-hVo.txt",
+    "owner": "hVo",
+    "length": 545627,
+    "interpolated": false,
+    "preview": "! 0 IQ== Ig== Iw== JA== JQ== Jg== Jw== KA== KQ== Kg== Kw== LA== LQ== Lg== Lw== MA== MQ== Mg== Mw== NA== NQ== Ng== Nw== O",
+    "line": 202415,
+    "endLine": 202416
+  },
+  {
+    "file": "recovered/text/202427-hVo.txt",
+    "owner": "hVo",
+    "length": 545627,
+    "interpolated": false,
+    "preview": "! 0 IQ== Ig== Iw== JA== JQ== Jg== Jw== KA== KQ== Kg== Kw== LA== LQ== Lg== Lw== MA== MQ== Mg== Mw== NA== NQ== Ng== Nw== O",
+    "line": 202427,
+    "endLine": 202428
+  },
+  {
+    "file": "recovered/text/206277-text.template.txt",
+    "owner": "text",
+    "length": 1600,
+    "interpolated": true,
+    "preview": "You are initializing PM mode. Research this project deeply to build context for making great product decisions.",
+    "line": 206277,
+    "endLine": 206315
+  },
+  {
+    "file": "recovered/text/207350-text.template.txt",
+    "owner": "text",
+    "length": 52786,
+    "interpolated": true,
+    "preview": "# OB1 Inbox Suggestions Agent v7${F7()}",
+    "line": 207350,
+    "endLine": 208574
+  },
+  {
+    "file": "recovered/text/208594-DNt.txt",
+    "owner": "DNt",
+    "length": 3518,
+    "interpolated": false,
+    "preview": "# Memory Initialization Request",
+    "line": 208594,
+    "endLine": 208680
+  },
+  {
+    "file": "recovered/text/209589-text.template.txt",
+    "owner": "text",
+    "length": 12165,
+    "interpolated": true,
+    "preview": "# OB1 Session Friction Analysis Agent${F7()}",
+    "line": 209589,
+    "endLine": 209838
+  },
+  {
+    "file": "recovered/text/209845-text.template.txt",
+    "owner": "text",
+    "length": 11487,
+    "interpolated": true,
+    "preview": "# OB1 Workflow Optimization Agent${F7()}",
+    "line": 209845,
+    "endLine": 210141
+  },
+  {
+    "file": "recovered/text/210148-text.template.txt",
+    "owner": "text",
+    "length": 9823,
+    "interpolated": true,
+    "preview": "# OB1 Codebase Readiness Agent${F7()}",
+    "line": 210148,
+    "endLine": 210387
+  },
+  {
+    "file": "recovered/text/211279-text.template.txt",
+    "owner": "text",
+    "length": 908,
+    "interpolated": true,
+    "preview": "You are analyzing a user prompt from a coding assistant conversation to determine if it represents a CORRECTION or STEER",
+    "line": 211279,
+    "endLine": 211303
+  },
+  {
+    "file": "recovered/text/211525-text.template.txt",
+    "owner": "text",
+    "length": 5272,
+    "interpolated": true,
+    "preview": "# OB1 High-Friction Session Analyzer",
+    "line": 211525,
+    "endLine": 211654
+  },
+  {
+    "file": "recovered/text/238620-cml.txt",
+    "owner": "cml",
+    "length": 2336,
+    "interpolated": false,
+    "preview": "You are a non-interactive CLI agent specializing in software engineering tasks. Your primary goal is to help users safel",
+    "line": 238620,
+    "endLine": 238658
+  },
+  {
+    "file": "recovered/text/250756-NAl.txt",
+    "owner": "NAl",
+    "length": 3496,
+    "interpolated": false,
+    "preview": "You are a Model Router AI. Pick the BEST model for the task, considering CACHE EFFICIENCY.",
+    "line": 250756,
+    "endLine": 250845
+  },
+  {
+    "file": "recovered/text/250882-text.template.txt",
+    "owner": "text",
+    "length": 2719,
+    "interpolated": true,
+    "preview": "# OB1 Inbox Action Executor",
+    "line": 250882,
+    "endLine": 250992
+  },
+  {
+    "file": "recovered/text/252202-SWt.txt",
+    "owner": "SWt",
+    "length": 2278,
+    "interpolated": false,
+    "preview": "Access and manage past conversation threads (sessions).",
+    "line": 252202,
+    "endLine": 252202
+  },
+  {
+    "file": "recovered/text/252349-LWt.txt",
+    "owner": "LWt",
+    "length": 1065,
+    "interpolated": false,
+    "preview": "Make authenticated requests to Console API integration endpoints. Authentication is handled automatically -- you do not ",
+    "line": 252349,
+    "endLine": 252349
+  },
+  {
+    "file": "recovered/text/253122-text.template.txt",
+    "owner": "text",
+    "length": 905,
+    "interpolated": true,
+    "preview": "${VX.TITLE}",
+    "line": 253122,
+    "endLine": 253154
+  },
+  {
+    "file": "recovered/text/253157-text.template.txt",
+    "owner": "text",
+    "length": 950,
+    "interpolated": true,
+    "preview": "Based on the conversation above (EXCLUDING this instruction message, system prompt, AGENTS.md entries, or past session s",
+    "line": 253157,
+    "endLine": 253175
+  },
+  {
+    "file": "recovered/text/258252-text.txt",
+    "owner": "text",
+    "length": 1284,
+    "interpolated": false,
+    "preview": "You are an autocomplete assistant for a coding CLI agent called ob-1. Your job is to predict the SINGLE most natural thi",
+    "line": 258252,
+    "endLine": 258277
+  },
+  {
+    "file": "recovered/text/320553-Qe.template.txt",
+    "owner": "Qe",
+    "length": 2183,
+    "interpolated": true,
+    "preview": "echo -n \"addr_assign_type: \"; cat /sys/class/net/${ie}/addr_assign_type 2>/dev/null; echo;",
+    "line": 320553,
+    "endLine": 320577
+  },
+  {
+    "file": "recovered/text/335941-tpi.txt",
+    "owner": "tpi",
+    "length": 18678,
+    "interpolated": false,
+    "preview": "Abreve~Ă~Acy~А~Afr~𝔄~Amacr~Ā~And~⩓~Aogon~Ą~Aopf~𝔸~ApplyFunction~⁡~Ascr~𝒜~Assign~≔~Backslash~∖~Barv~⫧~Barwed~⌆~Bcy~Б~B",
+    "line": 335941,
+    "endLine": 335941
+  },
+  {
+    "file": "recovered/text/412505-_T.template.txt",
+    "owner": "$T",
+    "length": 992,
+    "interpolated": true,
+    "preview": "$ErrorActionPreference = 'Stop'",
+    "line": 412505,
+    "endLine": 412540
+  },
+  {
+    "file": "recovered/text/412728-Zcc.txt",
+    "owner": "Zcc",
+    "length": 1262,
+    "interpolated": false,
+    "preview": "Summarize the following tool output to be a maximum of {maxOutputTokens} tokens. The summary should be concise and captu",
+    "line": 412728,
+    "endLine": 412740
+  },
+  {
+    "file": "recovered/text/425293-YPn.txt",
+    "owner": "YPn",
+    "length": 2916,
+    "interpolated": false,
+    "preview": "You are a codebase exploration specialist for OB1 CLI. You are fast, thorough, and excel at navigating large codebases.",
+    "line": 425293,
+    "endLine": 425339
+  },
+  {
+    "file": "recovered/text/425479-m.template.txt",
+    "owner": "m",
+    "length": 1721,
+    "interpolated": true,
+    "preview": "# Active Approval Mode: Plan",
+    "line": 425479,
+    "endLine": 425518
+  },
+  {
+    "file": "recovered/text/425521-m.txt",
+    "owner": "m",
+    "length": 1608,
+    "interpolated": false,
+    "preview": "# Active Approval Mode: PM (Product Mode)",
+    "line": 425521,
+    "endLine": 425549
+  },
+  {
+    "file": "recovered/text/425559-text.template.txt",
+    "owner": "text",
+    "length": 3498,
+    "interpolated": true,
+    "preview": "# Core Mandates",
+    "line": 425559,
+    "endLine": 425583
+  },
+  {
+    "file": "recovered/text/425590-text.template.txt",
+    "owner": "text",
+    "length": 1033,
+    "interpolated": true,
+    "preview": "# Primary Workflows",
+    "line": 425590,
+    "endLine": 425597
+  },
+  {
+    "file": "recovered/text/425598-text.template.txt",
+    "owner": "text",
+    "length": 1294,
+    "interpolated": true,
+    "preview": "# Primary Workflows",
+    "line": 425598,
+    "endLine": 425604
+  },
+  {
+    "file": "recovered/text/425605-text.template.txt",
+    "owner": "text",
+    "length": 1412,
+    "interpolated": true,
+    "preview": "# Primary Workflows",
+    "line": 425605,
+    "endLine": 425611
+  },
+  {
+    "file": "recovered/text/425612-text.template.txt",
+    "owner": "text",
+    "length": 1151,
+    "interpolated": true,
+    "preview": "# Primary Workflows",
+    "line": 425612,
+    "endLine": 425618
+  },
+  {
+    "file": "recovered/text/425619-text.template.txt",
+    "owner": "text",
+    "length": 6810,
+    "interpolated": true,
+    "preview": "3. **Implement:** Use the available tools (e.g., '${yb}', '${dm}' '${oc}' ...) to act on the plan, strictly adhering to ",
+    "line": 425619,
+    "endLine": 425646
+  },
+  {
+    "file": "recovered/text/425640-text.template.txt",
+    "owner": "text",
+    "length": 1623,
+    "interpolated": true,
+    "preview": "3. **User Approval:** Obtain user approval for the proposed plan.",
+    "line": 425640,
+    "endLine": 425643
+  },
+  {
+    "file": "recovered/text/425644-text.template.txt",
+    "owner": "text",
+    "length": 1414,
+    "interpolated": true,
+    "preview": "3. **Implementation:** Autonomously implement each feature and design element per the approved plan utilizing all availa",
+    "line": 425644,
+    "endLine": 425645
+  },
+  {
+    "file": "recovered/text/425648-text.template.txt",
+    "owner": "text",
+    "length": 6079,
+    "interpolated": true,
+    "preview": "# Operational Guidelines${t.getShellCapabilitiesPromptSection()}",
+    "line": 425648,
+    "endLine": 425699
+  },
+  {
+    "file": "recovered/text/425652-text.template.txt",
+    "owner": "text",
+    "length": 1098,
+    "interpolated": true,
+    "preview": "## Shell tool output token efficiency:",
+    "line": 425652,
+    "endLine": 425663
+  },
+  {
+    "file": "recovered/text/425702-text.template.txt",
+    "owner": "text",
+    "length": 1157,
+    "interpolated": true,
+    "preview": "${(function () {",
+    "line": 425702,
+    "endLine": 425717
+  },
+  {
+    "file": "recovered/text/425718-text.template.txt",
+    "owner": "text",
+    "length": 1670,
+    "interpolated": true,
+    "preview": "${(function () {",
+    "line": 425718,
+    "endLine": 425745
+  },
+  {
+    "file": "recovered/text/425721-text.template.txt",
+    "owner": "text",
+    "length": 1567,
+    "interpolated": true,
+    "preview": "# Git Repository",
+    "line": 425721,
+    "endLine": 425743
+  },
+  {
+    "file": "recovered/text/425785-text.template.txt",
+    "owner": "text",
+    "length": 1119,
+    "interpolated": true,
+    "preview": "---",
+    "line": 425785,
+    "endLine": 425824
+  },
+  {
+    "file": "recovered/text/425841-text.txt",
+    "owner": "text",
+    "length": 3412,
+    "interpolated": false,
+    "preview": "You are a specialized system component responsible for distilling chat history into a structured XML <state_snapshot>.",
+    "line": 425841,
+    "endLine": 425909
+  },
+  {
+    "file": "recovered/text/479553-LJi.template.txt",
+    "owner": "LJi",
+    "length": 934,
+    "interpolated": true,
+    "preview": "PRAGMA journal_mode = WAL;",
+    "line": 479553,
+    "endLine": 479580
+  },
+  {
+    "file": "recovered/text/485329-YBc.txt",
+    "owner": "YBc",
+    "length": 2069,
+    "interpolated": false,
+    "preview": "You are an expert code-editing assistant specializing in debugging and correcting failed search-and-replace operations.",
+    "line": 485329,
+    "endLine": 485329
+  },
+  {
+    "file": "recovered/text/486287-text.template.txt",
+    "owner": "text",
+    "length": 1433,
+    "interpolated": true,
+    "preview": "Context: A process needs to find an exact literal, unique match for a specific text snippet within a file's content. The",
+    "line": 486287,
+    "endLine": 486308
+  },
+  {
+    "file": "recovered/text/486340-text.template.txt",
+    "owner": "text",
+    "length": 1749,
+    "interpolated": true,
+    "preview": "Context: A text replacement operation was planned. The original text to be replaced (original_old_string) was slightly d",
+    "line": 486340,
+    "endLine": 486367
+  },
+  {
+    "file": "recovered/text/486396-text.template.txt",
+    "owner": "text",
+    "length": 1338,
+    "interpolated": true,
+    "preview": "Context: A text replacement operation is planned. The text to be replaced (old_string) has been correctly identified in ",
+    "line": 486396,
+    "endLine": 486418
+  },
+  {
+    "file": "recovered/text/486449-text.template.txt",
+    "owner": "text",
+    "length": 1015,
+    "interpolated": true,
+    "preview": "Context: An LLM has just generated potentially_problematic_string and the text might have been improperly escaped (e.g. ",
+    "line": 486449,
+    "endLine": 486466
+  },
+  {
+    "file": "recovered/text/493523-BUc.txt",
+    "owner": "BUc",
+    "length": 1084,
+    "interpolated": false,
+    "preview": "Analyze *only* the content and structure of your immediately preceding response (your last turn in the conversation hist",
+    "line": 493523,
+    "endLine": 493527
+  },
+  {
+    "file": "recovered/text/493582-jUc.txt",
+    "owner": "jUc",
+    "length": 1334,
+    "interpolated": false,
+    "preview": "You are a sophisticated AI diagnostic agent specializing in identifying when a conversational AI is stuck in an unproduc",
+    "line": 493582,
+    "endLine": 493591
+  },
+  {
+    "file": "recovered/text/504841-y8i.txt",
+    "owner": "y8i",
+    "length": 5044,
+    "interpolated": false,
+    "preview": "You are **Codebase Investigator**, a hyper-specialized AI agent expert in reverse-engineering complex software projects.",
+    "line": 504841,
+    "endLine": 504919
+  },
+  {
+    "file": "recovered/text/505089-R8i.txt",
+    "owner": "R8i",
+    "length": 1392,
+    "interpolated": false,
+    "preview": "### Sub-Agents (Local & Remote)",
+    "line": 505089,
+    "endLine": 505089
+  },
+  {
+    "file": "recovered/text/505205-C8i.txt",
+    "owner": "C8i",
+    "length": 3835,
+    "interpolated": false,
+    "preview": "You are a software architect and planning specialist for OB1 CLI. Your role is to explore the codebase and design implem",
+    "line": 505205,
+    "endLine": 505285
+  },
+  {
+    "file": "recovered/text/505346-Y8i.txt",
+    "owner": "Y8i",
+    "length": 2794,
+    "interpolated": false,
+    "preview": "You are an agent for OB1 CLI. Given the user's message, you should use the tools available to complete the task. Do what",
+    "line": 505346,
+    "endLine": 505399
+  },
+  {
+    "file": "recovered/text/505456-Q8i.txt",
+    "owner": "Q8i",
+    "length": 1706,
+    "interpolated": false,
+    "preview": "You are a specialized web operations agent optimized for speed. Complete tasks in as few turns as possible.",
+    "line": 505456,
+    "endLine": 505494
+  },
+  {
+    "file": "recovered/text/505628-S8i.txt",
+    "owner": "S8i",
+    "length": 3458,
+    "interpolated": false,
+    "preview": "You are a worker agent for OB1 CLI — a full-capability implementation specialist. You have access to the same tools as t",
+    "line": 505628,
+    "endLine": 505689
+  },
+  {
+    "file": "recovered/text/505894-l.template.txt",
+    "owner": "l",
+    "length": 4348,
+    "interpolated": true,
+    "preview": "import CDP from ${s};",
+    "line": 505894,
+    "endLine": 506045
+  },
+  {
+    "file": "recovered/text/506155-L8i.template.txt",
+    "owner": "L8i",
+    "length": 1580,
+    "interpolated": true,
+    "preview": "const { Page, Runtime } = client;",
+    "line": 506155,
+    "endLine": 506199
+  },
+  {
+    "file": "recovered/text/506714-text.txt",
+    "owner": "text",
+    "length": 1636,
+    "interpolated": false,
+    "preview": "You are a browser automation agent with direct Chrome DevTools Protocol tools.",
+    "line": 506714,
+    "endLine": 506745
+  },
+  {
+    "file": "recovered/text/519761-text.txt",
+    "owner": "text",
+    "length": 2328,
+    "interpolated": false,
+    "preview": "You are an AI agent that brings the power of Gemini directly into the terminal. Your task is to analyze the current dire",
+    "line": 519761,
+    "endLine": 519795
+  },
+  {
+    "file": "recovered/text/523212-Ktu.txt",
+    "owner": "Ktu",
+    "length": 822,
+    "interpolated": false,
+    "preview": "Write a brief description of this conversation in 1-2 sentences (max 200 characters).",
+    "line": 523212,
+    "endLine": 523227
+  },
+  {
+    "file": "recovered/text/523228-qtu.txt",
+    "owner": "qtu",
+    "length": 850,
+    "interpolated": false,
+    "preview": "Summarize the user's primary goal in 1-3 words (max 30 characters).",
+    "line": 523228,
+    "endLine": 523254
+  },
+  {
+    "file": "recovered/text/595845-text.txt",
+    "owner": "text",
+    "length": 848,
+    "interpolated": false,
+    "preview": "🟢 JetBrains IDE detected!",
+    "line": 595845,
+    "endLine": 595870
+  },
+  {
+    "file": "recovered/text/596001-text.txt",
+    "owner": "text",
+    "length": 2170,
+    "interpolated": false,
+    "preview": "You are an AI coding assistant. Your task is to analyze the current directory and generate a comprehensive AGENTS.md fil",
+    "line": 596001,
+    "endLine": 596035
+  }
+]

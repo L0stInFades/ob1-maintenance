@@ -1,0 +1,26 @@
+Make authenticated requests to Console API integration endpoints. Authentication is handled automatically -- you do not need to manage API keys or tokens.
+
+## Parameters
+
+- `integration` (required): The integration name (e.g., "braintrust", "posthog", "linear", "sentry")
+- `path` (required): API path (e.g., "/projects", "/query")
+- `method` (optional): "GET" (default) or "POST"
+- `query` (optional): Query parameters object for GET requests
+- `body` (optional): JSON body object for POST requests
+
+## Examples
+
+### List Braintrust projects
+```json
+{"integration": "braintrust", "path": "/projects"}
+```
+
+### Run a Braintrust BTQL query
+```json
+{"integration": "braintrust", "method": "POST", "path": "/query", "body": {"query": "SELECT * FROM project_logs('PROJECT_ID') LIMIT 5"}}
+```
+
+### Query PostHog events
+```json
+{"integration": "posthog", "method": "POST", "path": "/query", "body": {"query": {"kind": "HogQLQuery", "query": "SELECT event, COUNT(*) FROM events WHERE timestamp >= now() - INTERVAL 1 day GROUP BY event ORDER BY count DESC LIMIT 10"}}}
+```

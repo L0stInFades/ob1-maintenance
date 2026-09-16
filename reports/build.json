@@ -1,0 +1,15 @@
+{
+  "builderRuntime": "v26.8.1",
+  "targetRuntime": "Node 24.16.0 from original/bin/ob1",
+  "templateSha256": "5e70c83694b55dcb43dbf71a507baba30f4c1da96b73604495e0d0abcb8ec4ac",
+  "method": "resize original SEA segment; preserve native code and data; relocate LINKEDIT file offsets",
+  "platform": "darwin",
+  "arch": "x64",
+  "sourceSha256": "f4dcb43c5e66f043e11a28a398fe6b42248a3ee58a950961d5dc0169971bb527",
+  "executableSha256": "17c5b71c40b5e6f45b0614a9322427fb75a1b702c0c78621bec3308d1af27fcf",
+  "executableSize": 151891456,
+  "signing": "local ad-hoc",
+  "builtAt": "2026-09-16T16:33:03.286Z",
+  "useSnapshot": false,
+  "useCodeCache": false
+}

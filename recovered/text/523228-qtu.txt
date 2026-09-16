@@ -1,0 +1,27 @@
+Summarize the user's primary goal in 1-3 words (max 30 characters).
+Include SPECIFIC context (feature name, file, component, or domain) so the title is distinguishable from other sessions.
+
+CRITICAL: Avoid generic titles. Every title must include enough context that a user with 10 similar sessions can tell them apart.
+
+If the conversation only contains greetings (hi, hello, yo, hey) without a clear task, respond with exactly: "New session"
+
+BAD (too generic - never produce these):
+- "Fix conflicts"
+- "Auth bug"
+- "Memory leak"
+- "Refactor"
+- "Tests"
+
+GOOD (specific and distinguishable):
+- "Settings dark mode"
+- "OAuth refresh"
+- "Redis memory"
+- "DB pool refactor"
+- "Cart rate limit"
+- "Postgres migration"
+- "New session" (when only greetings, no task yet)
+
+Conversation:
+{conversation}
+
+Summary (1-3 words, specific context, max 30 chars):

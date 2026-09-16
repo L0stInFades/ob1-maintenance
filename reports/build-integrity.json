@@ -1,0 +1,115 @@
+{
+  "native_sections": [
+    {
+      "segment": "__TEXT",
+      "section": "__text",
+      "layout_equal": true,
+      "bytes_equal": true
+    },
+    {
+      "segment": "__TEXT",
+      "section": "__stubs",
+      "layout_equal": true,
+      "bytes_equal": true
+    },
+    {
+      "segment": "__TEXT",
+      "section": "__init_offsets",
+      "layout_equal": true,
+      "bytes_equal": true
+    },
+    {
+      "segment": "__TEXT",
+      "section": "__const",
+      "layout_equal": true,
+      "bytes_equal": true
+    },
+    {
+      "segment": "__TEXT",
+      "section": "__cstring",
+      "layout_equal": true,
+      "bytes_equal": true
+    },
+    {
+      "segment": "__TEXT",
+      "section": "__lpstub",
+      "layout_equal": true,
+      "bytes_equal": true
+    },
+    {
+      "segment": "__TEXT",
+      "section": "__ustring",
+      "layout_equal": true,
+      "bytes_equal": true
+    },
+    {
+      "segment": "__TEXT",
+      "section": "__oslogstring",
+      "layout_equal": true,
+      "bytes_equal": true
+    },
+    {
+      "segment": "__TEXT",
+      "section": "__unwind_info",
+      "layout_equal": true,
+      "bytes_equal": true
+    },
+    {
+      "segment": "__DATA_CONST",
+      "section": "__got",
+      "layout_equal": true,
+      "bytes_equal": true
+    },
+    {
+      "segment": "__DATA_CONST",
+      "section": "__const",
+      "layout_equal": true,
+      "bytes_equal": true
+    },
+    {
+      "segment": "__DATA_CONST",
+      "section": "__cfstring",
+      "layout_equal": true,
+      "bytes_equal": true
+    },
+    {
+      "segment": "__DATA",
+      "section": "__data",
+      "layout_equal": true,
+      "bytes_equal": true
+    },
+    {
+      "segment": "__DATA",
+      "section": "__thread_vars",
+      "layout_equal": true,
+      "bytes_equal": true
+    },
+    {
+      "segment": "__DATA",
+      "section": "__thread_data",
+      "layout_equal": true,
+      "bytes_equal": true
+    },
+    {
+      "segment": "__DATA",
+      "section": "__thread_bss",
+      "layout_equal": true,
+      "bytes_equal": null
+    },
+    {
+      "segment": "__DATA",
+      "section": "__bss",
+      "layout_equal": true,
+      "bytes_equal": null
+    },
+    {
+      "segment": "__DATA",
+      "section": "__common",
+      "layout_equal": true,
+      "bytes_equal": null
+    }
+  ],
+  "source_payload_equal": true,
+  "original_snapshot_intact": true,
+  "source_sha256": "f4dcb43c5e66f043e11a28a398fe6b42248a3ee58a950961d5dc0169971bb527"
+}

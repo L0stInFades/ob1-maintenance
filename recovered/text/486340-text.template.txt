@@ -1,0 +1,28 @@
+
+Context: A text replacement operation was planned. The original text to be replaced (original_old_string) was slightly different from the actual text in the file (corrected_old_string). The original_old_string has now been corrected to match the file content.
+We now need to adjust the replacement text (original_new_string) so that it makes sense as a replacement for the corrected_old_string, while preserving the original intent of the change.
+
+original_old_string (what was initially intended to be found):
+```
+${e}
+```
+
+corrected_old_string (what was actually found in the file and will be replaced):
+```
+${n}
+```
+
+original_new_string (what was intended to replace original_old_string):
+```
+${r}
+```
+
+Task: Based on the differences between original_old_string and corrected_old_string, and the content of original_new_string, generate a corrected_new_string. This corrected_new_string should be what original_new_string would have been if it was designed to replace corrected_old_string directly, while maintaining the spirit of the original transformation.
+
+For example, if original_old_string was "\\\nconst greeting = `Hello \\`${name}\\``;" and corrected_old_string is "
+const greeting = `Hello \`${name}\``;", and original_new_string was "\\\nconst greeting = `Hello \\`${name} ${lastName}\\``;", then corrected_new_string should likely be "
+const greeting = `Hello \`${name} ${lastName}\``;" to fix the incorrect escaping.
+If the differences are only in whitespace or formatting, apply similar whitespace/formatting changes to the corrected_new_string.
+
+Return ONLY the corrected string in the specified JSON format with the key 'corrected_new_string'. If no adjustment is deemed necessary or possible, return the original_new_string.
+  

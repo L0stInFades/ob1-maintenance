@@ -1,0 +1,151 @@
+
+import CDP from ${s};
+import http from 'http';
+import fs from 'fs';
+
+const TAB_STATE_FILE = ${a};
+const TARGET_TAB_ID = ${o};
+
+function createTab(port) {
+  return new Promise((resolve, reject) => {
+    const req = http.request({ hostname: '127.0.0.1', port, path: '/json/new?about:blank', method: 'PUT' }, (res) => {
+      let data = '';
+      res.on('data', (chunk) => data += chunk);
+      res.on('end', () => {
+        try { resolve(JSON.parse(data)); }
+        catch (e) { reject(new Error('Failed to parse tab response: ' + data)); }
+      });
+    });
+    req.on('error', reject);
+    req.end();
+  });
+}
+
+function listLiveTabs(port) {
+  return new Promise((resolve, reject) => {
+    const req = http.request({ hostname: '127.0.0.1', port, path: '/json', method: 'GET' }, (res) => {
+      let data = '';
+      res.on('data', (chunk) => data += chunk);
+      res.on('end', () => {
+        try { resolve(JSON.parse(data)); }
+        catch (e) { resolve([]); }
+      });
+    });
+    req.on('error', () => resolve([]));
+    req.end();
+  });
+}
+
+function getExistingTab(port, tabId) {
+  return new Promise((resolve, reject) => {
+    const req = http.request({ hostname: '127.0.0.1', port, path: '/json', method: 'GET' }, (res) => {
+      let data = '';
+      res.on('data', (chunk) => data += chunk);
+      res.on('end', () => {
+        try {
+          const tabs = JSON.parse(data);
+          const tab = tabs.find(t => t.id === tabId);
+          resolve(tab || null);
+        } catch (e) { resolve(null); }
+      });
+    });
+    req.on('error', () => resolve(null));
+    req.end();
+  });
+}
+
+function loadTabState() {
+  try {
+    if (fs.existsSync(TAB_STATE_FILE)) {
+      const raw = JSON.parse(fs.readFileSync(TAB_STATE_FILE, 'utf-8'));
+      // Migrate old single-tab format { tabId, wsUrl } to multi-tab
+      if (raw.tabId && !raw.tabs) {
+        return {
+          activeTabId: raw.tabId,
+          tabs: { [raw.tabId]: { id: raw.tabId, wsUrl: raw.wsUrl } },
+        };
+      }
+      // Already multi-tab format
+      if (raw.tabs) return raw;
+    }
+  } catch {}
+  return null;
+}
+
+function saveTabState(state) {
+  fs.writeFileSync(TAB_STATE_FILE, JSON.stringify(state));
+}
+
+function getTabTarget(state, requestedTabId) {
+  if (!state) return null;
+  const id = requestedTabId || state.activeTabId;
+  if (!id || !state.tabs[id]) return null;
+  return state.tabs[id];
+}
+
+// Prune stale tabs from state that no longer exist in Chrome
+async function pruneStaleTabState(tabState, port) {
+  if (!tabState || !tabState.tabs) return tabState;
+  const liveTabs = await listLiveTabs(port);
+  const liveIds = new Set(liveTabs.map(t => t.id));
+  let changed = false;
+  for (const id of Object.keys(tabState.tabs)) {
+    if (!liveIds.has(id)) {
+      delete tabState.tabs[id];
+      changed = true;
+    }
+  }
+  if (tabState.activeTabId && !liveIds.has(tabState.activeTabId)) {
+    const remaining = Object.keys(tabState.tabs);
+    tabState.activeTabId = remaining.length > 0 ? remaining[0] : null;
+    changed = true;
+  }
+  if (changed) saveTabState(tabState);
+  return tabState;
+}
+
+async function main() {
+  const port = 9222;
+  let client;
+  let tabState = loadTabState();
+  let tab;
+
+  try {
+    // Prune stale tabs before attempting to connect
+    tabState = await pruneStaleTabState(tabState, port);
+
+    // Determine which tab to use
+    const targetInfo = getTabTarget(tabState, TARGET_TAB_ID);
+
+    if (targetInfo) {
+      tab = await getExistingTab(port, targetInfo.id);
+    }
+
+    // Create new tab if needed
+    if (!tab) {
+      tab = await createTab(port);
+      if (!tabState) {
+        tabState = { activeTabId: tab.id, tabs: {} };
+      }
+      tabState.tabs[tab.id] = { id: tab.id, wsUrl: tab.webSocketDebuggerUrl };
+      tabState.activeTabId = tab.id;
+      saveTabState(tabState);
+    }
+
+    client = await CDP({ target: tab.webSocketDebuggerUrl, port });
+    ${t}
+  } catch (err) {
+    if (err.code === 'ECONNREFUSED') {
+      console.error(JSON.stringify({
+        error: 'Chrome is not responding on port 9222. Auto-launch may have failed. Try running: /chrome visible'
+      }));
+    } else {
+      console.error(JSON.stringify({ error: err.message || String(err) }));
+    }
+    process.exit(1);
+  } finally {
+    if (client) await client.close();
+    // NOTE: We do NOT close the tab anymore - it persists for reuse
+  }
+}
+main();

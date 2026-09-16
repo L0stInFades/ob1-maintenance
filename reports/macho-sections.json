@@ -1,0 +1,135 @@
+[
+  {
+    "section": "__text",
+    "segment": "__TEXT",
+    "address": 4294972096,
+    "size": 39996784,
+    "offset": 4800
+  },
+  {
+    "section": "__stubs",
+    "segment": "__TEXT",
+    "address": 4334968880,
+    "size": 3774,
+    "offset": 40001584
+  },
+  {
+    "section": "__init_offsets",
+    "segment": "__TEXT",
+    "address": 4334972656,
+    "size": 968,
+    "offset": 40005360
+  },
+  {
+    "section": "__const",
+    "segment": "__TEXT",
+    "address": 4334973632,
+    "size": 40644480,
+    "offset": 40006336
+  },
+  {
+    "section": "__cstring",
+    "segment": "__TEXT",
+    "address": 4375618112,
+    "size": 10747309,
+    "offset": 80650816
+  },
+  {
+    "section": "__lpstub",
+    "segment": "__TEXT",
+    "address": 4386365440,
+    "size": 432,
+    "offset": 91398144
+  },
+  {
+    "section": "__ustring",
+    "segment": "__TEXT",
+    "address": 4386365872,
+    "size": 565412,
+    "offset": 91398576
+  },
+  {
+    "section": "__oslogstring",
+    "segment": "__TEXT",
+    "address": 4386931296,
+    "size": 22,
+    "offset": 91964000
+  },
+  {
+    "section": "__unwind_info",
+    "segment": "__TEXT",
+    "address": 4386931320,
+    "size": 221776,
+    "offset": 91964024
+  },
+  {
+    "section": "__got",
+    "segment": "__DATA_CONST",
+    "address": 4387155968,
+    "size": 19632,
+    "offset": 92188672
+  },
+  {
+    "section": "__const",
+    "segment": "__DATA_CONST",
+    "address": 4387176448,
+    "size": 1524376,
+    "offset": 92209152
+  },
+  {
+    "section": "__cfstring",
+    "segment": "__DATA_CONST",
+    "address": 4388700824,
+    "size": 128,
+    "offset": 93733528
+  },
+  {
+    "section": "__data",
+    "segment": "__DATA",
+    "address": 4388704256,
+    "size": 159168,
+    "offset": 93736960
+  },
+  {
+    "section": "__thread_vars",
+    "segment": "__DATA",
+    "address": 4388863424,
+    "size": 792,
+    "offset": 93896128
+  },
+  {
+    "section": "__thread_data",
+    "segment": "__DATA",
+    "address": 4388864216,
+    "size": 4,
+    "offset": 93896920
+  },
+  {
+    "section": "__thread_bss",
+    "segment": "__DATA",
+    "address": 4388864224,
+    "size": 432,
+    "offset": 0
+  },
+  {
+    "section": "__bss",
+    "segment": "__DATA",
+    "address": 4388864704,
+    "size": 191928,
+    "offset": 0
+  },
+  {
+    "section": "__common",
+    "segment": "__DATA",
+    "address": 4389056640,
+    "size": 4105,
+    "offset": 0
+  },
+  {
+    "section": "__NODE_SEA_BLOB",
+    "segment": "NODE_SEA",
+    "address": 4389064704,
+    "size": 21077397,
+    "offset": 93900800
+  }
+]

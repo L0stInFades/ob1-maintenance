@@ -1,0 +1,19 @@
+Based on the conversation above (EXCLUDING this instruction message, system prompt, AGENTS.md entries, or past session summaries), analyze and update the session notes.
+
+Current session notes at ${t}:
+
+<current_notes>
+${e}
+</current_notes>
+
+Output the COMPLETE updated session notes markdown. Keep the exact structure with all section headers and italic descriptions intact.
+
+RULES:
+- Preserve all section headers (lines starting with '#') exactly as-is
+- Preserve all italic _section description_ lines exactly as-is  
+- Update ONLY the content that appears BELOW each italic description
+- Be DETAILED and INFO-DENSE: include file paths, function names, error messages, command outputs
+- For "Key Results", include complete, exact outputs the user requested
+- Keep each section under ~2000 tokens
+- ALWAYS update "Current State" to reflect the most recent work
+- Output ONLY the raw markdown - no explanations, no code blocks, just the session notes

@@ -1,0 +1,23 @@
+{
+  "header_size": 9,
+  "flags": 1,
+  "entry_path": "bundle/gemini-sea.cjs",
+  "code_offset_in_section": 46,
+  "code_size": 21077351,
+  "exec_argv_extension": 1,
+  "main_format": 0,
+  "exec_argv": [],
+  "binary_sha256": "5e70c83694b55dcb43dbf71a507baba30f4c1da96b73604495e0d0abcb8ec4ac",
+  "binary_size": 143912048,
+  "section": {
+    "section": "__NODE_SEA_BLOB",
+    "segment": "NODE_SEA",
+    "address": 4389064704,
+    "size": 21077397,
+    "offset": 93900800
+  },
+  "code_sha256": "ef19b0cb412f46429fcdbb93c5bc7e44b317753b5713480a5fb08665497c28e9",
+  "asset_names": [],
+  "code_cache_size": 0,
+  "source_map_present": false
+}
