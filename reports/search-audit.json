@@ -1,0 +1,542 @@
+[
+  {
+    "returncode": 0,
+    "stdout": "{\"type\":\"init\",\"timestamp\":\"2026-09-16T17:25:36.199Z\",\"session_id\":\"01a0ab40-9f1b-71c2-94fc-3bfe71d140a5\",\"model\":\"gemini-2.5-flash\"}\n{\"type\":\"message\",\"timestamp\":\"2026-09-16T17:25:36.200Z\",\"role\":\"user\",\"content\":\"AUDIT_PROMPT\"}\n{\"type\":\"tool_use\",\"timestamp\":\"2026-09-16T17:25:36.209Z\",\"tool_name\":\"glob\",\"tool_id\":\"glob\",\"parameters\":{\"pattern\":\"**/*.txt\",\"dir_path\":\"fixtures\"}}\n{\"type\":\"tool_use\",\"timestamp\":\"2026-09-16T17:25:36.209Z\",\"tool_name\":\"grep_search\",\"tool_id\":\"grep\",\"parameters\":{\"pattern\":\"audit_needle\",\"dir_path\":\"fixtures\",\"include\":\"*.txt\"}}\n{\"type\":\"tool_result\",\"timestamp\":\"2026-09-16T17:25:36.261Z\",\"tool_id\":\"glob\",\"status\":\"success\",\"output\":\"Found 2 matching file(s)\"}\n{\"type\":\"tool_result\",\"timestamp\":\"2026-09-16T17:25:36.261Z\",\"tool_id\":\"grep\",\"status\":\"success\",\"output\":\"Found 2 matches\"}\n{\"type\":\"message\",\"timestamp\":\"2026-09-16T17:25:36.264Z\",\"role\":\"assistant\",\"content\":\"AUDIT_DONE\",\"delta\":true}\n{\"type\":\"result\",\"timestamp\":\"2026-09-16T17:25:36.267Z\",\"status\":\"success\",\"stats\":{\"total_tokens\":30,\"input_tokens\":20,\"output_tokens\":10,\"cached\":0,\"input\":20,\"duration_ms\":69,\"tool_calls\":2}}\n",
+    "stderr": "(node:60602) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.\n(Use `ob1 --trace-deprecation ...` to show where the warning was created)\nTimeout of 30000 exceeds the interval of 10000. Clamping timeout to interval duration.\nThe 'metricReader' option is deprecated. Please use 'metricReaders' instead.\n(node:60602) [DEP0190] DeprecationWarning: Passing args to a child process with shell option true can lead to security vulnerabilities, as the arguments are not escaped, only concatenated.\n",
+    "timed_out": false,
+    "isolated_home": "/Users/Apple/ob1-maintenance/.work/validation/glob-and-grep-original-4_ca3e0h/home",
+    "workspace": "/Users/Apple/ob1-maintenance/.work/validation/glob-and-grep-original-4_ca3e0h/workspace",
+    "network": "denied",
+    "checks": {
+      "exit_success": true,
+      "no_timeout": true,
+      "response": true,
+      "status_glob": true,
+      "status_grep": true,
+      "content_glob": true,
+      "content_grep": true
+    },
+    "observed": [
+      {
+        "type": "init",
+        "model": "gemini-2.5-flash"
+      },
+      {
+        "type": "message",
+        "role": "user",
+        "content": "AUDIT_PROMPT"
+      },
+      {
+        "type": "tool_use",
+        "tool_name": "glob",
+        "tool_id": "glob",
+        "parameters": {
+          "pattern": "**/*.txt",
+          "dir_path": "fixtures"
+        }
+      },
+      {
+        "type": "tool_use",
+        "tool_name": "grep_search",
+        "tool_id": "grep",
+        "parameters": {
+          "pattern": "audit_needle",
+          "dir_path": "fixtures",
+          "include": "*.txt"
+        }
+      },
+      {
+        "type": "tool_result",
+        "tool_id": "glob",
+        "status": "success",
+        "output": "Found 2 matching file(s)"
+      },
+      {
+        "type": "tool_result",
+        "tool_id": "grep",
+        "status": "success",
+        "output": "Found 2 matches"
+      },
+      {
+        "type": "message",
+        "role": "assistant",
+        "content": "AUDIT_DONE",
+        "delta": true
+      },
+      {
+        "type": "result",
+        "status": "success",
+        "stats": {
+          "total_tokens": 30,
+          "input_tokens": 20,
+          "output_tokens": 10,
+          "cached": 0,
+          "input": 20,
+          "tool_calls": 2
+        }
+      }
+    ],
+    "tool_responses": [
+      {
+        "id": "glob",
+        "name": "glob",
+        "response": {
+          "output": "Found 2 file(s) matching \"**/*.txt\" within <WORKSPACE>/fixtures, sorted by modification time (newest first):\n<WORKSPACE>/fixtures/deep/b.txt\n<WORKSPACE>/fixtures/a.txt"
+        }
+      },
+      {
+        "id": "grep",
+        "name": "grep_search",
+        "response": {
+          "output": "Found 2 matches for pattern \"audit_needle\" in path \"fixtures\" (filter: \"*.txt\"):\n---\nFile: a.txt\nL1: audit_needle_A\n---\nFile: deep/b.txt\nL1: audit_needle_B\n---"
+        }
+      }
+    ],
+    "file_effects": {},
+    "case": "glob-and-grep",
+    "variant": "original",
+    "equivalent_to_original": true,
+    "comparison": {
+      "returncode": 0,
+      "observed": [
+        {
+          "type": "init",
+          "model": "gemini-2.5-flash"
+        },
+        {
+          "type": "message",
+          "role": "user",
+          "content": "AUDIT_PROMPT"
+        },
+        {
+          "type": "tool_use",
+          "tool_name": "glob",
+          "tool_id": "glob",
+          "parameters": {
+            "pattern": "**/*.txt",
+            "dir_path": "fixtures"
+          }
+        },
+        {
+          "type": "tool_use",
+          "tool_name": "grep_search",
+          "tool_id": "grep",
+          "parameters": {
+            "pattern": "audit_needle",
+            "dir_path": "fixtures",
+            "include": "*.txt"
+          }
+        },
+        {
+          "type": "tool_result",
+          "tool_id": "glob",
+          "status": "success",
+          "output": "Found 2 matching file(s)"
+        },
+        {
+          "type": "tool_result",
+          "tool_id": "grep",
+          "status": "success",
+          "output": "Found 2 matches"
+        },
+        {
+          "type": "message",
+          "role": "assistant",
+          "content": "AUDIT_DONE",
+          "delta": true
+        },
+        {
+          "type": "result",
+          "status": "success",
+          "stats": {
+            "total_tokens": 30,
+            "input_tokens": 20,
+            "output_tokens": 10,
+            "cached": 0,
+            "input": 20,
+            "tool_calls": 2
+          }
+        }
+      ],
+      "tool_responses": [
+        {
+          "id": "glob",
+          "name": "glob",
+          "response": {
+            "output": "Found 2 file(s) matching \"**/*.txt\" within <WORKSPACE>/fixtures, sorted by modification time (newest first):\n<WORKSPACE>/fixtures/deep/b.txt\n<WORKSPACE>/fixtures/a.txt"
+          }
+        },
+        {
+          "id": "grep",
+          "name": "grep_search",
+          "response": {
+            "output": "Found 2 matches for pattern \"audit_needle\" in path \"fixtures\" (filter: \"*.txt\"):\n---\nFile: a.txt\nL1: audit_needle_A\n---\nFile: deep/b.txt\nL1: audit_needle_B\n---"
+          }
+        }
+      ],
+      "file_effects": {}
+    },
+    "fixture_repository_isolated": true,
+    "passed": true
+  },
+  {
+    "returncode": 0,
+    "stdout": "{\"type\":\"init\",\"timestamp\":\"2026-09-16T17:25:50.041Z\",\"session_id\":\"01a0ab40-d569-79f1-9ebd-3547ee0f6817\",\"model\":\"gemini-2.5-flash\"}\n{\"type\":\"message\",\"timestamp\":\"2026-09-16T17:25:50.041Z\",\"role\":\"user\",\"content\":\"AUDIT_PROMPT\"}\n{\"type\":\"tool_use\",\"timestamp\":\"2026-09-16T17:25:50.051Z\",\"tool_name\":\"glob\",\"tool_id\":\"glob\",\"parameters\":{\"pattern\":\"**/*.txt\",\"dir_path\":\"fixtures\"}}\n{\"type\":\"tool_use\",\"timestamp\":\"2026-09-16T17:25:50.051Z\",\"tool_name\":\"grep_search\",\"tool_id\":\"grep\",\"parameters\":{\"pattern\":\"audit_needle\",\"dir_path\":\"fixtures\",\"include\":\"*.txt\"}}\n{\"type\":\"tool_result\",\"timestamp\":\"2026-09-16T17:25:50.106Z\",\"tool_id\":\"glob\",\"status\":\"success\",\"output\":\"Found 2 matching file(s)\"}\n{\"type\":\"tool_result\",\"timestamp\":\"2026-09-16T17:25:50.106Z\",\"tool_id\":\"grep\",\"status\":\"success\",\"output\":\"Found 2 matches\"}\n{\"type\":\"message\",\"timestamp\":\"2026-09-16T17:25:50.109Z\",\"role\":\"assistant\",\"content\":\"AUDIT_DONE\",\"delta\":true}\n{\"type\":\"result\",\"timestamp\":\"2026-09-16T17:25:50.112Z\",\"status\":\"success\",\"stats\":{\"total_tokens\":30,\"input_tokens\":20,\"output_tokens\":10,\"cached\":0,\"input\":20,\"duration_ms\":72,\"tool_calls\":2}}\n",
+    "stderr": "(node:60655) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.\n(Use `node --trace-deprecation ...` to show where the warning was created)\nTimeout of 30000 exceeds the interval of 10000. Clamping timeout to interval duration.\nThe 'metricReader' option is deprecated. Please use 'metricReaders' instead.\n(node:60655) [DEP0190] DeprecationWarning: Passing args to a child process with shell option true can lead to security vulnerabilities, as the arguments are not escaped, only concatenated.\n",
+    "timed_out": false,
+    "isolated_home": "/Users/Apple/ob1-maintenance/.work/validation/glob-and-grep-readable-pbvfgkf2/home",
+    "workspace": "/Users/Apple/ob1-maintenance/.work/validation/glob-and-grep-readable-pbvfgkf2/workspace",
+    "network": "denied",
+    "checks": {
+      "exit_success": true,
+      "no_timeout": true,
+      "response": true,
+      "status_glob": true,
+      "status_grep": true,
+      "content_glob": true,
+      "content_grep": true
+    },
+    "observed": [
+      {
+        "type": "init",
+        "model": "gemini-2.5-flash"
+      },
+      {
+        "type": "message",
+        "role": "user",
+        "content": "AUDIT_PROMPT"
+      },
+      {
+        "type": "tool_use",
+        "tool_name": "glob",
+        "tool_id": "glob",
+        "parameters": {
+          "pattern": "**/*.txt",
+          "dir_path": "fixtures"
+        }
+      },
+      {
+        "type": "tool_use",
+        "tool_name": "grep_search",
+        "tool_id": "grep",
+        "parameters": {
+          "pattern": "audit_needle",
+          "dir_path": "fixtures",
+          "include": "*.txt"
+        }
+      },
+      {
+        "type": "tool_result",
+        "tool_id": "glob",
+        "status": "success",
+        "output": "Found 2 matching file(s)"
+      },
+      {
+        "type": "tool_result",
+        "tool_id": "grep",
+        "status": "success",
+        "output": "Found 2 matches"
+      },
+      {
+        "type": "message",
+        "role": "assistant",
+        "content": "AUDIT_DONE",
+        "delta": true
+      },
+      {
+        "type": "result",
+        "status": "success",
+        "stats": {
+          "total_tokens": 30,
+          "input_tokens": 20,
+          "output_tokens": 10,
+          "cached": 0,
+          "input": 20,
+          "tool_calls": 2
+        }
+      }
+    ],
+    "tool_responses": [
+      {
+        "id": "glob",
+        "name": "glob",
+        "response": {
+          "output": "Found 2 file(s) matching \"**/*.txt\" within <WORKSPACE>/fixtures, sorted by modification time (newest first):\n<WORKSPACE>/fixtures/deep/b.txt\n<WORKSPACE>/fixtures/a.txt"
+        }
+      },
+      {
+        "id": "grep",
+        "name": "grep_search",
+        "response": {
+          "output": "Found 2 matches for pattern \"audit_needle\" in path \"fixtures\" (filter: \"*.txt\"):\n---\nFile: a.txt\nL1: audit_needle_A\n---\nFile: deep/b.txt\nL1: audit_needle_B\n---"
+        }
+      }
+    ],
+    "file_effects": {},
+    "case": "glob-and-grep",
+    "variant": "readable",
+    "equivalent_to_original": true,
+    "comparison": {
+      "returncode": 0,
+      "observed": [
+        {
+          "type": "init",
+          "model": "gemini-2.5-flash"
+        },
+        {
+          "type": "message",
+          "role": "user",
+          "content": "AUDIT_PROMPT"
+        },
+        {
+          "type": "tool_use",
+          "tool_name": "glob",
+          "tool_id": "glob",
+          "parameters": {
+            "pattern": "**/*.txt",
+            "dir_path": "fixtures"
+          }
+        },
+        {
+          "type": "tool_use",
+          "tool_name": "grep_search",
+          "tool_id": "grep",
+          "parameters": {
+            "pattern": "audit_needle",
+            "dir_path": "fixtures",
+            "include": "*.txt"
+          }
+        },
+        {
+          "type": "tool_result",
+          "tool_id": "glob",
+          "status": "success",
+          "output": "Found 2 matching file(s)"
+        },
+        {
+          "type": "tool_result",
+          "tool_id": "grep",
+          "status": "success",
+          "output": "Found 2 matches"
+        },
+        {
+          "type": "message",
+          "role": "assistant",
+          "content": "AUDIT_DONE",
+          "delta": true
+        },
+        {
+          "type": "result",
+          "status": "success",
+          "stats": {
+            "total_tokens": 30,
+            "input_tokens": 20,
+            "output_tokens": 10,
+            "cached": 0,
+            "input": 20,
+            "tool_calls": 2
+          }
+        }
+      ],
+      "tool_responses": [
+        {
+          "id": "glob",
+          "name": "glob",
+          "response": {
+            "output": "Found 2 file(s) matching \"**/*.txt\" within <WORKSPACE>/fixtures, sorted by modification time (newest first):\n<WORKSPACE>/fixtures/deep/b.txt\n<WORKSPACE>/fixtures/a.txt"
+          }
+        },
+        {
+          "id": "grep",
+          "name": "grep_search",
+          "response": {
+            "output": "Found 2 matches for pattern \"audit_needle\" in path \"fixtures\" (filter: \"*.txt\"):\n---\nFile: a.txt\nL1: audit_needle_A\n---\nFile: deep/b.txt\nL1: audit_needle_B\n---"
+          }
+        }
+      ],
+      "file_effects": {}
+    },
+    "fixture_repository_isolated": true,
+    "passed": true
+  },
+  {
+    "returncode": 0,
+    "stdout": "{\"type\":\"init\",\"timestamp\":\"2026-09-16T17:26:03.880Z\",\"session_id\":\"01a0ab41-0b39-71b2-b96b-e38e8c1d173c\",\"model\":\"gemini-2.5-flash\"}\n{\"type\":\"message\",\"timestamp\":\"2026-09-16T17:26:03.881Z\",\"role\":\"user\",\"content\":\"AUDIT_PROMPT\"}\n{\"type\":\"tool_use\",\"timestamp\":\"2026-09-16T17:26:03.891Z\",\"tool_name\":\"glob\",\"tool_id\":\"glob\",\"parameters\":{\"pattern\":\"**/*.txt\",\"dir_path\":\"fixtures\"}}\n{\"type\":\"tool_use\",\"timestamp\":\"2026-09-16T17:26:03.891Z\",\"tool_name\":\"grep_search\",\"tool_id\":\"grep\",\"parameters\":{\"pattern\":\"audit_needle\",\"dir_path\":\"fixtures\",\"include\":\"*.txt\"}}\n{\"type\":\"tool_result\",\"timestamp\":\"2026-09-16T17:26:03.944Z\",\"tool_id\":\"glob\",\"status\":\"success\",\"output\":\"Found 2 matching file(s)\"}\n{\"type\":\"tool_result\",\"timestamp\":\"2026-09-16T17:26:03.944Z\",\"tool_id\":\"grep\",\"status\":\"success\",\"output\":\"Found 2 matches\"}\n{\"type\":\"message\",\"timestamp\":\"2026-09-16T17:26:03.947Z\",\"role\":\"assistant\",\"content\":\"AUDIT_DONE\",\"delta\":true}\n{\"type\":\"result\",\"timestamp\":\"2026-09-16T17:26:03.950Z\",\"status\":\"success\",\"stats\":{\"total_tokens\":30,\"input_tokens\":20,\"output_tokens\":10,\"cached\":0,\"input\":20,\"duration_ms\":70,\"tool_calls\":2}}\n",
+    "stderr": "(node:60708) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.\n(Use `ob1 --trace-deprecation ...` to show where the warning was created)\nTimeout of 30000 exceeds the interval of 10000. Clamping timeout to interval duration.\nThe 'metricReader' option is deprecated. Please use 'metricReaders' instead.\n(node:60708) [DEP0190] DeprecationWarning: Passing args to a child process with shell option true can lead to security vulnerabilities, as the arguments are not escaped, only concatenated.\n",
+    "timed_out": false,
+    "isolated_home": "/Users/Apple/ob1-maintenance/.work/validation/glob-and-grep-rebuilt-38xcgdca/home",
+    "workspace": "/Users/Apple/ob1-maintenance/.work/validation/glob-and-grep-rebuilt-38xcgdca/workspace",
+    "network": "denied",
+    "checks": {
+      "exit_success": true,
+      "no_timeout": true,
+      "response": true,
+      "status_glob": true,
+      "status_grep": true,
+      "content_glob": true,
+      "content_grep": true
+    },
+    "observed": [
+      {
+        "type": "init",
+        "model": "gemini-2.5-flash"
+      },
+      {
+        "type": "message",
+        "role": "user",
+        "content": "AUDIT_PROMPT"
+      },
+      {
+        "type": "tool_use",
+        "tool_name": "glob",
+        "tool_id": "glob",
+        "parameters": {
+          "pattern": "**/*.txt",
+          "dir_path": "fixtures"
+        }
+      },
+      {
+        "type": "tool_use",
+        "tool_name": "grep_search",
+        "tool_id": "grep",
+        "parameters": {
+          "pattern": "audit_needle",
+          "dir_path": "fixtures",
+          "include": "*.txt"
+        }
+      },
+      {
+        "type": "tool_result",
+        "tool_id": "glob",
+        "status": "success",
+        "output": "Found 2 matching file(s)"
+      },
+      {
+        "type": "tool_result",
+        "tool_id": "grep",
+        "status": "success",
+        "output": "Found 2 matches"
+      },
+      {
+        "type": "message",
+        "role": "assistant",
+        "content": "AUDIT_DONE",
+        "delta": true
+      },
+      {
+        "type": "result",
+        "status": "success",
+        "stats": {
+          "total_tokens": 30,
+          "input_tokens": 20,
+          "output_tokens": 10,
+          "cached": 0,
+          "input": 20,
+          "tool_calls": 2
+        }
+      }
+    ],
+    "tool_responses": [
+      {
+        "id": "glob",
+        "name": "glob",
+        "response": {
+          "output": "Found 2 file(s) matching \"**/*.txt\" within <WORKSPACE>/fixtures, sorted by modification time (newest first):\n<WORKSPACE>/fixtures/deep/b.txt\n<WORKSPACE>/fixtures/a.txt"
+        }
+      },
+      {
+        "id": "grep",
+        "name": "grep_search",
+        "response": {
+          "output": "Found 2 matches for pattern \"audit_needle\" in path \"fixtures\" (filter: \"*.txt\"):\n---\nFile: a.txt\nL1: audit_needle_A\n---\nFile: deep/b.txt\nL1: audit_needle_B\n---"
+        }
+      }
+    ],
+    "file_effects": {},
+    "case": "glob-and-grep",
+    "variant": "rebuilt",
+    "equivalent_to_original": true,
+    "comparison": {
+      "returncode": 0,
+      "observed": [
+        {
+          "type": "init",
+          "model": "gemini-2.5-flash"
+        },
+        {
+          "type": "message",
+          "role": "user",
+          "content": "AUDIT_PROMPT"
+        },
+        {
+          "type": "tool_use",
+          "tool_name": "glob",
+          "tool_id": "glob",
+          "parameters": {
+            "pattern": "**/*.txt",
+            "dir_path": "fixtures"
+          }
+        },
+        {
+          "type": "tool_use",
+          "tool_name": "grep_search",
+          "tool_id": "grep",
+          "parameters": {
+            "pattern": "audit_needle",
+            "dir_path": "fixtures",
+            "include": "*.txt"
+          }
+        },
+        {
+          "type": "tool_result",
+          "tool_id": "glob",
+          "status": "success",
+          "output": "Found 2 matching file(s)"
+        },
+        {
+          "type": "tool_result",
+          "tool_id": "grep",
+          "status": "success",
+          "output": "Found 2 matches"
+        },
+        {
+          "type": "message",
+          "role": "assistant",
+          "content": "AUDIT_DONE",
+          "delta": true
+        },
+        {
+          "type": "result",
+          "status": "success",
+          "stats": {
+            "total_tokens": 30,
+            "input_tokens": 20,
+            "output_tokens": 10,
+            "cached": 0,
+            "input": 20,
+            "tool_calls": 2
+          }
+        }
+      ],
+      "tool_responses": [
+        {
+          "id": "glob",
+          "name": "glob",
+          "response": {
+            "output": "Found 2 file(s) matching \"**/*.txt\" within <WORKSPACE>/fixtures, sorted by modification time (newest first):\n<WORKSPACE>/fixtures/deep/b.txt\n<WORKSPACE>/fixtures/a.txt"
+          }
+        },
+        {
+          "id": "grep",
+          "name": "grep_search",
+          "response": {
+            "output": "Found 2 matches for pattern \"audit_needle\" in path \"fixtures\" (filter: \"*.txt\"):\n---\nFile: a.txt\nL1: audit_needle_A\n---\nFile: deep/b.txt\nL1: audit_needle_B\n---"
+          }
+        }
+      ],
+      "file_effects": {}
+    },
+    "fixture_repository_isolated": true,
+    "passed": true
+  }
+]

@@ -1,0 +1,92 @@
+{
+  "checked_at": "2026-09-16T17:29:36.880260+00:00",
+  "scope": "Installed OB1 0.1.725 macOS x86_64 client recovery baseline",
+  "artifacts": {
+    "original/bin/ob1": {
+      "bytes": 143912048,
+      "sha256": "5e70c83694b55dcb43dbf71a507baba30f4c1da96b73604495e0d0abcb8ec4ac"
+    },
+    "recovered/ob1.bundle.cjs": {
+      "bytes": 21077351,
+      "sha256": "ef19b0cb412f46429fcdbb93c5bc7e44b317753b5713480a5fb08665497c28e9"
+    },
+    "src/ob1.cjs": {
+      "bytes": 28991754,
+      "sha256": "f4dcb43c5e66f043e11a28a398fe6b42248a3ee58a950961d5dc0169971bb527"
+    },
+    "dist/bin/ob1": {
+      "bytes": 151891456,
+      "sha256": "17c5b71c40b5e6f45b0614a9322427fb75a1b702c0c78621bec3308d1af27fcf"
+    }
+  },
+  "checks": {
+    "actual_v8_sources_exact": true,
+    "runtime_binary_fingerprints_current": true,
+    "independent_static_checks": true,
+    "static_binary_fingerprints_current": true,
+    "formatting_ast_equal": true,
+    "independent_rebuild_identical": true,
+    "behavior_matrix_complete": true,
+    "search_retest_complete": true,
+    "all_initial_behavior_matches_original": true,
+    "effective_behavior_expectations_and_equivalence": true,
+    "initial_failures_accounted_for": true,
+    "http_matrix_complete": true,
+    "http_expectations_and_equivalence": true,
+    "analysis_index_current": true
+  },
+  "passed": true,
+  "counts": {
+    "runtime_source_captures": 2,
+    "independent_static_checks": 92,
+    "behavior_initial_runs": 63,
+    "behavior_initial_expectations_passed": 60,
+    "behavior_initial_matches_original": 63,
+    "search_retest_runs": 3,
+    "effective_behavior_runs": 63,
+    "effective_behavior_expectations_passed": 63,
+    "http_runs": 6,
+    "http_passed": 6
+  },
+  "initial_failures_retained": [
+    {
+      "case": "glob-and-grep",
+      "variant": "original",
+      "failed_checks": [
+        "content_grep"
+      ]
+    },
+    {
+      "case": "glob-and-grep",
+      "variant": "readable",
+      "failed_checks": [
+        "content_grep"
+      ]
+    },
+    {
+      "case": "glob-and-grep",
+      "variant": "rebuilt",
+      "failed_checks": [
+        "content_grep"
+      ]
+    }
+  ],
+  "search_fixture_resolution": "Parent repository .gitignore excludes .work/. git grep --untracked therefore returned no matches in all three versions. Retest uses an independent empty Git repository and keeps the original hit expectations.",
+  "report_sha256": {
+    "reports/runtime-audit.json": "e8d0eb02c43feea0c809263d00d102adb58bcced9d46b56ccee10e7b55f70eeb",
+    "reports/static-audit.json": "50eade67c9f4a0e9ff4db2bbf513e4d7a2813693bfde97f3c7fa1efa7d58c48e",
+    "reports/source-equivalence.json": "7c12afb1ba4d2578c94798bfc2e17a56b1923ecacbf8e24f571af35d61d30da7",
+    "reports/rebuild-audit.json": "9f2639456412eb0ea60d23bc8b10da9f5a8b558a3d0faa29caa925ddc7d9697d",
+    "reports/behavior-audit.json": "7d5e945183ee57173bc45d7f588822270d976a3dea6299db997cbff3c57c2d5b",
+    "reports/search-audit.json": "786e9512f72d11187ebd8e8e00def75dc01057fa9d0520108baf507765dbcb69",
+    "reports/http-audit.json": "ad6807d9b9a586f2bdef5f94f63a14b520c19bf1f4c721a7a6ced39742518088",
+    "reports/analysis-summary.json": "cf2aec23eba0fb3389dfb51d1c783c45c8b6b8a3b7833d3af424170e09e9ac09"
+  },
+  "limitations": [
+    "No overall functionality percentage or branch-coverage claim.",
+    "Formatting changes source locations and function source reflection.",
+    "HTTP tests use local Google-compatible SSE fixtures, not live providers or real credentials.",
+    "Interactive terminal, real MCP servers, OAuth refresh, cloud features and optional native modules are not fully validated.",
+    "Original TypeScript project and server source are not recovered; native runtime is preserved, not decompiled."
+  ]
+}

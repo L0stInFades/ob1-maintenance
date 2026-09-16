@@ -1,0 +1,665 @@
+{
+  "checked_at": "2026-09-16T17:12:25.796771+00:00",
+  "parser": "Apple /usr/bin/otool; no imports from recovery parser/repacker",
+  "original_sha256": "5e70c83694b55dcb43dbf71a507baba30f4c1da96b73604495e0d0abcb8ec4ac",
+  "rebuilt_sha256": "17c5b71c40b5e6f45b0614a9322427fb75a1b702c0c78621bec3308d1af27fcf",
+  "checks": [
+    {
+      "name": "native_file_region_exact",
+      "passed": true,
+      "offset": 4800,
+      "bytes": 93896000
+    },
+    {
+      "name": "complete_linkedit_before_signature_exact",
+      "passed": true,
+      "bytes": 27799504,
+      "sha256": "92566f16a07e21b35e770687dac6fb49a5a62e7c5bc966d01d0f3e06aed7e856"
+    },
+    {
+      "name": "sea_file_and_vm_growth_agree",
+      "passed": true,
+      "delta": 7917568
+    },
+    {
+      "name": "load_command_count",
+      "passed": true,
+      "count": 22
+    },
+    {
+      "name": "load_command_0_LC_SEGMENT_64",
+      "passed": true
+    },
+    {
+      "name": "load_command_1_LC_SEGMENT_64",
+      "passed": true
+    },
+    {
+      "name": "load_command_2_LC_SEGMENT_64",
+      "passed": true
+    },
+    {
+      "name": "load_command_3_LC_SEGMENT_64",
+      "passed": true
+    },
+    {
+      "name": "sea_size_alignment",
+      "passed": true
+    },
+    {
+      "name": "load_command_4_LC_SEGMENT_64",
+      "passed": true
+    },
+    {
+      "name": "linkedit_file_bounds",
+      "passed": true,
+      "virtual_padding_bytes": 4608
+    },
+    {
+      "name": "load_command_5_LC_SEGMENT_64",
+      "passed": true
+    },
+    {
+      "name": "load_command_6_LC_DYLD_CHAINED_FIXUPS",
+      "passed": true
+    },
+    {
+      "name": "load_command_7_LC_DYLD_EXPORTS_TRIE",
+      "passed": true
+    },
+    {
+      "name": "load_command_8_LC_SYMTAB",
+      "passed": true
+    },
+    {
+      "name": "load_command_9_LC_DYSYMTAB",
+      "passed": true
+    },
+    {
+      "name": "load_command_10_LC_LOAD_DYLINKER",
+      "passed": true
+    },
+    {
+      "name": "load_command_11_LC_UUID",
+      "passed": true
+    },
+    {
+      "name": "load_command_12_LC_BUILD_VERSION",
+      "passed": true
+    },
+    {
+      "name": "load_command_13_LC_SOURCE_VERSION",
+      "passed": true
+    },
+    {
+      "name": "load_command_14_LC_MAIN",
+      "passed": true
+    },
+    {
+      "name": "load_command_15_LC_LOAD_DYLIB",
+      "passed": true
+    },
+    {
+      "name": "load_command_16_LC_LOAD_DYLIB",
+      "passed": true
+    },
+    {
+      "name": "load_command_17_LC_LOAD_DYLIB",
+      "passed": true
+    },
+    {
+      "name": "load_command_18_LC_LOAD_DYLIB",
+      "passed": true
+    },
+    {
+      "name": "load_command_19_LC_FUNCTION_STARTS",
+      "passed": true
+    },
+    {
+      "name": "load_command_20_LC_DATA_IN_CODE",
+      "passed": true
+    },
+    {
+      "name": "load_command_21_LC_CODE_SIGNATURE",
+      "passed": true
+    },
+    {
+      "name": "original_code_signature",
+      "passed": true,
+      "stderr": ""
+    },
+    {
+      "name": "rebuilt_code_signature",
+      "passed": true,
+      "stderr": ""
+    },
+    {
+      "name": "native_library_dependencies",
+      "passed": true
+    },
+    {
+      "name": "snapshot_bin/ob1",
+      "passed": true
+    },
+    {
+      "name": "installed_bin/ob1",
+      "passed": true
+    },
+    {
+      "name": "snapshot_bin/policies/discovered.toml",
+      "passed": true
+    },
+    {
+      "name": "installed_bin/policies/discovered.toml",
+      "passed": true
+    },
+    {
+      "name": "snapshot_bin/policies/plan.toml",
+      "passed": true
+    },
+    {
+      "name": "installed_bin/policies/plan.toml",
+      "passed": true
+    },
+    {
+      "name": "snapshot_bin/policies/privileged-commands.toml",
+      "passed": true
+    },
+    {
+      "name": "installed_bin/policies/privileged-commands.toml",
+      "passed": true
+    },
+    {
+      "name": "snapshot_bin/policies/read-only.toml",
+      "passed": true
+    },
+    {
+      "name": "installed_bin/policies/read-only.toml",
+      "passed": true
+    },
+    {
+      "name": "snapshot_bin/policies/safe-yolo.toml",
+      "passed": true
+    },
+    {
+      "name": "installed_bin/policies/safe-yolo.toml",
+      "passed": true
+    },
+    {
+      "name": "snapshot_bin/policies/write.toml",
+      "passed": true
+    },
+    {
+      "name": "installed_bin/policies/write.toml",
+      "passed": true
+    },
+    {
+      "name": "snapshot_bin/policies/yolo.toml",
+      "passed": true
+    },
+    {
+      "name": "installed_bin/policies/yolo.toml",
+      "passed": true
+    },
+    {
+      "name": "snapshot_bin/sandbox-macos-permissive-open.sb",
+      "passed": true
+    },
+    {
+      "name": "installed_bin/sandbox-macos-permissive-open.sb",
+      "passed": true
+    },
+    {
+      "name": "snapshot_bin/sandbox-macos-permissive-proxied.sb",
+      "passed": true
+    },
+    {
+      "name": "installed_bin/sandbox-macos-permissive-proxied.sb",
+      "passed": true
+    },
+    {
+      "name": "snapshot_bin/sandbox-macos-restrictive-open.sb",
+      "passed": true
+    },
+    {
+      "name": "installed_bin/sandbox-macos-restrictive-open.sb",
+      "passed": true
+    },
+    {
+      "name": "snapshot_bin/sandbox-macos-restrictive-proxied.sb",
+      "passed": true
+    },
+    {
+      "name": "installed_bin/sandbox-macos-restrictive-proxied.sb",
+      "passed": true
+    },
+    {
+      "name": "snapshot_bin/sandbox-macos-strict-open.sb",
+      "passed": true
+    },
+    {
+      "name": "installed_bin/sandbox-macos-strict-open.sb",
+      "passed": true
+    },
+    {
+      "name": "snapshot_bin/sandbox-macos-strict-proxied.sb",
+      "passed": true
+    },
+    {
+      "name": "installed_bin/sandbox-macos-strict-proxied.sb",
+      "passed": true
+    },
+    {
+      "name": "snapshot_scripts/optimize/analyze_github_history.js",
+      "passed": true
+    },
+    {
+      "name": "installed_scripts/optimize/analyze_github_history.js",
+      "passed": true
+    },
+    {
+      "name": "snapshot_scripts/optimize/analyze_model_routing.js",
+      "passed": true
+    },
+    {
+      "name": "installed_scripts/optimize/analyze_model_routing.js",
+      "passed": true
+    },
+    {
+      "name": "snapshot_scripts/optimize/analyze_readiness.js",
+      "passed": true
+    },
+    {
+      "name": "installed_scripts/optimize/analyze_readiness.js",
+      "passed": true
+    },
+    {
+      "name": "snapshot_scripts/optimize/analyze_session_deep.js",
+      "passed": true
+    },
+    {
+      "name": "installed_scripts/optimize/analyze_session_deep.js",
+      "passed": true
+    },
+    {
+      "name": "snapshot_scripts/optimize/analyze_session_metrics.js",
+      "passed": true
+    },
+    {
+      "name": "installed_scripts/optimize/analyze_session_metrics.js",
+      "passed": true
+    },
+    {
+      "name": "snapshot_scripts/optimize/analyze_subagent_value.js",
+      "passed": true
+    },
+    {
+      "name": "installed_scripts/optimize/analyze_subagent_value.js",
+      "passed": true
+    },
+    {
+      "name": "snapshot_scripts/optimize/check_setup.js",
+      "passed": true
+    },
+    {
+      "name": "installed_scripts/optimize/check_setup.js",
+      "passed": true
+    },
+    {
+      "name": "snapshot_scripts/optimize/extract_external_sessions.js",
+      "passed": true
+    },
+    {
+      "name": "installed_scripts/optimize/extract_external_sessions.js",
+      "passed": true
+    },
+    {
+      "name": "snapshot_scripts/optimize/extract_sessions.js",
+      "passed": true
+    },
+    {
+      "name": "installed_scripts/optimize/extract_sessions.js",
+      "passed": true
+    },
+    {
+      "name": "snapshot_scripts/optimize/find_friction_signals.js",
+      "passed": true
+    },
+    {
+      "name": "installed_scripts/optimize/find_friction_signals.js",
+      "passed": true
+    },
+    {
+      "name": "snapshot_scripts/optimize/find_repeated_intents.js",
+      "passed": true
+    },
+    {
+      "name": "installed_scripts/optimize/find_repeated_intents.js",
+      "passed": true
+    },
+    {
+      "name": "snapshot_scripts/optimize/get_recommendation_value.js",
+      "passed": true
+    },
+    {
+      "name": "installed_scripts/optimize/get_recommendation_value.js",
+      "passed": true
+    },
+    {
+      "name": "snapshot_scripts/optimize/githubUtils.js",
+      "passed": true
+    },
+    {
+      "name": "installed_scripts/optimize/githubUtils.js",
+      "passed": true
+    },
+    {
+      "name": "snapshot_scripts/optimize/package.json",
+      "passed": true
+    },
+    {
+      "name": "installed_scripts/optimize/package.json",
+      "passed": true
+    },
+    {
+      "name": "snapshot_scripts/optimize/utils.js",
+      "passed": true
+    },
+    {
+      "name": "installed_scripts/optimize/utils.js",
+      "passed": true
+    },
+    {
+      "name": "all_maintained_and_distributed_sidecars_exact",
+      "passed": true,
+      "files": 69
+    },
+    {
+      "name": "node_bundle_exact",
+      "passed": true
+    },
+    {
+      "name": "source_baseline_unchanged",
+      "passed": true
+    }
+  ],
+  "sidecar_copies": [
+    {
+      "path": "src/policies/discovered.toml",
+      "exact": true
+    },
+    {
+      "path": "dist/bin/policies/discovered.toml",
+      "exact": true
+    },
+    {
+      "path": "dist/bundle/policies/discovered.toml",
+      "exact": true
+    },
+    {
+      "path": "src/policies/plan.toml",
+      "exact": true
+    },
+    {
+      "path": "dist/bin/policies/plan.toml",
+      "exact": true
+    },
+    {
+      "path": "dist/bundle/policies/plan.toml",
+      "exact": true
+    },
+    {
+      "path": "src/policies/privileged-commands.toml",
+      "exact": true
+    },
+    {
+      "path": "dist/bin/policies/privileged-commands.toml",
+      "exact": true
+    },
+    {
+      "path": "dist/bundle/policies/privileged-commands.toml",
+      "exact": true
+    },
+    {
+      "path": "src/policies/read-only.toml",
+      "exact": true
+    },
+    {
+      "path": "dist/bin/policies/read-only.toml",
+      "exact": true
+    },
+    {
+      "path": "dist/bundle/policies/read-only.toml",
+      "exact": true
+    },
+    {
+      "path": "src/policies/safe-yolo.toml",
+      "exact": true
+    },
+    {
+      "path": "dist/bin/policies/safe-yolo.toml",
+      "exact": true
+    },
+    {
+      "path": "dist/bundle/policies/safe-yolo.toml",
+      "exact": true
+    },
+    {
+      "path": "src/policies/write.toml",
+      "exact": true
+    },
+    {
+      "path": "dist/bin/policies/write.toml",
+      "exact": true
+    },
+    {
+      "path": "dist/bundle/policies/write.toml",
+      "exact": true
+    },
+    {
+      "path": "src/policies/yolo.toml",
+      "exact": true
+    },
+    {
+      "path": "dist/bin/policies/yolo.toml",
+      "exact": true
+    },
+    {
+      "path": "dist/bundle/policies/yolo.toml",
+      "exact": true
+    },
+    {
+      "path": "src/sandbox-macos-permissive-open.sb",
+      "exact": true
+    },
+    {
+      "path": "dist/bin/sandbox-macos-permissive-open.sb",
+      "exact": true
+    },
+    {
+      "path": "dist/bundle/sandbox-macos-permissive-open.sb",
+      "exact": true
+    },
+    {
+      "path": "src/sandbox-macos-permissive-proxied.sb",
+      "exact": true
+    },
+    {
+      "path": "dist/bin/sandbox-macos-permissive-proxied.sb",
+      "exact": true
+    },
+    {
+      "path": "dist/bundle/sandbox-macos-permissive-proxied.sb",
+      "exact": true
+    },
+    {
+      "path": "src/sandbox-macos-restrictive-open.sb",
+      "exact": true
+    },
+    {
+      "path": "dist/bin/sandbox-macos-restrictive-open.sb",
+      "exact": true
+    },
+    {
+      "path": "dist/bundle/sandbox-macos-restrictive-open.sb",
+      "exact": true
+    },
+    {
+      "path": "src/sandbox-macos-restrictive-proxied.sb",
+      "exact": true
+    },
+    {
+      "path": "dist/bin/sandbox-macos-restrictive-proxied.sb",
+      "exact": true
+    },
+    {
+      "path": "dist/bundle/sandbox-macos-restrictive-proxied.sb",
+      "exact": true
+    },
+    {
+      "path": "src/sandbox-macos-strict-open.sb",
+      "exact": true
+    },
+    {
+      "path": "dist/bin/sandbox-macos-strict-open.sb",
+      "exact": true
+    },
+    {
+      "path": "dist/bundle/sandbox-macos-strict-open.sb",
+      "exact": true
+    },
+    {
+      "path": "src/sandbox-macos-strict-proxied.sb",
+      "exact": true
+    },
+    {
+      "path": "dist/bin/sandbox-macos-strict-proxied.sb",
+      "exact": true
+    },
+    {
+      "path": "dist/bundle/sandbox-macos-strict-proxied.sb",
+      "exact": true
+    },
+    {
+      "path": "scripts/optimize/analyze_github_history.js",
+      "exact": true
+    },
+    {
+      "path": "dist/scripts/optimize/analyze_github_history.js",
+      "exact": true
+    },
+    {
+      "path": "scripts/optimize/analyze_model_routing.js",
+      "exact": true
+    },
+    {
+      "path": "dist/scripts/optimize/analyze_model_routing.js",
+      "exact": true
+    },
+    {
+      "path": "scripts/optimize/analyze_readiness.js",
+      "exact": true
+    },
+    {
+      "path": "dist/scripts/optimize/analyze_readiness.js",
+      "exact": true
+    },
+    {
+      "path": "scripts/optimize/analyze_session_deep.js",
+      "exact": true
+    },
+    {
+      "path": "dist/scripts/optimize/analyze_session_deep.js",
+      "exact": true
+    },
+    {
+      "path": "scripts/optimize/analyze_session_metrics.js",
+      "exact": true
+    },
+    {
+      "path": "dist/scripts/optimize/analyze_session_metrics.js",
+      "exact": true
+    },
+    {
+      "path": "scripts/optimize/analyze_subagent_value.js",
+      "exact": true
+    },
+    {
+      "path": "dist/scripts/optimize/analyze_subagent_value.js",
+      "exact": true
+    },
+    {
+      "path": "scripts/optimize/check_setup.js",
+      "exact": true
+    },
+    {
+      "path": "dist/scripts/optimize/check_setup.js",
+      "exact": true
+    },
+    {
+      "path": "scripts/optimize/extract_external_sessions.js",
+      "exact": true
+    },
+    {
+      "path": "dist/scripts/optimize/extract_external_sessions.js",
+      "exact": true
+    },
+    {
+      "path": "scripts/optimize/extract_sessions.js",
+      "exact": true
+    },
+    {
+      "path": "dist/scripts/optimize/extract_sessions.js",
+      "exact": true
+    },
+    {
+      "path": "scripts/optimize/find_friction_signals.js",
+      "exact": true
+    },
+    {
+      "path": "dist/scripts/optimize/find_friction_signals.js",
+      "exact": true
+    },
+    {
+      "path": "scripts/optimize/find_repeated_intents.js",
+      "exact": true
+    },
+    {
+      "path": "dist/scripts/optimize/find_repeated_intents.js",
+      "exact": true
+    },
+    {
+      "path": "scripts/optimize/get_recommendation_value.js",
+      "exact": true
+    },
+    {
+      "path": "dist/scripts/optimize/get_recommendation_value.js",
+      "exact": true
+    },
+    {
+      "path": "scripts/optimize/githubUtils.js",
+      "exact": true
+    },
+    {
+      "path": "dist/scripts/optimize/githubUtils.js",
+      "exact": true
+    },
+    {
+      "path": "scripts/optimize/package.json",
+      "exact": true
+    },
+    {
+      "path": "dist/scripts/optimize/package.json",
+      "exact": true
+    },
+    {
+      "path": "scripts/optimize/utils.js",
+      "exact": true
+    },
+    {
+      "path": "dist/scripts/optimize/utils.js",
+      "exact": true
+    }
+  ],
+  "passed": true
+}

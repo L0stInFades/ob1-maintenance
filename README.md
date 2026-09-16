@@ -13,7 +13,7 @@
 | 可编辑的格式化代码 | `src/ob1.cjs`，约 61.5 万行，包含打包依赖 |
 | 模块初始化包装器索引 | `reports/module-index.json`，3,777 个 |
 | 导出名称 → 压缩符号映射 | `reports/export-aliases.json`，3,734 条 |
-| 提示词、模板等文本资源 | `recovered/text/`，81 份；有插值的模板仍保留表达式 |
+| 按规则选取的长文本 | `recovered/text/`，81 份，包含提示词、模板和其他长文本；不是全部提示词数量 |
 | 内嵌 WASM | `recovered/assets/`，2 个，均通过 WebAssembly 验证 |
 | 可维护的策略与沙箱配置 | `src/policies/`、`src/sandbox-macos-*.sb` |
 | 可维护的工作流优化脚本 | `scripts/optimize/` |
@@ -56,6 +56,7 @@ npm run test:offline
 
 ## 阅读入口
 
+- [独立正确性校验结论、证据和复现命令](docs/VALIDATION.md)
 - [架构、模型路由与主要修改位置](docs/ARCHITECTURE.md)
 - [恢复过程、构建方式与验证范围](docs/RECOVERY.md)
 - [BYOK 示例配置](examples/byok.json)
@@ -71,4 +72,4 @@ npm run test:offline
 
 服务端没有包含在这个客户端中。云端登录、额度、同步、分享、搜索代理等服务仍需原服务或兼容实现。BYOK 路由已从客户端代码确认存在；真实模型服务连接和云功能没有使用你的账户进行验证。
 
-`npm run extract` 可重新提取；`npm run format` 只用于首次恢复，目标已存在时会拒绝覆盖，避免抹掉维护修改。`npm run verify:source` 验证的是初始恢复与原始代码的语义结构一致性，进行实际功能修改后出现差异是预期情况。修改代码后用 `npm run analyze` 更新索引。
+`npm run extract` 可重新提取；`npm run format` 只用于首次恢复，目标已存在时会拒绝覆盖，避免抹掉维护修改。`npm run verify:source` 验证的是初始恢复与原始代码的规范化 AST 结构一致性；格式化会改变报错行号和函数源码反射文本。进行实际功能修改后出现 AST 差异是预期情况。修改代码后用 `npm run analyze` 更新索引。

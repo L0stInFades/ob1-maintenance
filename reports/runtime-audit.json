@@ -1,0 +1,36 @@
+[
+  {
+    "label": "original",
+    "binary_sha256": "5e70c83694b55dcb43dbf71a507baba30f4c1da96b73604495e0d0abcb8ec4ac",
+    "expected_file": "recovered/ob1.bundle.cjs",
+    "expected_sha256": "ef19b0cb412f46429fcdbb93c5bc7e44b317753b5713480a5fb08665497c28e9",
+    "returncode": 0,
+    "stdout": "0.1.725\n",
+    "stderr": "(node:55922) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.\n(Use `ob1 --trace-deprecation ...` to show where the warning was created)\n",
+    "capture": {
+      "node": "v24.16.0",
+      "url": "bundle/gemini-sea.cjs",
+      "bytes": 21077351,
+      "sha256": "ef19b0cb412f46429fcdbb93c5bc7e44b317753b5713480a5fb08665497c28e9",
+      "method": "V8 Inspector Debugger.getScriptSource (in-process session)"
+    },
+    "engine_source_equals_file": true
+  },
+  {
+    "label": "rebuilt",
+    "binary_sha256": "17c5b71c40b5e6f45b0614a9322427fb75a1b702c0c78621bec3308d1af27fcf",
+    "expected_file": "src/ob1.cjs",
+    "expected_sha256": "f4dcb43c5e66f043e11a28a398fe6b42248a3ee58a950961d5dc0169971bb527",
+    "returncode": 0,
+    "stdout": "0.1.725\n",
+    "stderr": "(node:55960) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.\n(Use `ob1 --trace-deprecation ...` to show where the warning was created)\n",
+    "capture": {
+      "node": "v24.16.0",
+      "url": "bundle/gemini-sea.cjs",
+      "bytes": 28991754,
+      "sha256": "f4dcb43c5e66f043e11a28a398fe6b42248a3ee58a950961d5dc0169971bb527",
+      "method": "V8 Inspector Debugger.getScriptSource (in-process session)"
+    },
+    "engine_source_equals_file": true
+  }
+]

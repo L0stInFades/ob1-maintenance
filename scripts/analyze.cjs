@@ -6,6 +6,7 @@ const path = require("node:path");
 const crypto = require("node:crypto");
 const { builtinModules } = require("node:module");
 const acorn = require("acorn");
+const { staticMemberName } = require("./ast-utils.cjs");
 const root = path.resolve(__dirname, "..");
 const source = fs.readFileSync(path.join(root, "src/ob1.cjs"), "utf8");
 const ast = acorn.parse(source, { ecmaVersion: "latest", sourceType: "script", locations: true });
@@ -19,6 +20,7 @@ const where = (n) => ({ line: n.loc.start.line, endLine: n.loc.end.line });
 const units = [], bindings = [], calls = [], env = new Map(), requires = new Map();
 const packages = [], classes = [], assets = [], texts = [], urls = new Map(), aliases = [];
 const dynamicRequires = [];
+const dynamicEnvironment = [];
 const assetDir = path.join(root, "recovered/assets");
 const textDir = path.join(root, "recovered/text");
 fs.mkdirSync(assetDir, { recursive: true });
@@ -63,9 +65,10 @@ while (stack.length) {
     }
   }
   if (n.type === "MemberExpression" && n.object?.type === "MemberExpression" &&
-      n.object.object?.name === "process" && keyOf(n.object.property) === "env") {
-    const name = keyOf(n.property);
+      n.object.object?.name === "process" && staticMemberName(n.object) === "env") {
+    const name = staticMemberName(n);
     if (name) { if (!env.has(name)) env.set(name, []); env.get(name).push(n.loc.start.line); }
+    else dynamicEnvironment.push({ expression: source.slice(n.start, n.end), ...where(n) });
   }
   if (n.type === "ObjectExpression") {
     const fields = new Map(n.properties.filter((p) => p.type === "Property" && p.value?.type === "Literal").map((p) => [keyOf(p.key), p.value.value]));
@@ -110,6 +113,7 @@ report("module-index", units);
 report("symbols", bindings);
 report("classes", classes);
 report("environment", [...env].sort().map(([name, lines]) => ({ name, lines: [...new Set(lines)] })));
+report("environment-dynamic", dynamicEnvironment);
 report("requires", { literal: [...requires].sort().map(([name, lines]) => ({ name, builtin: builtin.has(name), lines })), dynamic: dynamicRequires });
 report("embedded-packages", packages);
 report("export-aliases", aliases);
@@ -119,6 +123,7 @@ report("text-resources", texts);
 const summary = { sourceSha256: hash(source), lines: source.split("\n").length,
   topLevelBindings: bindings.length, bundledModuleWrappers: units.length,
   classDefinitions: classes.length, environmentVariables: env.size, embeddedPackageRecords: packages.length, exportAliases: aliases.length,
+  dynamicEnvironmentAccesses: dynamicEnvironment.length,
   embeddedBinaryAssets: assets.length, textResources: texts.length,
   sourceMaps: false, originalTypescriptRecovered: false };
 report("analysis-summary", summary);

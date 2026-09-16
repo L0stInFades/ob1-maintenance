@@ -1,0 +1,15 @@
+{
+  "checked_at": "2026-09-16T17:19:09.068960+00:00",
+  "workspace": "/Users/Apple/ob1-maintenance/.work/rebuild-audit-or27fl04",
+  "stdout": "Repacked /Users/Apple/ob1-maintenance/.work/rebuild-audit-or27fl04/.work/build/ob1: 150695888 bytes\nBuilt /Users/Apple/ob1-maintenance/.work/rebuild-audit-or27fl04/dist/bin/ob1\n",
+  "stderr": "",
+  "current_binary_sha256": "17c5b71c40b5e6f45b0614a9322427fb75a1b702c0c78621bec3308d1af27fcf",
+  "fresh_binary_sha256": "17c5b71c40b5e6f45b0614a9322427fb75a1b702c0c78621bec3308d1af27fcf",
+  "source_sha256": "f4dcb43c5e66f043e11a28a398fe6b42248a3ee58a950961d5dc0169971bb527",
+  "checks": {
+    "build_succeeded": true,
+    "current_distribution_untouched": true,
+    "independent_build_byte_identical": true
+  },
+  "passed": true
+}

@@ -1,0 +1,202 @@
+[
+  {
+    "expression": "process.env[e]",
+    "line": 45982,
+    "endLine": 45982
+  },
+  {
+    "expression": "process.env[cY.CERTIFICATE_CONFIGURATION_ENV_VARIABLE]",
+    "line": 57448,
+    "endLine": 57448
+  },
+  {
+    "expression": "process.env[PQs]",
+    "line": 58137,
+    "endLine": 58137
+  },
+  {
+    "expression": "process.env[eOs]",
+    "line": 83384,
+    "endLine": 83384
+  },
+  {
+    "expression": "process.env[vua]",
+    "line": 106323,
+    "endLine": 106323
+  },
+  {
+    "expression": "process.env[bdt]",
+    "line": 106645,
+    "endLine": 106645
+  },
+  {
+    "expression": "process.env[t]",
+    "line": 125693,
+    "endLine": 125693
+  },
+  {
+    "expression": "process.env[t]",
+    "line": 125706,
+    "endLine": 125706
+  },
+  {
+    "expression": "process.env[t]",
+    "line": 125711,
+    "endLine": 125711
+  },
+  {
+    "expression": "process.env[e]",
+    "line": 130987,
+    "endLine": 130987
+  },
+  {
+    "expression": "process.env[r]",
+    "line": 168797,
+    "endLine": 168797
+  },
+  {
+    "expression": "process.env[n]",
+    "line": 168806,
+    "endLine": 168806
+  },
+  {
+    "expression": "process.env[FMa]",
+    "line": 187794,
+    "endLine": 187794
+  },
+  {
+    "expression": "process.env[a]",
+    "line": 205642,
+    "endLine": 205642
+  },
+  {
+    "expression": "process.env[l]",
+    "line": 205648,
+    "endLine": 205648
+  },
+  {
+    "expression": "process.env[t]",
+    "line": 226737,
+    "endLine": 226737
+  },
+  {
+    "expression": "process.env[t]",
+    "line": 260750,
+    "endLine": 260750
+  },
+  {
+    "expression": "process.env[t]",
+    "line": 260763,
+    "endLine": 260763
+  },
+  {
+    "expression": "process.env[t]",
+    "line": 260768,
+    "endLine": 260768
+  },
+  {
+    "expression": "process.env[`OTEL_EXPORTER_OTLP_${t}_HEADERS`]",
+    "line": 280954,
+    "endLine": 280954
+  },
+  {
+    "expression": "process.env[`OTEL_EXPORTER_OTLP_${t}_ENDPOINT`]",
+    "line": 280969,
+    "endLine": 280969
+  },
+  {
+    "expression": "process.env[`OTEL_EXPORTER_OTLP_${t}_INSECURE`]",
+    "line": 280974,
+    "endLine": 280974
+  },
+  {
+    "expression": "process.env[t]",
+    "line": 280979,
+    "endLine": 280979
+  },
+  {
+    "expression": "process.env[e]",
+    "line": 280980,
+    "endLine": 280980
+  },
+  {
+    "expression": "process.env[ijl]",
+    "line": 328449,
+    "endLine": 328449
+  },
+  {
+    "expression": "process.env[sjl]",
+    "line": 328453,
+    "endLine": 328453
+  },
+  {
+    "expression": "process.env[t]",
+    "line": 328474,
+    "endLine": 328474
+  },
+  {
+    "expression": "process.env[Vjl]",
+    "line": 328550,
+    "endLine": 328550
+  },
+  {
+    "expression": "process.env[Wci]",
+    "line": 328554,
+    "endLine": 328554
+  },
+  {
+    "expression": "process.env[t]",
+    "line": 328583,
+    "endLine": 328583
+  },
+  {
+    "expression": "process.env[Ojl]",
+    "line": 328598,
+    "endLine": 328598
+  },
+  {
+    "expression": "process.env[s]",
+    "line": 424177,
+    "endLine": 424177
+  },
+  {
+    "expression": "process.env[s]",
+    "line": 498872,
+    "endLine": 498872
+  },
+  {
+    "expression": "process.env[bdt]",
+    "line": 513831,
+    "endLine": 513831
+  },
+  {
+    "expression": "process.env[t]",
+    "line": 548410,
+    "endLine": 548410
+  },
+  {
+    "expression": "process.env[a]",
+    "line": 553152,
+    "endLine": 553152
+  },
+  {
+    "expression": "process.env[a]",
+    "line": 553153,
+    "endLine": 553153
+  },
+  {
+    "expression": "process.env[t]",
+    "line": 605856,
+    "endLine": 605856
+  },
+  {
+    "expression": "process.env[D]",
+    "line": 611269,
+    "endLine": 611269
+  },
+  {
+    "expression": "process.env[D]",
+    "line": 611269,
+    "endLine": 611269
+  }
+]
